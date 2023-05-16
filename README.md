@@ -1,8 +1,19 @@
-# subgroups
+# Subgroups of $SL_2(\mathbb{Z})$
 
-Our script uses the GAP packages [Yags](https://github.com/yags/yags) and [ToolsForHomalg](https://github.com/homalg-project/homalg_project/tree/master/ToolsForHomalg). 
+The repository contains the [GAP](https://www.gap-system.org) code used in the paper...
 
-Here we show an example of the calculations related to conjugacy classes in $GL_2(\Z)$:
+## Authors
+* Ariel Pacetti
+* Nicolás Mayorga Uruburu
+* Leandro Vendramin
+
+### Usage 
+
+Our script uses the GAP packages [Yags](https://github.com/yags/yags), 
+[congruence](https://www.gap-system.org/Packages/congruence.html), 
+and [ToolsForHomalg](https://github.com/homalg-project/homalg_project/tree/master/ToolsForHomalg). 
+
+Here we show an example of the calculations related to conjugacy classes in $GL_2(\mathbb{Z})$:
 
 ```
 gap> ComputeGL2Classes(10);;
@@ -16,10 +27,12 @@ Index: 8, I constructed 6 GL2 representatives of subgroups in 31ms (= 0:00:00.03
 Index: 9, I constructed 12 GL2 representatives of subgroups in 134ms (= 0:00:00.134)
 Index: 10, I constructed 19 GL2 representatives of subgroups in 324ms (= 0:00:00.324)
 --
-Here we show an example of the calculations related to conjugacy classes in $GL_2(\Z)$:
-```
-```
 I constructed 10 tables in 568ms (= 0:00:00.568)
+```
+
+Here we show an example of the calculations related to conjugacy classes in $SL_2(\mathbb{Z})$:
+
+```
 gap> ComputeSL2Classes(10);;
 Index: 2, I constructed 1 SL2 representatives of subgroups in 0ms (= 0:00:00.000)
 Index: 3, I constructed 2 SL2 representatives of subgroups in 8ms (= 0:00:00.008)
