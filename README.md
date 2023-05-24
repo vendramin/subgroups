@@ -2,16 +2,24 @@
 
 The repository contains the [GAP](https://www.gap-system.org) code used in the paper...
 
+Our script uses the GAP packages [Yags](https://github.com/yags/yags), 
+[congruence](https://www.gap-system.org/Packages/congruence.html), 
+and [ToolsForHomalg](https://github.com/homalg-project/homalg_project/tree/master/ToolsForHomalg). 
+
 ## Authors
 * Ariel Pacetti
 * Nicolás Mayorga Uruburu
 * Leandro Vendramin
 
-### Usage 
+## Constructions  
 
-Our script uses the GAP packages [Yags](https://github.com/yags/yags), 
-[congruence](https://www.gap-system.org/Packages/congruence.html), 
-and [ToolsForHomalg](https://github.com/homalg-project/homalg_project/tree/master/ToolsForHomalg). 
+The file ```kulkarni.g``` contains functions to construct Kulkarni diagrams 
+up to equivalence by conjugation in $SL_2(\mathbb{Z})$ and $GL_2(\mathbb{Z})$. To do this, 
+first we need to read our main file:
+
+```
+gap> Read("kulkarni.g");
+```
 
 Here we show an example of the calculations related to conjugacy classes in $GL_2(\mathbb{Z})$:
 
@@ -45,4 +53,72 @@ Index: 9, I constructed 14 SL2 representatives of subgroups in 123ms (= 0:00:00.
 Index: 10, I constructed 27 SL2 representatives of subgroups in 298ms (= 0:00:00.298)
 --
 I constructed 10 tables in 524ms (= 0:00:00.524)
+```
+## The database 
+
+We precomputed Kulkarni diagrams of index up to 20. 
+The folder ```data/``` contains GAP files with this database.  
+
+### Example 1: passports 
+
+We will compute the list of passports corresponding to Kulkarni diagrams (up to 
+conjugation in $SL_2(\mathbb{Z})$ corresponding to subgroups of index 8. The corresponding
+data is located in the GAP file ```data/uptoSL2_8.g```
+
+This file contains contains a list names ```diagrams``` of Kulkarni diagrams. To use this file we need
+to load the GAP package ```congruence```:
+
+```
+gap> LoadPackage("congruence");
+```
+
+This is needed to understand the generalized Farey sequence. Then one reads the corresponding file, in our case ```uptoSL2_8.g```. We also
+need our script ```kulkarni.g```:
+
+```
+gap> Read("data/uptoSL2_8.g");
+gap> Read("kulkarni.g");
+```
+Now to obtain the list of passports we just need to run over the elements of the list diagrams 
+and use the function 
+
+```
+gap> Read("data/uptoSL2_8.g");
+gap> for x in diagrams do
+> Display(KulkarniDiagram2Passport(x));
+> od;
+[ (1,2)(3,7)(4,5), (1,3,4)(6,7,8), (1,2,3,8,6,7,4,5) ]
+[ (1,2)(3,7)(5,6), (1,3,4)(5,7,8), (1,2,3,8,5,6,7,4) ]
+[ (2,7)(3,4)(5,6), (1,2,3)(5,7,8), (1,2,8,5,6,7,3,4) ]
+[ (2,6)(3,4)(7,8), (1,2,3)(5,6,7), (1,2,7,8,5,6,3,4) ]
+[ (1,2)(3,7)(4,5)(6,8), (1,3,4)(6,8,7), (1,2,3,6,7,4,5) ]
+[ (1,2)(3,7)(4,8)(5,6), (1,3,8)(4,5,7), (1,2,3,4)(5,6,7,8) ]
+[ (1,8)(2,7)(3,4)(5,6), (1,5,7)(2,3,8), (1,2)(3,4,8,5,6,7) ]
+```
+
+### Example 2: generalized Farey symbols  
+
+We will show the list of generalized Farey symbols corresponding 
+to subgroups (up to conjugation in $SL_2(\mathbb{Z})$ of index 8. As before, 
+first we need to do some technical stuff:
+```
+gap> LoadPackage("congruence");
+gap> Read("kulkarni.g");
+```
+We also need to load the part of the database we want to use:
+```
+gap> Read("data/uptoSL2_8.g");
+```
+Our Kulkarni diagrams contain the generalized Farey sequence: 
+```
+gap> for x in diagrams do
+> Display(x!.farey_symbol);
+> od;
+FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "odd", "odd", "even", "even" ] ) 
+FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "odd", "even", "odd", "even" ] ) 
+FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "even", "odd", "odd", "even" ] ) 
+FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "even", "odd", "even", "odd" ] ) 
+FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "odd", "odd", 5, 5 ] ) 
+FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "odd", 4, "odd", 4 ] ) 
+FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ 3, "odd", "odd", 3 ] ) 
 ```
