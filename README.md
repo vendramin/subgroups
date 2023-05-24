@@ -80,7 +80,7 @@ gap> Read("data/uptoSL2_8.g");
 gap> Read("kulkarni.g");
 ```
 Now to obtain the list of passports we just need to run over the elements of the list diagrams 
-and use the function 
+and use the function ```KulkarniDiagram2Passport```.
 
 ```
 gap> Read("data/uptoSL2_8.g");
