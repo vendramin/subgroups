@@ -1419,6 +1419,48 @@ end;
 # 6) A <coloring>. 
 # 7) A generalized <farey_symbol>.
 
+# Given a positive integer <n> the function returns a list 
+# of Kulkarni diagrams up to conjugation 
+# by SL_2(Z)
+KulkarniDiagramsUpToSL2Equivalence := function(n)
+  local res, x, p, t, k;
+
+  res := [];
+
+  t := TreeDiagrams(n);
+  p := List(t, x->KulkarniDiagram2Passport(ColoredTree2KulkarniDiagram(x)));
+
+  for x in p do
+    if ForAll(res, k->not SL2PermutationsAreEquivalent(n, x, p[k])) then
+      Add(res, Position(p, x));
+    fi;
+  od;
+
+  return List(res, x->t[x]); 
+end;
+
+# Given a positive integer <n> the function returns a list 
+# of Kulkarni diagrams up to conjugation 
+# by GL_2(Z)
+KulkarniDiagramsUpToGL2Equivalence := function(n)
+  local res, x, p, t, k;
+
+  res := [];
+
+  t := TreeDiagrams(n);
+  p := List(t, x->KulkarniDiagram2Passport(ColoredTree2KulkarniDiagram(x)));
+
+  for x in p do
+    if ForAll(res, k->not GL2PermutationsAreEquivalent(n, x, p[k])) then
+      Add(res, Position(p, x));
+    fi;
+  od;
+
+  return List(res, x->t[x]); 
+end;
+
+
+
 ComputeTables := function(bound)
   local s, k, g, n, t0, t1, t2, t3, mytime;
 
