@@ -533,12 +533,98 @@ ActionOnColoredTree := function(obj, f)
   od;
 
   return rec(graph := ActionOnTree(graph, f), orientation := new, 
-  coloring := [Set(coloring[1], x->x^Inverse(f)), Set(coloring[2], x->x^Inverse(f)), 
-              coloring[3]^Inverse(f)],
+#  coloring := [Set(coloring[1], x->x^Inverse(f)), Set(coloring[2], x->x^Inverse(f)), 
+#              coloring[3]^Inverse(f)],
+   coloring := [Set(coloring[1], x->x^(f)), Set(coloring[2], x->x^(f)), 
+              coloring[3]^(f)],
   size := n, aut := ConjugateGroup(obj!.aut,f), 
   tree_aut := ConjugateGroup(obj!.tree_aut,f));
 
 end;
+
+# Given an oriented tree <obj> and an external vertex <x>, the function 
+# returns the vertex of <obj> to the left of <x> and 
+# the distance between them. 
+LeftVertex := function(obj, x)
+  local c, k, l, g, y, z, d;
+
+  if x < obj!.size/2 then
+    return fail;
+  fi;
+
+  d := 0;
+  g := ShallowCopy(obj);
+  for c in obj!.orientation do 
+    k := Position(obj!.orientation, c);
+    if c = () then
+      l := VerticesAdjacentTo(obj!.graph, k);
+      g!.orientation[k] := (l[1], l[2], l[3]); # We now choose one arbitrary orientation 
+    fi;
+  od;
+
+  y := VerticesAdjacentTo(obj!.graph, x)[1];
+  d := d+1;
+
+  while y <= obj!.size/2-1 do
+    z := y;
+    y := x^Inverse(g!.orientation[y]);
+    x := z;
+    d := d+1;
+  od;
+
+  return [y, d];
+end;
+
+# Given an oriented tree <obj> and an external vertex <x>, the function 
+# returns the vertex of <obj> to the right of <x> and 
+# the distance between them. 
+RightVertex := function(obj, x)
+  local c, k, l, g, y, z, d;
+
+  if x < obj!.size/2 then
+    return fail;
+  fi;
+
+  d := 0;
+  g := ShallowCopy(obj);
+  for c in obj!.orientation do 
+    k := Position(obj!.orientation, c);
+    if c = () then
+      l := VerticesAdjacentTo(obj!.graph, k);
+      g!.orientation[k] := (l[1], l[2], l[3]); # We now choose one arbitrary orientation 
+    fi;
+  od;
+
+  y := VerticesAdjacentTo(obj!.graph, x)[1];
+  d := d+1;
+
+  while y <= obj!.size/2-1 do
+    z := y;
+    y := x^g!.orientation[y];
+    x := z;
+    d := d+1;
+  od;
+
+  return [y, d];
+end;
+
+OrientationPermutation := function(oriented_tree)
+  local n, perm, tmp, i, j, w;
+  n :=oriented_tree!.size;
+  perm := [n/2];
+  for i in [1..n/2] do
+  tmp :=LeftVertex(oriented_tree,perm[i]);
+    Add(perm,tmp[1]);
+  od;
+  w := List([1..n],x->x);
+  w[perm[n/2+1]] := perm[1];
+  for i in [1..n/2] do
+    w[perm[i]] := perm[i+1];
+  od;
+  return PermList(w);
+end;
+
+
 
 # Given a <list> of colored trees, a colored tree <obj> and a set
 # <aut> of automorphisms, the function checks whether the action of an
@@ -547,12 +633,13 @@ IsNewColoredTree := function(list, obj, aut)
   local g,f,x;
   for f in aut do 
     g := ActionOnColoredTree(obj, f);
-    if g in list then
-      return false;
+      if g in list then
+        return false;
     fi;
   od;
   return true;
 end;
+
 
 # This function computes oriented tree classes up to 
 # size 12 in a couple of minutes. Here we take advantage
@@ -756,21 +843,20 @@ ColoredTree := function(blue, red, free)
   n := blue+red+2*free;
   classes := OrientedTreeClassesWithAutomorphisms(n-2);
   output := [];
-
   for c in classes do
     for b in IteratorOfCombinations([1..n], blue) do
       if not free = 0 then 
        for r in IteratorOfCombinations(Difference([1..n], b), red) do
         set := Difference([1..n], Union(b,r));
           f := Filtered(SymmetricGroup(2*free), p->IsOrderedPermutation(p,2*free));
-          for x in f do 
+          for x in f do
             tmp := ShallowCopy(c);
             tmp!.coloring := [(n-2)+b, (n-2)+r, ToPermutation(n-2+List(ListPerm(x, 2*free), y->set[y]),2*n-2)];
             #tmp!.coloring := [(n-2)+b, (n-2)+r, ToPermutation(n-2+List(ListPerm(x, 2*free), y->set[y]))];
             tmp!.aut := c!.aut;
             if IsNewColoredTree(output, tmp, c!.aut) then
               Add(output, tmp);
-            fi;
+           fi;
           od;
         od;
       else
@@ -819,95 +905,6 @@ TreeDiagrams := function(d)
   return l;
 end;
 
-# Given an oriented tree <obj> and an external vertex <x>, the function 
-# returns the vertex of <obj> to the left of <x>. 
-LeftVertex := function(obj, x)
-  local c, k, l, g, y, z;
-
-  if x < obj!.size/2 then
-    return fail;
-  fi;
-
-  g := ShallowCopy(obj);
-  for c in obj!.orientation do 
-    k := Position(obj!.orientation, c);
-    if c = () then
-      l := VerticesAdjacentTo(obj!.graph, k);
-      g!.orientation[k] := (l[1], l[2], l[3]); # We now choose one arbitrary orientation 
-    fi;
-  od;
-
-  y := VerticesAdjacentTo(obj!.graph, x)[1];
-
-  while y <= obj!.size/2-1 do
-    z := y;
-    y := x^Inverse(g!.orientation[y]);
-    x := z;
-  od;
-
-  return y;
-end;
-
-# Given an oriented tree <obj> and an external vertex <x>, the function 
-# returns the vertex of <obj> to the right of <x>. 
-RightVertex := function(obj, x)
-  local c, k, l, g, y, z;
-
-  if x < obj!.size/2 then
-    return fail;
-  fi;
-
-  g := ShallowCopy(obj);
-  for c in obj!.orientation do 
-    k := Position(obj!.orientation, c);
-    if c = () then
-      l := VerticesAdjacentTo(obj!.graph, k);
-      g!.orientation[k] := (l[1], l[2], l[3]); # We now choose one arbitrary orientation 
-    fi;
-  od;
-
-  y := VerticesAdjacentTo(obj!.graph, x)[1];
-
-  while y <= obj!.size/2-1 do
-    z := y;
-    y := x^g!.orientation[y];
-    x := z;
-  od;
-
-  return y;
-end;
-
-
-# Given a colored tree <obj> the function
-# returns the associated Kulkarni diagram. 
-ColoredTree2KulkarniDiagram := function(obj)
-  local n, v, w, x, p;
-
-  n := obj!.size;
-  v := Concatenation([infinity], [0..n/2-1], [infinity]);
-  w := [1..n/2+1]; 
-
-  # Even
-  for x in obj!.coloring[2] do
-    w[x-n/2+1] := "even";
-  od;
-
-  # Odd
-  for x in obj!.coloring[1] do
-    w[x-n/2+1] := "odd";
-  od;
-  
-  p := obj!.coloring[3];
-  for x in MovedPoints(p) do
-    if x^p > x then
-      w[x-n/2+1] := x;
-      w[x^p-n/2+1] := x;
-    fi;
-  od;
-  
-  obj!.farey_symbol := FareySymbolByData(v, w);
-  return obj;
-end;
 
 # Given a colored tree <obj>, this function
 # returns the linear system of the inequivalent cups of <obj>. 
@@ -920,12 +917,12 @@ SystemNumberOfCusps := function(obj)
   for i in [1..n] do 
     e := i+obj!.size/2-1;
     if e in Union(obj!.coloring[1], obj!.coloring[2]) then
-      j := RightVertex(obj, e)-obj!.size/2+1;
+      j := RightVertex(obj, e)[1]-obj!.size/2+1;
       m[i][i] := 1;
       m[i][j] := -1;
     else
       m[i][i] := 1;
-      f := RightVertex(obj, e^obj!.coloring[3]);
+      f := RightVertex(obj, e^obj!.coloring[3])[1];
       j := f-obj!.size/2+1;
       if f = e then
         m[i][j] := 0;
@@ -949,9 +946,9 @@ CuspsRelations := function(kdiagram)
   for i in [1..n] do 
     e := i+kdiagram!.size/2-1;
     if e in Union(kdiagram!.coloring[1], kdiagram!.coloring[2]) then
-      j := RightVertex(kdiagram, e)-kdiagram!.size/2+1;
+      j := RightVertex(kdiagram, e)[1]-kdiagram!.size/2+1;
     else
-      f := RightVertex(kdiagram, e^kdiagram!.coloring[3]);
+      f := RightVertex(kdiagram, e^kdiagram!.coloring[3])[1];
       j := f-kdiagram!.size/2+1;
     fi;
     if not i = j then
@@ -984,7 +981,7 @@ end;
 
 # Given a Kulkarni diagram <kdiagram>, this function
 # computes all equivalence classes of cusps.
-EquivalenceClassesCusps := function(kdiagram)
+EquivalenceClassesOfCusps := function(kdiagram)
   local i, j, m, ac, cclass;
   
   m := SystemNumberOfCusps(kdiagram);
@@ -1006,6 +1003,74 @@ EquivalenceClassesCusps := function(kdiagram)
   od;
   return cclass;
 end;
+
+
+
+TreeDiagram2GFS := function(obj)
+  local x, i, m, v, p, w, a, b, c, d, tmp, u, ww;
+
+  m := obj!.size/2+1; 
+  w := [1..m]; 
+
+  # Even
+  for x in obj!.coloring[2] do
+    w[x-m+2] := "even";
+  od;
+
+  # Odd
+  for x in obj!.coloring[1] do
+    w[x-m+2] := "odd";
+  od;
+  
+  p := obj!.coloring[3];
+  for x in MovedPoints(p) do
+    if x^p > x then
+      w[x-m+2] := x;
+      w[x^p-m+2] := x;
+    fi;
+  od;
+
+# The problem here is that we do not have the right order!
+
+  ww := ShallowCopy(w);
+  tmp:= m-1;
+  for i in [1..m] do
+    ww[i] := w[tmp+2-m];
+    tmp :=RightVertex(obj, tmp)[1];
+  od;
+
+  v := [infinity, 0];
+
+  if m = 2 then
+    Add(v, infinity); 
+    return FareySymbolByData(v, w);    
+  else
+    tmp := RightVertex(obj, m-1);
+    Add(v, 1/(tmp[2]-1));
+    for i in [2..m-2] do
+      tmp := RightVertex(obj, tmp[1]);
+      a := NumeratorRat(v[i+1]);
+      b := DenominatorRat(v[i+1]);
+      c := NumeratorRat(v[i]);
+      d := DenominatorRat(v[i]);
+      u := Inverse([[a,-b],[c,-d]])*[[-1],[1-tmp[2]]]; 
+      Add(v, u[2][1]/u[1][1]);
+    od;
+    Add(v, infinity);
+  fi;
+
+  return FareySymbolByData(v,ww);
+
+end;
+
+# Given a colored tree <obj> the function
+# returns the associated Kulkarni diagram. 
+ColoredTree2KulkarniDiagram := function(obj)
+  obj!.farey_symbol := TreeDiagram2GFS(obj);
+  return obj;
+end;
+
+
 
 # Given a Kulkarni diagram <kdiagram> and a <cusp>, this function
 # returns the widths of the k-cusp.
@@ -1317,6 +1382,11 @@ end;
 # Given a positive integer <n> the function returns a list 
 # index-n subgroups of PSL_2(Z) up to conjugation 
 # by SL_2(Z)
+
+####
+#### FIXME: n=1,2 no andan!
+####
+
 SL2RepresentativesOfSubgroups := function(n)
   local res, x, pairs;
 
@@ -1407,6 +1477,8 @@ IsACongruenceSubgroup := function(kdiagram)
   fi;
 end;
 
+
+
 # Our object is a record with the following components:
 # A Kulkarni diagram an oriented tree 
 # with a <coloring> of the external vertices 
@@ -1460,6 +1532,36 @@ KulkarniDiagramsUpToGL2Equivalence := function(n)
 end;
 
 
+# Given a colored tree <obj> the function
+# returns the associated Kulkarni diagram. 
+ColoredTree2GFSColor := function(obj)
+  local n, v, w, x, p;
+
+  n := obj!.size;
+  w := [1..n/2+1]; 
+
+  # Even
+  for x in obj!.coloring[2] do
+    w[x-n/2+1] := "even";
+  od;
+
+  # Odd
+  for x in obj!.coloring[1] do
+    w[x-n/2+1] := "odd";
+  od;
+  
+  p := obj!.coloring[3];
+  for x in MovedPoints(p) do
+    if x^p > x then
+      w[x-n/2+1] := x;
+      w[x^p-n/2+1] := x;
+    fi;
+  od;
+  
+  return w;
+end;
+
+
 
 ComputeTables := function(bound)
   local s, k, g, n, t0, t1, t2, t3, mytime;
@@ -1492,11 +1594,11 @@ end;
 ComputeSL2Classes := function(bound)
   local s, n, t0, t1, t2, t3, mytime;
 
-  s := [1..bound]; 
+  s := 0*[1..bound]; 
 
   t0 := NanosecondsSinceEpoch();
 
-  for n in [2..bound] do
+  for n in [3..bound] do
     t1 := NanosecondsSinceEpoch();
 
     s[n] := SL2RepresentativesOfSubgroups(n);
@@ -1516,11 +1618,11 @@ end;
 ComputeGL2Classes := function(bound)
   local s, n, t0, t1, t2, t3, mytime;
 
-  s := [1..bound]; 
+  s := 0*[1..bound]; 
 
   t0 := NanosecondsSinceEpoch();
 
-  for n in [2..bound] do
+  for n in [3..bound] do
     t1 := NanosecondsSinceEpoch();
 
     s[n] := GL2RepresentativesOfSubgroups(n);
