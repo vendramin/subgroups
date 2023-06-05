@@ -4,11 +4,12 @@
 diagrams := [rec(
   aut := Group( [ () ] ),
   coloring := [ [ 4, 5 ], [ 6, 7, 8 ], () ],
-  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "odd", "even", "even", "odd", "even" 
-     ] ] ,
+  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], 
+    [ "odd", "even", "even", "odd", "even" ] ) ,
   graph := [ [ false, true, true, true, false, false, false, false ], 
-      [ true, false, false, false, true, true, false, false ], [ true, false, false, false, false, false, true, true 
-         ], [ true, false, false, false, false, false, false, false ], 
+      [ true, false, false, false, true, true, false, false ], 
+      [ true, false, false, false, false, false, true, true ], 
+      [ true, false, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false ], 
@@ -19,11 +20,12 @@ diagrams := [rec(
 rec(
   aut := Group( [ () ] ),
   coloring := [ [ 4, 6 ], [ 5, 7, 8 ], () ],
-  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "odd", "even", "even", "even", "odd" 
-     ] ] ,
+  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], 
+    [ "odd", "even", "even", "even", "odd" ] ) ,
   graph := [ [ false, true, true, true, false, false, false, false ], 
-      [ true, false, false, false, true, true, false, false ], [ true, false, false, false, false, false, true, true 
-         ], [ true, false, false, false, false, false, false, false ], 
+      [ true, false, false, false, true, true, false, false ], 
+      [ true, false, false, false, false, false, true, true ], 
+      [ true, false, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false ], 
@@ -34,11 +36,12 @@ rec(
 rec(
   aut := Group( [ () ] ),
   coloring := [ [ 5, 6 ], [ 4, 7, 8 ], () ],
-  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "even", "even", "even", "odd", "odd" 
-     ] ] ,
+  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], 
+    [ "even", "even", "even", "odd", "odd" ] ) ,
   graph := [ [ false, true, true, true, false, false, false, false ], 
-      [ true, false, false, false, true, true, false, false ], [ true, false, false, false, false, false, true, true 
-         ], [ true, false, false, false, false, false, false, false ], 
+      [ true, false, false, false, true, true, false, false ], 
+      [ true, false, false, false, false, false, true, true ], 
+      [ true, false, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false ], 
@@ -49,11 +52,12 @@ rec(
 rec(
   aut := Group( [ () ] ),
   coloring := [ [ 5, 7 ], [ 4, 6, 8 ], () ],
-  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "even", "odd", "even", "odd", "even" 
-     ] ] ,
+  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], 
+    [ "even", "odd", "even", "odd", "even" ] ) ,
   graph := [ [ false, true, true, true, false, false, false, false ], 
-      [ true, false, false, false, true, true, false, false ], [ true, false, false, false, false, false, true, true 
-         ], [ true, false, false, false, false, false, false, false ], 
+      [ true, false, false, false, true, true, false, false ], 
+      [ true, false, false, false, false, false, true, true ], 
+      [ true, false, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false ], 
@@ -64,11 +68,12 @@ rec(
 rec(
   aut := Group( [ () ] ),
   coloring := [ [ 6, 7 ], [ 4, 5, 8 ], () ],
-  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "even", "odd", "even", "even", "odd" 
-     ] ] ,
+  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], 
+    [ "even", "odd", "even", "even", "odd" ] ) ,
   graph := [ [ false, true, true, true, false, false, false, false ], 
-      [ true, false, false, false, true, true, false, false ], [ true, false, false, false, false, false, true, true 
-         ], [ true, false, false, false, false, false, false, false ], 
+      [ true, false, false, false, true, true, false, false ], 
+      [ true, false, false, false, false, false, true, true ], 
+      [ true, false, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false ], 
@@ -79,11 +84,12 @@ rec(
 rec(
   aut := Group( [ () ] ),
   coloring := [ [ 5, 8 ], [ 4, 6, 7 ], () ],
-  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "even", "even", "odd", "odd", "even" 
-     ] ] ,
+  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], 
+    [ "even", "even", "odd", "odd", "even" ] ) ,
   graph := [ [ false, true, true, true, false, false, false, false ], 
-      [ true, false, false, false, true, true, false, false ], [ true, false, false, false, false, false, true, true 
-         ], [ true, false, false, false, false, false, false, false ], 
+      [ true, false, false, false, true, true, false, false ], 
+      [ true, false, false, false, false, false, true, true ], 
+      [ true, false, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false ], 
@@ -94,10 +100,12 @@ rec(
 rec(
   aut := Group( [ () ] ),
   coloring := [ [ 4, 5 ], [ 6 ], (7,8) ],
-  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "odd", 7, 7, "odd", "even" ] ] ,
+  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "odd", 7, 7, "odd", "even" 
+     ] ) ,
   graph := [ [ false, true, true, true, false, false, false, false ], 
-      [ true, false, false, false, true, true, false, false ], [ true, false, false, false, false, false, true, true 
-         ], [ true, false, false, false, false, false, false, false ], 
+      [ true, false, false, false, true, true, false, false ], 
+      [ true, false, false, false, false, false, true, true ], 
+      [ true, false, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false ], 
@@ -108,10 +116,12 @@ rec(
 rec(
   aut := Group( [ () ] ),
   coloring := [ [ 4, 5 ], [ 7 ], (6,8) ],
-  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "odd", "even", 6, "odd", 6 ] ] ,
+  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "odd", "even", 6, "odd", 6 
+     ] ) ,
   graph := [ [ false, true, true, true, false, false, false, false ], 
-      [ true, false, false, false, true, true, false, false ], [ true, false, false, false, false, false, true, true 
-         ], [ true, false, false, false, false, false, false, false ], 
+      [ true, false, false, false, true, true, false, false ], 
+      [ true, false, false, false, false, false, true, true ], 
+      [ true, false, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false ], 
@@ -122,10 +132,12 @@ rec(
 rec(
   aut := Group( [ () ] ),
   coloring := [ [ 4, 6 ], [ 5 ], (7,8) ],
-  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "odd", 7, 7, "even", "odd" ] ] ,
+  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "odd", 7, 7, "even", "odd" 
+     ] ) ,
   graph := [ [ false, true, true, true, false, false, false, false ], 
-      [ true, false, false, false, true, true, false, false ], [ true, false, false, false, false, false, true, true 
-         ], [ true, false, false, false, false, false, false, false ], 
+      [ true, false, false, false, true, true, false, false ], 
+      [ true, false, false, false, false, false, true, true ], 
+      [ true, false, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false ], 
@@ -136,10 +148,12 @@ rec(
 rec(
   aut := Group( [ () ] ),
   coloring := [ [ 4, 6 ], [ 7 ], (5,8) ],
-  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "odd", "even", 5, 5, "odd" ] ] ,
+  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "odd", "even", 5, 5, "odd" 
+     ] ) ,
   graph := [ [ false, true, true, true, false, false, false, false ], 
-      [ true, false, false, false, true, true, false, false ], [ true, false, false, false, false, false, true, true 
-         ], [ true, false, false, false, false, false, false, false ], 
+      [ true, false, false, false, true, true, false, false ], 
+      [ true, false, false, false, false, false, true, true ], 
+      [ true, false, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false ], 
@@ -150,10 +164,12 @@ rec(
 rec(
   aut := Group( [ () ] ),
   coloring := [ [ 4, 6 ], [ 8 ], (5,7) ],
-  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "odd", 5, "even", 5, "odd" ] ] ,
+  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "odd", 5, "even", 5, "odd" 
+     ] ) ,
   graph := [ [ false, true, true, true, false, false, false, false ], 
-      [ true, false, false, false, true, true, false, false ], [ true, false, false, false, false, false, true, true 
-         ], [ true, false, false, false, false, false, false, false ], 
+      [ true, false, false, false, true, true, false, false ], 
+      [ true, false, false, false, false, false, true, true ], 
+      [ true, false, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false ], 
@@ -164,10 +180,12 @@ rec(
 rec(
   aut := Group( [ () ] ),
   coloring := [ [ 5, 6 ], [ 4 ], (7,8) ],
-  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "even", 7, 7, "odd", "odd" ] ] ,
+  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "even", 7, 7, "odd", "odd" 
+     ] ) ,
   graph := [ [ false, true, true, true, false, false, false, false ], 
-      [ true, false, false, false, true, true, false, false ], [ true, false, false, false, false, false, true, true 
-         ], [ true, false, false, false, false, false, false, false ], 
+      [ true, false, false, false, true, true, false, false ], 
+      [ true, false, false, false, false, false, true, true ], 
+      [ true, false, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false ], 
@@ -178,10 +196,12 @@ rec(
 rec(
   aut := Group( [ () ] ),
   coloring := [ [ 5, 6 ], [ 7 ], (4,8) ],
-  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ 4, "even", 4, "odd", "odd" ] ] ,
+  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ 4, "even", 4, "odd", "odd" 
+     ] ) ,
   graph := [ [ false, true, true, true, false, false, false, false ], 
-      [ true, false, false, false, true, true, false, false ], [ true, false, false, false, false, false, true, true 
-         ], [ true, false, false, false, false, false, false, false ], 
+      [ true, false, false, false, true, true, false, false ], 
+      [ true, false, false, false, false, false, true, true ], 
+      [ true, false, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false ], 
@@ -192,10 +212,12 @@ rec(
 rec(
   aut := Group( [ () ] ),
   coloring := [ [ 5, 6 ], [ 8 ], (4,7) ],
-  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ 4, 4, "even", "odd", "odd" ] ] ,
+  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ 4, 4, "even", "odd", "odd" 
+     ] ) ,
   graph := [ [ false, true, true, true, false, false, false, false ], 
-      [ true, false, false, false, true, true, false, false ], [ true, false, false, false, false, false, true, true 
-         ], [ true, false, false, false, false, false, false, false ], 
+      [ true, false, false, false, true, true, false, false ], 
+      [ true, false, false, false, false, false, true, true ], 
+      [ true, false, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false ], 
@@ -206,10 +228,12 @@ rec(
 rec(
   aut := Group( [ () ] ),
   coloring := [ [ 5, 7 ], [ 6 ], (4,8) ],
-  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ 4, "odd", 4, "odd", "even" ] ] ,
+  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ 4, "odd", 4, "odd", "even" 
+     ] ) ,
   graph := [ [ false, true, true, true, false, false, false, false ], 
-      [ true, false, false, false, true, true, false, false ], [ true, false, false, false, false, false, true, true 
-         ], [ true, false, false, false, false, false, false, false ], 
+      [ true, false, false, false, true, true, false, false ], 
+      [ true, false, false, false, false, false, true, true ], 
+      [ true, false, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false ], 
@@ -220,10 +244,12 @@ rec(
 rec(
   aut := Group( [ () ] ),
   coloring := [ [ 5, 7 ], [ 8 ], (4,6) ],
-  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ 4, "odd", "even", "odd", 4 ] ] ,
+  farey_symbol := FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ 4, "odd", "even", "odd", 4 
+     ] ) ,
   graph := [ [ false, true, true, true, false, false, false, false ], 
-      [ true, false, false, false, true, true, false, false ], [ true, false, false, false, false, false, true, true 
-         ], [ true, false, false, false, false, false, false, false ], 
+      [ true, false, false, false, true, true, false, false ], 
+      [ true, false, false, false, false, false, true, true ], 
+      [ true, false, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false ], 

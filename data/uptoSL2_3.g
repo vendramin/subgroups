@@ -4,7 +4,7 @@
 diagrams := [rec(
   aut := Group( [ (), (3,4), (2,4,3), (2,4), (2,3,4), (2,3) ] ),
   coloring := [ [  ], [ 2, 3, 4 ], () ],
-  farey_symbol := FareySymbolByData( [ infinity, 0, 1, infinity ], [ "even", "even", "even" ] ] ,
+  farey_symbol := FareySymbolByData( [ infinity, 0, 1, infinity ], [ "even", "even", "even" ] ) ,
   graph := [ [ false, true, true, true ], [ true, false, false, false ], [ true, false, false, false ], 
       [ true, false, false, false ] ],
   orientation := [ (2,3,4) ],
@@ -13,7 +13,7 @@ diagrams := [rec(
 rec(
   aut := Group( [ (), (3,4), (2,4,3), (2,4), (2,3,4), (2,3) ] ),
   coloring := [ [  ], [ 2 ], (3,4) ],
-  farey_symbol := FareySymbolByData( [ infinity, 0, 1, infinity ], [ "even", 3, 3 ] ] ,
+  farey_symbol := FareySymbolByData( [ infinity, 0, 1, infinity ], [ "even", 3, 3 ] ) ,
   graph := [ [ false, true, true, true ], [ true, false, false, false ], [ true, false, false, false ], 
       [ true, false, false, false ] ],
   orientation := [ (2,3,4) ],
