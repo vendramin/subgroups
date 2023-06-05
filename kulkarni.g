@@ -516,7 +516,12 @@ end;
 # 3) The <size>.   
 # 4) The automorphism group <tree_aut> of the tree.
 # 5) The automorphism group <aut> of the oriented tree. 
-# 6) A <coloring>. 
+# 6) A <coloring>.
+# 
+# A coloring is a vector with three coordinates:
+# i) The list of even vertices. 
+# ii) The list of odd vertices.
+# iii) A product of disjoint transpositions describing the free sides.
 
 # This function acts on a colored tree <obj> by an automorphism <f>.
 ActionOnColoredTree := function(obj, f)
@@ -552,6 +557,17 @@ LeftVertex := function(obj, x)
     return fail;
   fi;
 
+  # This patch is needed only in the case of index two 
+  if obj!.size = 2 then
+    if x = 2 then 
+      return [1, 1];
+    else
+      return [2, 1];
+    fi;
+  fi;
+
+
+
   d := 0;
   g := ShallowCopy(obj);
   for c in obj!.orientation do 
@@ -583,6 +599,15 @@ RightVertex := function(obj, x)
 
   if x < obj!.size/2 then
     return fail;
+  fi;
+
+  # This patch is needed only in the case of index two 
+  if obj!.size = 2 then
+    if x = 2 then 
+      return [1, 1];
+    else
+      return [2, 1];
+    fi;
   fi;
 
   d := 0;
@@ -1009,6 +1034,11 @@ end;
 TreeDiagram2GFS := function(obj)
   local x, i, m, v, p, w, a, b, c, d, tmp, u, ww;
 
+  # The case of index two is quite exceptional
+  if obj!.size = 2 then
+    return FareySymbolByData([infinity, 0, infinity], ["odd", "odd"]);
+  fi;
+
   m := obj!.size/2+1; 
   w := [1..m]; 
 
@@ -1065,7 +1095,7 @@ end;
 
 # Given a colored tree <obj> the function
 # returns the associated Kulkarni diagram. 
-ColoredTree2KulkarniDiagram := function(obj)
+TreeDiagram2KulkarniDiagram := function(obj)
   obj!.farey_symbol := TreeDiagram2GFS(obj);
   return obj;
 end;
@@ -1112,7 +1142,7 @@ end;
 # Given a colored tree <obj> the function
 # returns the generators of an associated subgroup. 
 #Generators := function(kdiagram)
-#  return GeneratorsByFareySymbol(ColoredTree2FareySymbol(obj));
+#  return GeneratorsByFareySymbol(TreeDiagram2FareySymbol(obj));
 #end;
 
 # Given a generalized <farey_symbol> and an integer <k> 
@@ -1391,7 +1421,7 @@ SL2RepresentativesOfSubgroups := function(n)
   local res, x, pairs;
 
   res := [];
-  pairs := List(TreeDiagrams(n), x->KulkarniDiagram2Passport(ColoredTree2KulkarniDiagram(x)));
+  pairs := List(TreeDiagrams(n), x->KulkarniDiagram2Passport(TreeDiagram2KulkarniDiagram(x)));
 
   for x in pairs do
     if ForAll(res, y->not SL2PermutationsAreEquivalent(n, x, y)) then
@@ -1406,7 +1436,7 @@ GL2RepresentativesOfSubgroups := function(n)
   local res, x, pairs;
 
   res := [];
-  pairs := List(TreeDiagrams(n), x->KulkarniDiagram2Passport(ColoredTree2KulkarniDiagram(x)));
+  pairs := List(TreeDiagrams(n), x->KulkarniDiagram2Passport(TreeDiagram2KulkarniDiagram(x)));
 
   for x in pairs do
     if ForAll(res, y->not GL2PermutationsAreEquivalent(n, x, y)) then
@@ -1500,7 +1530,7 @@ KulkarniDiagramsUpToSL2Equivalence := function(n)
   res := [];
 
   t := TreeDiagrams(n);
-  p := List(t, x->KulkarniDiagram2Passport(ColoredTree2KulkarniDiagram(x)));
+  p := List(t, x->KulkarniDiagram2Passport(TreeDiagram2KulkarniDiagram(x)));
 
   for x in p do
     if ForAll(res, k->not SL2PermutationsAreEquivalent(n, x, p[k])) then
@@ -1520,7 +1550,7 @@ KulkarniDiagramsUpToGL2Equivalence := function(n)
   res := [];
 
   t := TreeDiagrams(n);
-  p := List(t, x->KulkarniDiagram2Passport(ColoredTree2KulkarniDiagram(x)));
+  p := List(t, x->KulkarniDiagram2Passport(TreeDiagram2KulkarniDiagram(x)));
 
   for x in p do
     if ForAll(res, k->not GL2PermutationsAreEquivalent(n, x, p[k])) then
@@ -1534,7 +1564,7 @@ end;
 
 # Given a colored tree <obj> the function
 # returns the associated Kulkarni diagram. 
-ColoredTree2GFSColor := function(obj)
+TreeDiagram2GFSColor := function(obj)
   local n, v, w, x, p;
 
   n := obj!.size;
@@ -1561,7 +1591,21 @@ ColoredTree2GFSColor := function(obj)
   return w;
 end;
 
+# Given a Kulkarni diagram, the function
+# returns the number of degree-two ramified points. 
+E2 := function(kdiagram)
+  return Size(kdiagram.coloring[1])+NrMovedPoints(kdiagram.coloring[3]);
+end;
 
+# Given a Kulkarni diagram, the function
+# returns the number of degree-three ramified points. 
+E3 := function(kdiagram)
+  return Size(kdiagram.coloring[2]);
+end;
+
+Generators := function(kdiagram)
+  return GeneratorsByFareySymbol(kdiagram!.farey_symbol);
+end;
 
 ComputeTables := function(bound)
   local s, k, g, n, t0, t1, t2, t3, mytime;
@@ -1576,7 +1620,7 @@ ComputeTables := function(bound)
     t1 := NanosecondsSinceEpoch();
 
     s[n] := TreeDiagrams(n);
-    k[n] := List(s[n], ColoredTree2KulkarniDiagram);
+    k[n] := List(s[n], TreeDiagram2KulkarniDiagram);
 #    g[n] := List(f[n], GeneratorsByFareySymbol);
 
     t2 := NanosecondsSinceEpoch();

@@ -12,7 +12,7 @@ LogTo("blah");
 # We need our package 
 Read("kulkarni.g");
 
-from := 3;
+from := 2;
 to := 10;
 
 # This is where we will store the data.
@@ -30,12 +30,17 @@ for k in [1..Size(data)] do
     for x in data[k] do
       Print("\nFarey symbol: ", x!.farey_symbol);
       Print("\nPassport: ", KulkarniDiagram2Passport(x));
-      Print("\nCups generators: ", CuspsRelations(x));
+  #    Print("\nCups generators: ", CuspsRelations(x));
+      Print("\nGraph: ... file");
+      Print("\nGenus: ", Genus(x));
+      Print("\ne2: ", E2(x));
+      Print("\ne3: ", E3(x));
       eq := EquivalenceClassesOfCusps(x);
       Print("\nEquivalence classes of cusps: ", eq);
       for j in [1..Size(eq)] do
         Print("\n Cusp ", j, ", width: ", WidthOfCusp(x, j));
       od;
+      Print("\nGenerators: ", Generators(x));
       Print("\n--");
     od;
   fi;
