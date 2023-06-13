@@ -1,3 +1,6 @@
+# The package io is used to create graph files.
+LoadPackage("io");
+
 # The package yags is used to test graph isomorphisms.
 LoadPackage("yags");
 
@@ -471,7 +474,7 @@ ActionOnOrientedTree := function(obj, f)
 
   new := [1..n/2-1];
   for x in [1..n/2-1] do
-    new[x^Inverse(f)] := orientation[x]^Inverse(f);
+    new[x^Inverse(f)] := orientation[x]^(f);
   od;
 
   if not IsBound(obj!.aut) then 
@@ -534,7 +537,7 @@ ActionOnColoredTree := function(obj, f)
 
   new := [1..n/2-1];
   for x in [1..n/2-1] do
-    new[x^Inverse(f)] := orientation[x]^Inverse(f);
+    new[x^Inverse(f)] := orientation[x]^(f);
   od;
 
   return rec(graph := ActionOnTree(graph, f), orientation := new, 
@@ -633,12 +636,13 @@ RightVertex := function(obj, x)
   return [y, d];
 end;
 
+# Given an oriented three, compute the cycle corresponding to moving to the right.
 OrientationPermutation := function(oriented_tree)
   local n, perm, tmp, i, j, w;
   n :=oriented_tree!.size;
   perm := [n/2];
   for i in [1..n/2] do
-  tmp :=LeftVertex(oriented_tree,perm[i]);
+  tmp :=RightVertex(oriented_tree,perm[i]);
     Add(perm,tmp[1]);
   od;
   w := List([1..n],x->x);
@@ -649,7 +653,20 @@ OrientationPermutation := function(oriented_tree)
   return PermList(w);
 end;
 
-
+# Given an oriented_tree, compute a relabelling so that the vertex to the right of the i-th vertex is i+1.
+OrientedTreeGoodLabelling := function(oriented_tree)
+  local n, perm, change, i, tmp;
+  n := oriented_tree.size;
+  perm := OrientationPermutation(oriented_tree);
+  change := List([1..n],x->x);
+  tmp := n/2;
+  for i in [1..n/2] do
+    tmp := tmp^perm;
+    change[n/2+i] := tmp;
+  od;
+  change := PermList(change);
+  return ActionOnOrientedTree(oriented_tree, Inverse(change));
+end;
 
 # Given a <list> of colored trees, a colored tree <obj> and a set
 # <aut> of automorphisms, the function checks whether the action of an
@@ -765,7 +782,7 @@ OrientedTreeClassesWithAutomorphisms := function(n)
       #tmp!.tree_aut := aut; 
       tmp!.aut := Group(Filtered(aut, f->PreservesOrientedTree(tmp, f)));
       if IsNewOrientedTree(res, tmp, aut) then
-        Add(res, tmp);
+        Add(res, OrientedTreeGoodLabelling(tmp));
       fi;
     od;
   od;
@@ -1062,12 +1079,12 @@ TreeDiagram2GFS := function(obj)
 
 # The problem here is that we do not have the right order!
 
-  ww := ShallowCopy(w);
-  tmp:= m-1;
-  for i in [1..m] do
-    ww[i] := w[tmp+2-m];
-    tmp :=RightVertex(obj, tmp)[1];
-  od;
+#  ww := ShallowCopy(w);
+#  tmp:= m-1;
+#  for i in [1..m] do
+#    ww[i] := w[tmp+2-m];
+#    tmp :=RightVertex(obj, tmp)[1];
+#  od;
 
   v := [infinity, 0];
 
@@ -1089,7 +1106,7 @@ TreeDiagram2GFS := function(obj)
     Add(v, infinity);
   fi;
 
-  return FareySymbolByData(v,ww);
+  return FareySymbolByData(v,w);
 
 end;
 
@@ -1606,6 +1623,39 @@ end;
 Generators := function(kdiagram)
   return GeneratorsByFareySymbol(kdiagram!.farey_symbol);
 end;
+
+CreateGraph := function(kdiagram, filename)
+  local i,j,f,str;
+  
+  f := IO_File(filename, "w");
+
+  IO_WriteLine(f, "graph diagram {");
+  for i in [1..Size(kdiagram!.graph)] do
+  #  IO_WriteLine(f, Concatenation(String(i), "[label=", String(i), ", shape=circle]"));
+    for j in [i+1..Size(kdiagram!.graph)] do 
+      if kdiagram!.graph[i][j] then
+        IO_WriteLine(f, String(i), " -- ", String(j), ";");
+      fi;
+    od;
+  od;
+  IO_WriteLine(f, "}");
+  IO_Flush(f);
+  IO_Close(f);
+end;
+
+# This function uses the Yags internal drawing system
+# to draw the underlying graph. The inner vertices
+# are highligthed. 
+# Commands:
+# H - Show help.
+# L - Show/hide labels.
+# R - Reorder vertices.
+DrawWithYags := function(kdiagram)
+  #Draw(GraphByAdjMatrix(kdiagram!.graph), kdiagram!.coloring[1]);
+  Draw(GraphByAdjMatrix(kdiagram!.graph));
+end;
+
+
 
 ComputeTables := function(bound)
   local s, k, g, n, t0, t1, t2, t3, mytime;

@@ -13,8 +13,7 @@ diagrams := [rec(
 rec(
   aut := Group( [ (), (1,2)(3,5)(4,6) ] ),
   coloring := [ [  ], [ 3, 4, 5, 6 ], () ],
-  farey_symbol := FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "even", "even", "even", "even" 
-     ] ) ,
+  farey_symbol := FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "even", "even", "even", "even" ] ) ,
   graph := [ [ false, true, true, true, false, false ], [ true, false, false, false, true, true ], 
       [ true, false, false, false, false, false ], [ true, false, false, false, false, false ], 
       [ false, true, false, false, false, false ], [ false, true, false, false, false, false ] ],
