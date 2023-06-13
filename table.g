@@ -8,7 +8,6 @@
 
 LogTo("blah");
 
-
 # We need our package 
 Read("kulkarni.g");
 
@@ -33,8 +32,8 @@ for k in [1..Size(data)] do
   #    Print("\nCups generators: ", CuspsRelations(x));
       Print("\nGraph: ... file");
       Print("\nGenus: ", Genus(x));
-      Print("\ne2: ", E2(x));
-      Print("\ne3: ", E3(x));
+      Print("\nDegree 2 ramified points: ", NrDegreeTwoRamifiedPoints(x));
+      Print("\nDegree 3 ramified points: ", NrDegreeThreeRamifiedPoints(x));
       eq := EquivalenceClassesOfCusps(x);
       Print("\nEquivalence classes of cusps: ", eq);
       for j in [1..Size(eq)] do

@@ -409,8 +409,11 @@ end;
 # rec( graph := [ [ false, true, true, true ], [ true, false, false, false ],
 #      [ true, false, false, false ], [ true, false, false, false ] ],
 #  orientation := [ (2,4,3), (), (), () ], size := 4 )
-# Note: 
-# The oriented tree does not have the automorphism group inside.
+# Notes: 
+# 1. The oriented tree does not have the automorphism group inside.
+# 2. We assume that the external vertices are labelled so that the right
+#    vertex of i corresponds to the label i+1. Given a general oriented
+#    tree, the script OrientedTreeGoodLabelling does the job. 
 
 # Given an oriented tree <obj> and an automorphism <f> of the 
 # underlying graph, the function returns a new oriented tree, which is the
@@ -522,8 +525,8 @@ end;
 # 6) A <coloring>.
 # 
 # A coloring is a vector with three coordinates:
-# i) The list of even vertices. 
-# ii) The list of odd vertices.
+# i) The list of odd vertices. 
+# ii) The list of even vertices fix by the involution.
 # iii) A product of disjoint transpositions describing the free sides.
 
 # This function acts on a colored tree <obj> by an automorphism <f>.
@@ -682,63 +685,6 @@ IsNewColoredTree := function(list, obj, aut)
   return true;
 end;
 
-
-# This function computes oriented tree classes up to 
-# size 12 in a couple of minutes. Here we take advantage
-# of the structure of the graph. 
-# Example:
-# gap> for x in [1..12] do
-# > Display(Size(OrientedTreeClasses2(x)));
-# > od;
-# 1
-# 1
-# 1
-# 4
-# 6
-# 19
-# 49
-# 150
-# 442
-# 1424
-# 4522
-# 14924
-OrientedTreeClasses2 := function(n)
-  local f, t, g, x, y, z, v, tmp, total, res, aut, graphs, orientation, tmp_orientation;
-
-  graphs := InnerInequivalentTrees(n);
-  res := [];
-
-  for g in graphs do
-    total := InnerToTotal(g);
-    orientation := [];
-    aut := ExtendedAutomorphismsOfInnerGraph(total);
-    f := Filtered([1..n], x->Size(VerticesAdjacentTo(g, x)) >= 2);
-
-    for x in [1..n] do
-      if x in f then 
-        v := VerticesAdjacentTo(total, x);
-        Add(orientation, (v[1],v[2],v[3]));
-      else
-        Add(orientation, ());
-      fi;
-    od;
-    for t in IteratorOfTuples([1,-1], Size(f)) do 
-      tmp_orientation := ShallowCopy(orientation);
-      for y in [1..n] do
-        if y in f then
-          z := Position(f, y);
-          tmp_orientation[y] := orientation[y]^t[z];
-        fi;
-      od;
-      tmp := rec(tree_aut := aut, graph := total, orientation := tmp_orientation, size := 2*n+2);
-      if IsNewOrientedTree(res, tmp, aut) then
-        Add(res, tmp);
-      fi;
-    od;
-  od;
-  return res;
-end;
-
 # This function computes the oriented tree classes 
 # of size <n> with their automorphism groups.  
 OrientedTreeClassesWithAutomorphisms := function(n)
@@ -783,48 +729,6 @@ OrientedTreeClassesWithAutomorphisms := function(n)
       tmp!.aut := Group(Filtered(aut, f->PreservesOrientedTree(tmp, f)));
       if IsNewOrientedTree(res, tmp, aut) then
         Add(res, OrientedTreeGoodLabelling(tmp));
-      fi;
-    od;
-  od;
-  return res;
-end;
-
-# This function computes the list of oriented tree classes 
-# This function computes oriented tree classes up to 
-# size 9 in a couple of minutes. For bigger sizes
-# one should use OrientedTreeClasses2. 
-# Example:
-# gap> for x in [1..9] do
-# > Display(Size(OrientedTreeClasses2(x)));
-# > od;
-# 1
-# 1
-# 1
-# 4
-# 6
-# 19
-# 49
-# 150
-# 442
-OrientedTreeClasses1 := function(n)
-  local t, g, x, v, tmp, total, res, aut, graphs, orientation;
-
-  graphs := InnerInequivalentTrees(n);
-  res := [];
-
-  for g in graphs do
-    total := InnerToTotal(g);
-    orientation := [];
-    aut := AutomorphismsOfGraph(total);
-
-    for x in [1..n] do
-      v := VerticesAdjacentTo(total, x);
-      Add(orientation, (v[1],v[2],v[3]));
-    od;
-    for t in IteratorOfTuples([1,-1], n) do 
-      tmp := rec(tree_aut := aut, graph := total, orientation := List([1..n], y->orientation[y]^t[y]), size := 2*n+2);
-      if IsNewOrientedTree(res, tmp, aut) then
-        Add(res, tmp);
       fi;
     od;
   od;
@@ -894,7 +798,6 @@ ColoredTree := function(blue, red, free)
           for x in f do
             tmp := ShallowCopy(c);
             tmp!.coloring := [(n-2)+b, (n-2)+r, ToPermutation(n-2+List(ListPerm(x, 2*free), y->set[y]),2*n-2)];
-            #tmp!.coloring := [(n-2)+b, (n-2)+r, ToPermutation(n-2+List(ListPerm(x, 2*free), y->set[y]))];
             tmp!.aut := c!.aut;
             if IsNewColoredTree(output, tmp, c!.aut) then
               Add(output, tmp);
@@ -917,7 +820,6 @@ end;
 # Given an integer <d>, the function returns
 # a list of equivalence classes of subgroups of index <d> 
 # in SL(2,Z) as an oriented graph. 
-# PSL?
 TreeDiagrams := function(d)
   local b, r, k, from, to, l;
 
@@ -975,6 +877,18 @@ SystemNumberOfCusps := function(obj)
   od;
   return m;
 end;
+
+# A Kulkarni diagram is an oriented tree 
+# with a <coloring> of the external vertices 
+# and a generalized Farey Symbol, that is: 
+# 1) An extended <graph>. 
+# 2) An <orientation>. 
+# 3) The <size>.   
+# 4) The automorphism group <tree_aut> of the tree.
+# 5) The automorphism group <aut> of the oriented tree. 
+# 6) A <coloring>. 
+# 7) A generalized <farey_symbol>.
+
 
 # Given a Kulkarni diagram <kdiagram>, this function
 # returns the permutation group associated to the cups relations of <obj>. 
@@ -1077,15 +991,6 @@ TreeDiagram2GFS := function(obj)
     fi;
   od;
 
-# The problem here is that we do not have the right order!
-
-#  ww := ShallowCopy(w);
-#  tmp:= m-1;
-#  for i in [1..m] do
-#    ww[i] := w[tmp+2-m];
-#    tmp :=RightVertex(obj, tmp)[1];
-#  od;
-
   v := [infinity, 0];
 
   if m = 2 then
@@ -1116,8 +1021,6 @@ TreeDiagram2KulkarniDiagram := function(obj)
   obj!.farey_symbol := TreeDiagram2GFS(obj);
   return obj;
 end;
-
-
 
 # Given a Kulkarni diagram <kdiagram> and a <cusp>, this function
 # returns the widths of the k-cusp.
@@ -1156,43 +1059,9 @@ WidthOfCusp := function(kdiagram, k)
   return d;
 end;
 
-# Given a colored tree <obj> the function
-# returns the generators of an associated subgroup. 
-#Generators := function(kdiagram)
-#  return GeneratorsByFareySymbol(TreeDiagram2FareySymbol(obj));
-#end;
-
-# Given a generalized <farey_symbol> and an integer <k> 
-# corresponding the the place of the k-cusp, 
-# the function computes...
-#CuspGeneratorsByFareySymbol := function(farey_symbol, k)
-#  local a, b, c, d, a2, b2, c2, d2, j, gfs, cfs;
-#
-#  gfs := GeneralizedFareySequence(farey_symbol);
-#  cfs := LabelsOfFareySymbol(farey_symbol);
-#
-#  a := NumeratorOfGFSElement(gfs, k+1);
-#  b := DenominatorOfGFSElement(gfs, k+1);
-#  c := NumeratorOfGFSElement(gfs, k);
-#  d := DenominatorOfGFSElement(gfs, k);
-# 
-#  if cfs[k] = "even" then
-#    return [[a*b+c*d,-c^2-a^2], [b^2+d^2,-a*b-c*d]];
-#  elif cfs[k] = "odd" then
-#    return [[a*b+c*b+c*d,-c^2-a*c-a^2], [b^2+b*d+d^2,-a*b-a*d-c*d]];
-#  else
-#    j := Filtered([1..Size(cfs)], x->cfs[x]=cfs[k] and x <> k)[1];
-#    a2 := NumeratorOfGFSElement(gfs, j+1);
-#    b2 := DenominatorOfGFSElement(gfs, j+1);
-#    c2 := NumeratorOfGFSElement(gfs, j);
-#    d2 := DenominatorOfGFSElement(gfs, j);
-#    return [[a2*b+c2*d,-c2*c-a2*a], [d2*d+b2*b,-a*b2-c*d2]];
-#  fi;
-#end;
-
 # Given a Kulkarni diagram <kdiagram> and an integer <k> 
-# corresponding the the place of the k-cusp, 
-# the function computes...
+# corresponding to k-coordinate of the cusp, 
+# the function computes the attached generator. 
 CuspGenerators := function(kdiagram, k)
   local a, b, c, d, a2, b2, c2, d2, j, gfs, cfs;
 
@@ -1405,63 +1274,12 @@ SL2PermutationsAreEquivalent := function(n, p1, p2)
   return not fail = RepresentativeAction(SymmetricGroup(n), [p1[1], p1[2]], [p2[1], p2[2]], OnPairs);
 end;
 
-# Given two Kulkarni diagrams <k1> and <k2> and an integer <n>, the function
-# checks whether the passports associated with these diagrams 
-# are conjugate. 
-KulkarniDiagramsAreEquivalent := function(n, k1, k2)
-  local p1, p2;
-
-  p1 := KulkarniDiagram2Passport(k1);
-  p2 := KulkarniDiagram2Passport(k2);
-
-  return SL2PermutationsAreEquivalent(n, p1, p2);
-
-end;
-
 # Given two permutations <p1> and <p2> and an integer <n>, the function
 # checks whether the pairs of permutations 
 # are conjugate in GL_2(Z) 
 GL2PermutationsAreEquivalent := function(n, p1, p2)
   return not fail = RepresentativeAction(SymmetricGroup(n), [p1[1], p1[2]], [p2[1], p2[2]], OnPairs)
   or not fail = RepresentativeAction(SymmetricGroup(n), [p1[1], p1[2]], [p2[1], Inverse(p2[2])], OnPairs);
-end;
-
-# Given a positive integer <n> the function returns a list 
-# index-n subgroups of PSL_2(Z) up to conjugation 
-# by SL_2(Z)
-
-####
-#### FIXME: n=1,2 no andan!
-####
-
-SL2RepresentativesOfSubgroups := function(n)
-  local res, x, pairs;
-
-  res := [];
-  pairs := List(TreeDiagrams(n), x->KulkarniDiagram2Passport(TreeDiagram2KulkarniDiagram(x)));
-
-  for x in pairs do
-    if ForAll(res, y->not SL2PermutationsAreEquivalent(n, x, y)) then
-      Add(res, x);
-    fi;
-  od;
-
-  return res; 
-end;
-
-GL2RepresentativesOfSubgroups := function(n)
-  local res, x, pairs;
-
-  res := [];
-  pairs := List(TreeDiagrams(n), x->KulkarniDiagram2Passport(TreeDiagram2KulkarniDiagram(x)));
-
-  for x in pairs do
-    if ForAll(res, y->not GL2PermutationsAreEquivalent(n, x, y)) then
-      Add(res, x);
-    fi;
-  od;
-
-  return res; 
 end;
 
 # Given a Kulkarni diagram <kdiagram>, the function
@@ -1524,20 +1342,6 @@ IsACongruenceSubgroup := function(kdiagram)
   fi;
 end;
 
-
-
-# Our object is a record with the following components:
-# A Kulkarni diagram an oriented tree 
-# with a <coloring> of the external vertices 
-# and a generalized Farey Symbol, that is: 
-# 1) An extended <graph>. 
-# 2) An <orientation>. 
-# 3) The <size>.   
-# 4) The automorphism group <tree_aut> of the tree.
-# 5) The automorphism group <aut> of the oriented tree. 
-# 6) A <coloring>. 
-# 7) A generalized <farey_symbol>.
-
 # Given a positive integer <n> the function returns a list 
 # of Kulkarni diagrams up to conjugation 
 # by SL_2(Z)
@@ -1578,52 +1382,28 @@ KulkarniDiagramsUpToGL2Equivalence := function(n)
   return List(res, x->t[x]); 
 end;
 
-
-# Given a colored tree <obj> the function
-# returns the associated Kulkarni diagram. 
-TreeDiagram2GFSColor := function(obj)
-  local n, v, w, x, p;
-
-  n := obj!.size;
-  w := [1..n/2+1]; 
-
-  # Even
-  for x in obj!.coloring[2] do
-    w[x-n/2+1] := "even";
-  od;
-
-  # Odd
-  for x in obj!.coloring[1] do
-    w[x-n/2+1] := "odd";
-  od;
-  
-  p := obj!.coloring[3];
-  for x in MovedPoints(p) do
-    if x^p > x then
-      w[x-n/2+1] := x;
-      w[x^p-n/2+1] := x;
-    fi;
-  od;
-  
-  return w;
-end;
-
 # Given a Kulkarni diagram, the function
 # returns the number of degree-two ramified points. 
-E2 := function(kdiagram)
-  return Size(kdiagram.coloring[1])+NrMovedPoints(kdiagram.coloring[3]);
+NrDegreeTwoRamifiedPoints := function(kdiagram)
+  return Size(kdiagram.coloring[2])+NrMovedPoints(kdiagram.coloring[3]);
 end;
 
 # Given a Kulkarni diagram, the function
 # returns the number of degree-three ramified points. 
-E3 := function(kdiagram)
-  return Size(kdiagram.coloring[2]);
+NrDegreeThreeRamifiedPoints := function(kdiagram)
+  return Size(kdiagram.coloring[1]);
 end;
 
+# Given a Kulkarni diagram, the function
+# returns a list of generators of the group. 
 Generators := function(kdiagram)
   return GeneratorsByFareySymbol(kdiagram!.farey_symbol);
 end;
 
+# Given a Kulkarni diagram, the function
+# creates a file with name <filename> 
+# and the graph in graphviz format. 
+# https://graphviz.org
 CreateGraph := function(kdiagram, filename)
   local i,j,f,str;
   
@@ -1653,84 +1433,6 @@ end;
 DrawWithYags := function(kdiagram)
   #Draw(GraphByAdjMatrix(kdiagram!.graph), kdiagram!.coloring[1]);
   Draw(GraphByAdjMatrix(kdiagram!.graph));
-end;
-
-
-
-ComputeTables := function(bound)
-  local s, k, g, n, t0, t1, t2, t3, mytime;
-
-  s := [1..bound]; 
-  k := [1..bound]; 
-  g := [1..bound];
-
-  t0 := NanosecondsSinceEpoch();
-
-  for n in [2..bound] do
-    t1 := NanosecondsSinceEpoch();
-
-    s[n] := TreeDiagrams(n);
-    k[n] := List(s[n], TreeDiagram2KulkarniDiagram);
-#    g[n] := List(f[n], GeneratorsByFareySymbol);
-
-    t2 := NanosecondsSinceEpoch();
-    mytime := Int(Float((t2-t1)/10^6));
-    Print("Index: ", n, ", I constructed ", Size(s[n]), " subgroups in ", mytime , "ms (=", StringTime(mytime), ")\n");
-  od;
-
-  t3 := NanosecondsSinceEpoch();
-  mytime := Int(Float((t3-t0)/10^6));
-  Print("--\nI constructed ", bound, " tables in ", mytime , "ms (=", StringTime(mytime), ")\n");
-
-  return [s,k];
-end;
-
-ComputeSL2Classes := function(bound)
-  local s, n, t0, t1, t2, t3, mytime;
-
-  s := 0*[1..bound]; 
-
-  t0 := NanosecondsSinceEpoch();
-
-  for n in [3..bound] do
-    t1 := NanosecondsSinceEpoch();
-
-    s[n] := SL2RepresentativesOfSubgroups(n);
-
-    t2 := NanosecondsSinceEpoch();
-    mytime := Int(Float((t2-t1)/10^6));
-    Print("Index: ", n, ", I constructed ", Size(s[n]), " SL2 representatives of subgroups in ", mytime , "ms (=", StringTime(mytime), ")\n");
-  od;
-
-  t3 := NanosecondsSinceEpoch();
-  mytime := Int(Float((t3-t0)/10^6));
-  Print("--\nI constructed ", bound, " tables in ", mytime , "ms (=", StringTime(mytime), ")\n");
-
-  return s;
-end;
-
-ComputeGL2Classes := function(bound)
-  local s, n, t0, t1, t2, t3, mytime;
-
-  s := 0*[1..bound]; 
-
-  t0 := NanosecondsSinceEpoch();
-
-  for n in [3..bound] do
-    t1 := NanosecondsSinceEpoch();
-
-    s[n] := GL2RepresentativesOfSubgroups(n);
-
-    t2 := NanosecondsSinceEpoch();
-    mytime := Int(Float((t2-t1)/10^6));
-    Print("Index: ", n, ", I constructed ", Size(s[n]), " GL2 representatives of subgroups in ", mytime , "ms (=", StringTime(mytime), ")\n");
-  od;
-
-  t3 := NanosecondsSinceEpoch();
-  mytime := Int(Float((t3-t0)/10^6));
-  Print("--\nI constructed ", bound, " tables in ", mytime , "ms (=", StringTime(mytime), ")\n");
-
-  return s;
 end;
 
 
