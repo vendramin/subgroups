@@ -4,8 +4,8 @@ Read("kulkarni.g");
 
 LogTo("histogram.log");
 
-from := 3;
-to := 20;
+from := 1;
+to := 4;
 
 for k in [from..to] do
   Read(Concatenation("data/uptoSL2_", String(k), ".g"));

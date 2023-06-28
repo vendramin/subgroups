@@ -11,7 +11,7 @@ LogTo("table.log");
 # We need our package 
 Read("kulkarni.g");
 
-from := 3;
+from := 1;
 to := 20;
 
 # This is where we will store the data.

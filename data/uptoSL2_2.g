@@ -7,6 +7,7 @@ diagrams := [rec(
   farey_symbol := FareySymbolByData( [ infinity, 0, infinity ], [ "odd", "odd" ] ) ,
   graph := [ [ false, true ], [ true, false ] ],
   orientation := [ [  ], [  ], () ],
+  passport := [ (1,2), (), (1,2) ],
   size := 2,
   tree_aut := Group( [ (1,2) ] ) )
 ];

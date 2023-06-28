@@ -1117,27 +1117,32 @@ ReducedModulo := function(g, kdiagram)
       return [[-x[1][2],x[1][1]],[-x[2][2],x[2][1]]];
     fi;
   elif case = 1 then
-    if g[1][1] < 0 and g[1][2]/g[2][2] > gfs[Size(gfs)-1] then
-      g := -g;
-    elif g[1][1] > 0 and g[1][2]/g[2][2] < 0 then
-      g := -g;
+    if g[1][1] > 0 then 
+      if g[1][2]/g[2][2] < 0 then
+        x := ReducedModulo([[g[1][2],-g[1][1]],[g[2][2],-g[2][1]]], kdiagram);
+        return [[-x[1][2],x[1][1]],[-x[2][2],x[2][1]]];
+      fi;
+    else
+      if g[1][2]/g[2][2] > gfs[Size(gfs)-1] then
+        g := -g;
+      else
+        x := ReducedModulo([[-g[1][2],g[1][1]],[-g[2][2],g[2][1]]], kdiagram);
+        return [[-x[1][2],x[1][1]],[-x[2][2],x[2][1]]];
+      fi;
     fi;
-
-    if g[1][1] < 0 then    
-      x := ReducedModulo([[-g[1][2],g[1][1]],[-g[2][2],g[2][1]]], kdiagram);
-      return [[-x[1][2],x[1][1]],[-x[2][2],x[2][1]]];
-    fi;
-
   elif case = 2 then
-    if g[1][1]/g[2][1] < 0 and g[1][2] > 0 then
-      g := -g;
-    elif g[1][1]/g[2][1] > gfs[Size(gfs)-1] and g[1][2] < 0 then
-      g := -g;
-    fi;
-
-    if g[1][2] > 0 then 
-      x := ReducedModulo([[g[1][2],-g[1][1]],[g[2][2],-g[2][1]]], kdiagram);
-      return [[x[1][2],-x[1][1]],[x[2][2],-x[2][1]]];
+    if g[1][2] > 0 then
+      if g[1][1]/g[2][1] > 0 then
+        x := ReducedModulo([[-g[1][2],g[1][1]],[-g[2][2],g[2][1]]], kdiagram);
+        return [[-x[1][2],x[1][1]],[-x[2][2],x[2][1]]];
+      else 
+        g := -g;
+      fi;
+    else
+      if g[1][1]/g[2][1] > gfs[Size(gfs)-1] then
+        x := ReducedModulo([[g[1][2],-g[1][1]],[g[2][2],-g[2][1]]], kdiagram);
+        return [[-x[1][2],x[1][1]],[-x[2][2],x[2][1]]];
+      fi;
     fi;
   fi;
 
@@ -1263,7 +1268,7 @@ KulkarniDiagram2Passport := function(kdiagram)
     q[i] := First([1..d], x->IsInSubgroup(v[i]*Inverse(reps[x]), kdiagram));
   od;
 
-  return [PermList(p), PermList(p)*PermList(q), PermList(q)];
+  return [PermList(p), PermList(q)*PermList(p), PermList(q)];
 
 end;
 
@@ -1346,16 +1351,18 @@ end;
 # of Kulkarni diagrams up to conjugation 
 # by SL_2(Z)
 KulkarniDiagramsUpToSL2Equivalence := function(n)
-  local res, x, p, t, k;
+  local res, x, t, k;
 
   res := [];
 
   t := TreeDiagrams(n);
-  p := List(t, x->KulkarniDiagram2Passport(TreeDiagram2KulkarniDiagram(x)));
+  for x in t do
+    x!.passport := KulkarniDiagram2Passport(TreeDiagram2KulkarniDiagram(x));
+  od;
 
-  for x in p do
-    if ForAll(res, k->not SL2PermutationsAreEquivalent(n, x, p[k])) then
-      Add(res, Position(p, x));
+  for x in t do
+    if ForAll(res, k->not SL2PermutationsAreEquivalent(n, x!.passport, t[k]!.passport)) then
+      Add(res, Position(t, x));
     fi;
   od;
 
@@ -1385,7 +1392,8 @@ end;
 # Given a Kulkarni diagram, the function
 # returns the number of degree-two ramified points. 
 NrDegreeTwoRamifiedPoints := function(kdiagram)
-  return Size(kdiagram.coloring[2])+NrMovedPoints(kdiagram.coloring[3]);
+  return Size(kdiagram.coloring[2]);
+  # +NrMovedPoints(kdiagram.coloring[3]);
 end;
 
 # Given a Kulkarni diagram, the function
