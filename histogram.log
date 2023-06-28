@@ -1,0 +1,121 @@
+Index: 3
+There are 2 subgroups (modulo SL_2(Z)).
+2 are congruence subgroups.
+Genera: [ 0 ]
+[ [  0,  2 ] ]
+--
+Index: 4
+There are 2 subgroups (modulo SL_2(Z)).
+2 are congruence subgroups.
+Genera: [ 0 ]
+[ [  0,  2 ] ]
+--
+Index: 5
+There are 1 subgroups (modulo SL_2(Z)).
+1 are congruence subgroups.
+Genera: [ 0 ]
+[ [  0,  1 ] ]
+--
+Index: 6
+There are 8 subgroups (modulo SL_2(Z)).
+8 are congruence subgroups.
+Genera: [ 0, 1 ]
+[ [  0,  7 ],
+  [  1,  1 ] ]
+--
+Index: 7
+There are 6 subgroups (modulo SL_2(Z)).
+2 are congruence subgroups.
+Genera: [ 0 ]
+[ [  0,  6 ] ]
+--
+Index: 8
+There are 7 subgroups (modulo SL_2(Z)).
+5 are congruence subgroups.
+Genera: [ 0 ]
+[ [  0,  7 ] ]
+--
+Index: 9
+There are 14 subgroups (modulo SL_2(Z)).
+2 are congruence subgroups.
+Genera: [ 0, 1 ]
+[ [   0,  13 ],
+  [   1,   1 ] ]
+--
+Index: 10
+There are 27 subgroups (modulo SL_2(Z)).
+2 are congruence subgroups.
+Genera: [ 0, 1 ]
+[ [   0,  26 ],
+  [   1,   1 ] ]
+--
+Index: 11
+There are 26 subgroups (modulo SL_2(Z)).
+2 are congruence subgroups.
+Genera: [ 0 ]
+[ [   0,  26 ] ]
+--
+Index: 12
+There are 80 subgroups (modulo SL_2(Z)).
+18 are congruence subgroups.
+Genera: [ 0, 1 ]
+[ [   0,  69 ],
+  [   1,  11 ] ]
+--
+Index: 13
+There are 133 subgroups (modulo SL_2(Z)).
+0 are congruence subgroups.
+Genera: [ 0, 1 ]
+[ [    0,  123 ],
+  [    1,   10 ] ]
+--
+Index: 14
+There are 170 subgroups (modulo SL_2(Z)).
+7 are congruence subgroups.
+Genera: [ 0, 1 ]
+[ [    0,  164 ],
+  [    1,    6 ] ]
+--
+Index: 15
+There are 348 subgroups (modulo SL_2(Z)).
+5 are congruence subgroups.
+Genera: [ 0, 1 ]
+[ [    0,  296 ],
+  [    1,   52 ] ]
+--
+Index: 16
+There are 765 subgroups (modulo SL_2(Z)).
+7 are congruence subgroups.
+Genera: [ 0, 1 ]
+[ [    0,  667 ],
+  [    1,   98 ] ]
+--
+Index: 17
+There are 1002 subgroups (modulo SL_2(Z)).
+0 are congruence subgroups.
+Genera: [ 0, 1 ]
+[ [    0,  932 ],
+  [    1,   70 ] ]
+--
+Index: 18
+There are 1002 subgroups (modulo SL_2(Z)).
+0 are congruence subgroups.
+Genera: [ 0, 1 ]
+[ [    0,  932 ],
+  [    1,   70 ] ]
+--
+Index: 19
+There are 4682 subgroups (modulo SL_2(Z)).
+0 are congruence subgroups.
+Genera: [ 0, 1 ]
+[ [     0,  3814 ],
+  [     1,   868 ] ]
+--
+Index: 20
+There are 6931 subgroups (modulo SL_2(Z)).
+6 are congruence subgroups.
+Genera: [ 0, 1 ]
+[ [     0,  6055 ],
+  [     1,   876 ] ]
+--
+gap> 

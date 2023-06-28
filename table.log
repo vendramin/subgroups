@@ -1,0 +1,1013 @@
+Loading  YAGS - Yet Another Graph System; Version 0.0.5.
+Copyright (C) 2019 by the YAGS authors; for details type: ?yags:authors
+This is free software under GPLv3; for details type: ?yags:copyright 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Loading  Congruence 1.2.4 (Congruence subgroups of SL(2,Integers))
+by Ann Dooms (http://homepages.vub.ac.be/~andooms),
+   Eric Jespers (http://homepages.vub.ac.be/~efjesper),
+   Olexandr Konovalov (https://alex-konovalov.github.io/), and
+   Helena Verrill (http://www.math.lsu.edu/~verrill).
+maintained by:
+   Ann Dooms (http://homepages.vub.ac.be/~andooms),
+   Olexandr Konovalov (https://alex-konovalov.github.io/), and
+   Helena Verrill (http://www.math.lsu.edu/~verrill).
+Homepage: https://gap-packages.github.io/congruence
+Report issues at https://github.com/gap-packages/congruence/issues
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Loading  ToolsForHomalg 2022.12-01 (Special methods and knowledge propagation tools)
+by Mohamed Barakat (https://mohamed-barakat.github.io),
+   Sebastian Gutsche (https://sebasguts.github.io), and
+   Markus Lange-Hegermann (http://wwwb.math.rwth-aachen.de/~markus/).
+Homepage: https://homalg-project.github.io/pkg/ToolsForHomalg
+Report issues at https://github.com/homalg-project/homalg_project/issues
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Index 3
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, infinity ], [ "even", "even", "even" ] ) 
+Passport: [ (), (1,3,2), (1,3,2) ]
+Graph: graph/modSL2_index3_1.dot
+Genus: 0
+Degree 2 ramified points: 3
+Degree 3 ramified points: 0
+Equivalence classes of cusps: [ [ 1, 2, 3 ] ]
+ Cusp 1, width: 3
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 1, -1 ], [ 2, -1 ] ], [ [ 1, -2 ], [ 1, -1 ] ] ]
+Is a congruence subgroup? true
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, infinity ], [ "even", 3, 3 ] ) 
+Passport: [ (2,3), (1,2,3), (1,2) ]
+Graph: graph/modSL2_index3_2.dot
+Genus: 0
+Degree 2 ramified points: 3
+Degree 3 ramified points: 0
+Equivalence classes of cusps: [ [ 1, 2 ], [ 3 ] ]
+ Cusp 1, width: 2
+ Cusp 2, width: 2
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 2, -1 ], [ 1, 0 ] ] ]
+Is a congruence subgroup? true
+--
+Index 4
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, infinity ], [ "odd", "even", "even" ] ) 
+Passport: [ (1,2), (1,4,3), (1,2,4,3) ]
+Graph: graph/modSL2_index4_1.dot
+Genus: 0
+Degree 2 ramified points: 2
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2, 3 ] ]
+ Cusp 1, width: 4
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 1, -1 ], [ 2, -1 ] ], [ [ 1, -2 ], [ 1, -1 ] ] ]
+Is a congruence subgroup? true
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, infinity ], [ "odd", 3, 3 ] ) 
+Passport: [ (1,2)(3,4), (1,3,4), (1,2,3) ]
+Graph: graph/modSL2_index4_2.dot
+Genus: 0
+Degree 2 ramified points: 2
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2 ], [ 3 ] ]
+ Cusp 1, width: 3
+ Cusp 2, width: 3
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 2, -1 ], [ 1, 0 ] ] ]
+Is a congruence subgroup? true
+--
+Index 5
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, infinity ], [ "odd", "odd", "even" ] ) 
+Passport: [ (1,2)(3,4), (1,5,3), (1,2,5,3,4) ]
+Graph: graph/modSL2_index5_1.dot
+Genus: 0
+Degree 2 ramified points: 1
+Degree 3 ramified points: 2
+Equivalence classes of cusps: [ [ 1, 2, 3 ] ]
+ Cusp 1, width: 5
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 1, -1 ], [ 3, -2 ] ], [ [ 1, -2 ], [ 1, -1 ] ] ]
+Is a congruence subgroup? true
+--
+Index 6
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, infinity ], [ "odd", "odd", "odd" ] ) 
+Passport: [ (1,2)(3,4)(5,6), (1,5,3), (1,2,5,6,3,4) ]
+Graph: graph/modSL2_index6_1.dot
+Genus: 0
+Degree 2 ramified points: 0
+Degree 3 ramified points: 3
+Equivalence classes of cusps: [ [ 1, 2, 3 ] ]
+ Cusp 1, width: 6
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 1, -1 ], [ 3, -2 ] ], [ [ 1, -3 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? true
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "even", "even", "even", "even" ] ) 
+Passport: [ (2,5), (1,2,3)(4,5,6), (1,2,6,4,5,3) ]
+Graph: graph/modSL2_index6_2.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 0
+Equivalence classes of cusps: [ [ 1, 2, 3, 4 ] ]
+ Cusp 1, width: 6
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 1, -1 ], [ 2, -1 ] ], [ [ 3, -5 ], [ 2, -3 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? true
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "even", "even", 5, 5 ] ) 
+Passport: [ (2,5)(4,6), (1,2,3)(4,6,5), (1,2,4,5,3) ]
+Graph: graph/modSL2_index6_3.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 0
+Equivalence classes of cusps: [ [ 1, 2, 3 ], [ 4 ] ]
+ Cusp 1, width: 5
+ Cusp 2, width: 5
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 1, -1 ], [ 2, -1 ] ], [ [ 3, -4 ], [ 1, -1 ] ] ]
+Is a congruence subgroup? true
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "even", 4, "even", 4 ] ) 
+Passport: [ (2,5)(3,6), (1,2,6)(3,4,5), (1,2,3)(4,5,6) ]
+Graph: graph/modSL2_index6_4.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 0
+Equivalence classes of cusps: [ [ 1, 2 ], [ 3, 4 ] ]
+ Cusp 1, width: 3
+ Cusp 2, width: 3
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 3, -1 ], [ 1, 0 ] ], [ [ 3, -5 ], [ 2, -3 ] ] ]
+Is a congruence subgroup? true
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ 3, "even", "even", 3 ] ) 
+Passport: [ (1,6)(2,5), (1,4,5)(2,3,6), (1,2)(3,6,4,5) ]
+Graph: graph/modSL2_index6_5.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 0
+Equivalence classes of cusps: [ [ 1 ], [ 2, 3, 4 ] ]
+ Cusp 1, width: 2
+ Cusp 2, width: 4
+Generators: [ [ [ 1, 2 ], [ 0, 1 ] ], [ [ 1, -1 ], [ 2, -1 ] ], [ [ 3, -5 ], [ 2, -3 ] ] ]
+Is a congruence subgroup? true
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ 3, 3, 5, 5 ] ) 
+Passport: [ (1,3)(2,5)(4,6), (1,3,2)(4,6,5), (1,2,4,5) ]
+Graph: graph/modSL2_index6_6.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 0
+Equivalence classes of cusps: [ [ 1, 3 ], [ 2 ], [ 4 ] ]
+ Cusp 1, width: 4
+ Cusp 2, width: 1
+ Cusp 3, width: 4
+Generators: [ [ [ 1, 0 ], [ 1, 1 ] ], [ [ 3, -4 ], [ 1, -1 ] ] ]
+Is a congruence subgroup? true
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ 3, 4, 4, 3 ] ) 
+Passport: [ (1,6)(2,5)(3,4), (1,3,5)(2,4,6), (1,2)(3,6)(4,5) ]
+Graph: graph/modSL2_index6_7.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 0
+Equivalence classes of cusps: [ [ 1 ], [ 2, 4 ], [ 3 ] ]
+ Cusp 1, width: 2
+ Cusp 2, width: 2
+ Cusp 3, width: 2
+Generators: [ [ [ 1, 2 ], [ 0, 1 ] ], [ [ 3, -2 ], [ 2, -1 ] ] ]
+Is a congruence subgroup? true
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ 3, 4, 3, 4 ] ) 
+Passport: [ (1,4)(2,5)(3,6), (1,5,3)(2,6,4), (1,2,3,4,5,6) ]
+Graph: graph/modSL2_index6_8.dot
+Genus: 1
+Degree 2 ramified points: 4
+Degree 3 ramified points: 0
+Equivalence classes of cusps: [ [ 1, 2, 3, 4 ] ]
+ Cusp 1, width: 6
+Generators: [ [ [ 2, 1 ], [ 1, 1 ] ], [ [ 3, -1 ], [ 1, 0 ] ] ]
+Is a congruence subgroup? true
+--
+Index 7
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "odd", "even", "even", "even" ] ) 
+Passport: [ (1,2)(3,6), (1,3,4)(5,6,7), (1,2,3,7,5,6,4) ]
+Graph: graph/modSL2_index7_1.dot
+Genus: 0
+Degree 2 ramified points: 3
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2, 3, 4 ] ]
+ Cusp 1, width: 7
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 1, -1 ], [ 2, -1 ] ], [ [ 3, -5 ], [ 2, -3 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? true
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "even", "odd", "even", "even" ] ) 
+Passport: [ (2,6)(3,4), (1,2,3)(5,6,7), (1,2,7,5,6,3,4) ]
+Graph: graph/modSL2_index7_2.dot
+Genus: 0
+Degree 2 ramified points: 3
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2, 3, 4 ] ]
+ Cusp 1, width: 7
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 1, -1 ], [ 3, -2 ] ], [ [ 3, -5 ], [ 2, -3 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? true
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "odd", "even", 5, 5 ] ) 
+Passport: [ (1,2)(3,6)(5,7), (1,3,4)(5,7,6), (1,2,3,5,6,4) ]
+Graph: graph/modSL2_index7_3.dot
+Genus: 0
+Degree 2 ramified points: 3
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2, 3 ], [ 4 ] ]
+ Cusp 1, width: 6
+ Cusp 2, width: 6
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 1, -1 ], [ 2, -1 ] ], [ [ 3, -4 ], [ 1, -1 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "odd", 4, "even", 4 ] ) 
+Passport: [ (1,2)(3,6)(4,7), (1,3,7)(4,5,6), (1,2,3,4)(5,6,7) ]
+Graph: graph/modSL2_index7_4.dot
+Genus: 0
+Degree 2 ramified points: 3
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2 ], [ 3, 4 ] ]
+ Cusp 1, width: 4
+ Cusp 2, width: 4
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 3, -1 ], [ 1, 0 ] ], [ [ 3, -5 ], [ 2, -3 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "odd", 4, 4, "even" ] ) 
+Passport: [ (1,2)(3,6)(4,5), (1,3,5)(4,6,7), (1,2,3,7,4)(5,6) ]
+Graph: graph/modSL2_index7_5.dot
+Genus: 0
+Degree 2 ramified points: 3
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2, 4 ], [ 3 ] ]
+ Cusp 1, width: 5
+ Cusp 2, width: 5
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 3, -2 ], [ 2, -1 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "even", "odd", 5, 5 ] ) 
+Passport: [ (2,6)(3,4)(5,7), (1,2,3)(5,7,6), (1,2,5,6,3,4) ]
+Graph: graph/modSL2_index7_6.dot
+Genus: 0
+Degree 2 ramified points: 3
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2, 3 ], [ 4 ] ]
+ Cusp 1, width: 6
+ Cusp 2, width: 6
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 1, -1 ], [ 3, -2 ] ], [ [ 3, -4 ], [ 1, -1 ] ] ]
+Is a congruence subgroup? false
+--
+Index 8
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "odd", "odd", "even", "even" ] ) 
+Passport: [ (1,2)(3,7)(4,5), (1,3,4)(6,7,8), (1,2,3,8,6,7,4,5) ]
+Graph: graph/modSL2_index8_1.dot
+Genus: 0
+Degree 2 ramified points: 2
+Degree 3 ramified points: 2
+Equivalence classes of cusps: [ [ 1, 2, 3, 4 ] ]
+ Cusp 1, width: 8
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 1, -1 ], [ 3, -2 ] ], [ [ 3, -5 ], [ 2, -3 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "odd", "even", "odd", "even" ] ) 
+Passport: [ (1,2)(3,7)(5,6), (1,3,4)(5,7,8), (1,2,3,8,5,6,7,4) ]
+Graph: graph/modSL2_index8_2.dot
+Genus: 0
+Degree 2 ramified points: 2
+Degree 3 ramified points: 2
+Equivalence classes of cusps: [ [ 1, 2, 3, 4 ] ]
+ Cusp 1, width: 8
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 1, -1 ], [ 2, -1 ] ], [ [ 4, -7 ], [ 3, -5 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? true
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "even", "odd", "odd", "even" ] ) 
+Passport: [ (2,7)(3,4)(5,6), (1,2,3)(5,7,8), (1,2,8,5,6,7,3,4) ]
+Graph: graph/modSL2_index8_3.dot
+Genus: 0
+Degree 2 ramified points: 2
+Degree 3 ramified points: 2
+Equivalence classes of cusps: [ [ 1, 2, 3, 4 ] ]
+ Cusp 1, width: 8
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 1, -1 ], [ 3, -2 ] ], [ [ 4, -7 ], [ 3, -5 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "even", "odd", "even", "odd" ] ) 
+Passport: [ (2,6)(3,4)(7,8), (1,2,3)(5,6,7), (1,2,7,8,5,6,3,4) ]
+Graph: graph/modSL2_index8_4.dot
+Genus: 0
+Degree 2 ramified points: 2
+Degree 3 ramified points: 2
+Equivalence classes of cusps: [ [ 1, 2, 3, 4 ] ]
+ Cusp 1, width: 8
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 1, -1 ], [ 3, -2 ] ], [ [ 3, -5 ], [ 2, -3 ] ], [ [ 2, -7 ], [ 1, -3 ] ] ]
+Is a congruence subgroup? true
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "odd", "odd", 5, 5 ] ) 
+Passport: [ (1,2)(3,7)(4,5)(6,8), (1,3,4)(6,8,7), (1,2,3,6,7,4,5) ]
+Graph: graph/modSL2_index8_5.dot
+Genus: 0
+Degree 2 ramified points: 2
+Degree 3 ramified points: 2
+Equivalence classes of cusps: [ [ 1, 2, 3 ], [ 4 ] ]
+ Cusp 1, width: 7
+ Cusp 2, width: 7
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 1, -1 ], [ 3, -2 ] ], [ [ 3, -4 ], [ 1, -1 ] ] ]
+Is a congruence subgroup? true
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "odd", 4, "odd", 4 ] ) 
+Passport: [ (1,2)(3,7)(4,8)(5,6), (1,3,8)(4,5,7), (1,2,3,4)(5,6,7,8) ]
+Graph: graph/modSL2_index8_6.dot
+Genus: 0
+Degree 2 ramified points: 2
+Degree 3 ramified points: 2
+Equivalence classes of cusps: [ [ 1, 2 ], [ 3, 4 ] ]
+ Cusp 1, width: 4
+ Cusp 2, width: 4
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 3, -1 ], [ 1, 0 ] ], [ [ 4, -7 ], [ 3, -5 ] ] ]
+Is a congruence subgroup? true
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ 3, "odd", "odd", 3 ] ) 
+Passport: [ (1,8)(2,7)(3,4)(5,6), (1,5,7)(2,3,8), (1,2)(3,4,8,5,6,7) ]
+Graph: graph/modSL2_index8_7.dot
+Genus: 0
+Degree 2 ramified points: 2
+Degree 3 ramified points: 2
+Equivalence classes of cusps: [ [ 1 ], [ 2, 3, 4 ] ]
+ Cusp 1, width: 2
+ Cusp 2, width: 6
+Generators: [ [ [ 1, 2 ], [ 0, 1 ] ], [ [ 1, -1 ], [ 3, -2 ] ], [ [ 4, -7 ], [ 3, -5 ] ] ]
+Is a congruence subgroup? true
+--
+Index 9
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "odd", "odd", "odd", "even" ] ) 
+Passport: [ (1,2)(3,8)(4,5)(6,7), (1,3,4)(6,8,9), (1,2,3,9,6,7,8,4,5) ]
+Graph: graph/modSL2_index9_1.dot
+Genus: 0
+Degree 2 ramified points: 1
+Degree 3 ramified points: 3
+Equivalence classes of cusps: [ [ 1, 2, 3, 4 ] ]
+ Cusp 1, width: 9
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 1, -1 ], [ 3, -2 ] ], [ [ 4, -7 ], [ 3, -5 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "odd", "odd", "even", "odd" ] ) 
+Passport: [ (1,2)(3,7)(4,5)(8,9), (1,3,4)(6,7,8), (1,2,3,8,9,6,7,4,5) ]
+Graph: graph/modSL2_index9_2.dot
+Genus: 0
+Degree 2 ramified points: 1
+Degree 3 ramified points: 3
+Equivalence classes of cusps: [ [ 1, 2, 3, 4 ] ]
+ Cusp 1, width: 9
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 1, -1 ], [ 3, -2 ] ], [ [ 3, -5 ], [ 2, -3 ] ], [ [ 2, -7 ], [ 1, -3 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "even", "even", "even", "even", "even" ] ) 
+Passport: [ (2,7)(4,8), (1,2,8)(3,4,5)(6,7,9), (1,2,9,6,7,8,5,3,4) ]
+Graph: graph/modSL2_index9_3.dot
+Genus: 0
+Degree 2 ramified points: 5
+Degree 3 ramified points: 0
+Equivalence classes of cusps: [ [ 1, 2, 3, 4, 5 ] ]
+ Cusp 1, width: 9
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 2, -1 ], [ 5, -2 ] ], [ [ 3, -2 ], [ 5, -3 ] ], [ [ 3, -5 ], [ 2, -3 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? true
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "even", "even", "even", 7, 7 ] ) 
+Passport: [ (2,7)(4,8)(6,9), (1,2,8)(3,4,5)(6,9,7), (1,2,6,7,8,5,3,4) ]
+Graph: graph/modSL2_index9_4.dot
+Genus: 0
+Degree 2 ramified points: 5
+Degree 3 ramified points: 0
+Equivalence classes of cusps: [ [ 1, 2, 3, 4 ], [ 5 ] ]
+ Cusp 1, width: 8
+ Cusp 2, width: 8
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 2, -1 ], [ 5, -2 ] ], [ [ 3, -2 ], [ 5, -3 ] ], [ [ 3, -4 ], [ 1, -1 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "even", "even", 6, "even", 6 ] ) 
+Passport: [ (2,7)(4,8)(5,9), (1,2,8)(3,4,9)(5,6,7), (1,2,5,3,4)(6,7,8,9) ]
+Graph: graph/modSL2_index9_5.dot
+Genus: 0
+Degree 2 ramified points: 5
+Degree 3 ramified points: 0
+Equivalence classes of cusps: [ [ 1, 2, 3 ], [ 4, 5 ] ]
+ Cusp 1, width: 5
+ Cusp 2, width: 5
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 2, -1 ], [ 5, -2 ] ], [ [ 5, -3 ], [ 2, -1 ] ], [ [ 3, -5 ], [ 2, -3 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ 4, "even", "even", "even", 4 ] ) 
+Passport: [ (1,9)(2,7)(4,8), (1,6,7)(2,8,9)(3,4,5), (1,2)(3,4,9,6,7,8,5) ]
+Graph: graph/modSL2_index9_6.dot
+Genus: 0
+Degree 2 ramified points: 5
+Degree 3 ramified points: 0
+Equivalence classes of cusps: [ [ 1 ], [ 2, 3, 4, 5 ] ]
+ Cusp 1, width: 2
+ Cusp 2, width: 7
+Generators: [ [ [ 1, 2 ], [ 0, 1 ] ], [ [ 2, -1 ], [ 5, -2 ] ], [ [ 3, -2 ], [ 5, -3 ] ], [ [ 3, -5 ], [ 2, -3 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "even", "even", 6, 6, "even" ] ) 
+Passport: [ (2,7)(4,8)(5,6), (1,2,8)(3,4,6)(5,7,9), (1,2,9,5,3,4)(6,7,8) ]
+Graph: graph/modSL2_index9_7.dot
+Genus: 0
+Degree 2 ramified points: 5
+Degree 3 ramified points: 0
+Equivalence classes of cusps: [ [ 1, 2, 3, 5 ], [ 4 ] ]
+ Cusp 1, width: 6
+ Cusp 2, width: 6
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 2, -1 ], [ 5, -2 ] ], [ [ 4, -3 ], [ 3, -2 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? true
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ 4, "even", "even", 4, "even" ] ) 
+Passport: [ (1,6)(2,7)(4,8), (1,7,9)(2,8,6)(3,4,5), (1,2,9)(3,4,6,7,8,5) ]
+Graph: graph/modSL2_index9_8.dot
+Genus: 0
+Degree 2 ramified points: 5
+Degree 3 ramified points: 0
+Equivalence classes of cusps: [ [ 1, 5 ], [ 2, 3, 4 ] ]
+ Cusp 1, width: 3
+ Cusp 2, width: 6
+Generators: [ [ [ 2, 1 ], [ 1, 1 ] ], [ [ 2, -1 ], [ 5, -2 ] ], [ [ 3, -2 ], [ 5, -3 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "even", 5, 5, "even", "even" ] ) 
+Passport: [ (2,7)(3,5)(4,8), (1,2,8)(3,5,4)(6,7,9), (1,2,9,6,7,8,3,4) ]
+Graph: graph/modSL2_index9_9.dot
+Genus: 0
+Degree 2 ramified points: 5
+Degree 3 ramified points: 0
+Equivalence classes of cusps: [ [ 1, 2, 4, 5 ], [ 3 ] ]
+ Cusp 1, width: 8
+ Cusp 2, width: 8
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 3, -1 ], [ 4, -1 ] ], [ [ 3, -5 ], [ 2, -3 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "even", 5, 5, 7, 7 ] ) 
+Passport: [ (2,7)(3,5)(4,8)(6,9), (1,2,8)(3,5,4)(6,9,7), (1,2,6,7,8,3,4) ]
+Graph: graph/modSL2_index9_10.dot
+Genus: 0
+Degree 2 ramified points: 5
+Degree 3 ramified points: 0
+Equivalence classes of cusps: [ [ 1, 2, 4 ], [ 3 ], [ 5 ] ]
+ Cusp 1, width: 7
+ Cusp 2, width: 7
+ Cusp 3, width: 1
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 3, -1 ], [ 4, -1 ] ], [ [ 3, -4 ], [ 1, -1 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "even", 5, 6, 6, 5 ] ) 
+Passport: [ (2,7)(3,9)(4,8)(5,6), (1,2,8)(3,5,7)(4,6,9), (1,2,3,4)(5,9)(6,7,8) ]
+Graph: graph/modSL2_index9_11.dot
+Genus: 0
+Degree 2 ramified points: 5
+Degree 3 ramified points: 0
+Equivalence classes of cusps: [ [ 1, 2 ], [ 3, 5 ], [ 4 ] ]
+ Cusp 1, width: 4
+ Cusp 2, width: 4
+ Cusp 3, width: 2
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 4, -1 ], [ 1, 0 ] ], [ [ 4, -3 ], [ 3, -2 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "even", 5, 6, 5, 6 ] ) 
+Passport: [ (2,7)(3,6)(4,8)(5,9), (1,2,8)(3,7,5)(4,9,6), (1,2,5,6,7,8,9,3,4) ]
+Graph: graph/modSL2_index9_12.dot
+Genus: 1
+Degree 2 ramified points: 5
+Degree 3 ramified points: 0
+Equivalence classes of cusps: [ [ 1, 2, 3, 4, 5 ] ]
+ Cusp 1, width: 9
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 5, -2 ], [ 3, -1 ] ], [ [ 5, -3 ], [ 2, -1 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ 4, "even", 4, 7, 7 ] ) 
+Passport: [ (1,5)(2,7)(4,8)(6,9), (1,3,4)(2,8,5)(6,9,7), (1,2,6,7,8)(3,4,5) ]
+Graph: graph/modSL2_index9_13.dot
+Genus: 0
+Degree 2 ramified points: 5
+Degree 3 ramified points: 0
+Equivalence classes of cusps: [ [ 1, 4 ], [ 2, 3 ], [ 5 ] ]
+ Cusp 1, width: 5
+ Cusp 2, width: 3
+ Cusp 3, width: 3
+Generators: [ [ [ 1, 1 ], [ 1, 2 ] ], [ [ 2, -1 ], [ 5, -2 ] ], [ [ 3, -4 ], [ 1, -1 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ 4, 4, "even", 7, 7 ] ) 
+Passport: [ (1,3)(2,7)(4,8)(6,9), (1,4,5)(2,8,3)(6,9,7), (1,2,6,7,8,5)(3,4) ]
+Graph: graph/modSL2_index9_14.dot
+Genus: 0
+Degree 2 ramified points: 5
+Degree 3 ramified points: 0
+Equivalence classes of cusps: [ [ 1, 3, 4 ], [ 2 ], [ 5 ] ]
+ Cusp 1, width: 6
+ Cusp 2, width: 2
+ Cusp 3, width: 6
+Generators: [ [ [ 1, 0 ], [ 2, 1 ] ], [ [ 3, -2 ], [ 5, -3 ] ], [ [ 3, -4 ], [ 1, -1 ] ] ]
+Is a congruence subgroup? false
+--
+Index 10
+Farey symbol: FareySymbolByData( [ infinity, 0, 1, 2, infinity ], [ "odd", "odd", "odd", "odd" ] ) 
+Passport: [ ( 1, 2)( 3, 8)( 4, 5)( 6, 7)( 9,10), (1,3,4)(6,8,9), ( 1, 2, 3, 9,10, 6, 7, 8, 4, 5) ]
+Graph: graph/modSL2_index10_1.dot
+Genus: 0
+Degree 2 ramified points: 0
+Degree 3 ramified points: 4
+Equivalence classes of cusps: [ [ 1, 2, 3, 4 ] ]
+ Cusp 1, width: 10
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 1, -1 ], [ 3, -2 ] ], [ [ 4, -7 ], [ 3, -5 ] ], [ [ 2, -7 ], [ 1, -3 ] ] ]
+Is a congruence subgroup? true
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "odd", "even", "even", "even", "even" ] ) 
+Passport: [ (1,2)(3,8)(5,9), ( 1, 3, 9)( 4, 5, 6)( 7, 8,10), ( 1, 2, 3,10, 7, 8, 9, 6, 4, 5) ]
+Graph: graph/modSL2_index10_2.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2, 3, 4, 5 ] ]
+ Cusp 1, width: 10
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 2, -1 ], [ 5, -2 ] ], [ [ 3, -2 ], [ 5, -3 ] ], [ [ 3, -5 ], [ 2, -3 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "even", "odd", "even", "even", "even" ] ) 
+Passport: [ (2,8)(3,4)(5,9), ( 1, 2, 9)( 3, 5, 6)( 7, 8,10), ( 1, 2,10, 7, 8, 9, 6, 3, 4, 5) ]
+Graph: graph/modSL2_index10_3.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2, 3, 4, 5 ] ]
+ Cusp 1, width: 10
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 2, -1 ], [ 7, -3 ] ], [ [ 3, -2 ], [ 5, -3 ] ], [ [ 3, -5 ], [ 2, -3 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "even", "even", "odd", "even", "even" ] ) 
+Passport: [ (2,8)(4,9)(5,6), ( 1, 2, 9)( 3, 4, 5)( 7, 8,10), ( 1, 2,10, 7, 8, 9, 5, 6, 3, 4) ]
+Graph: graph/modSL2_index10_4.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2, 3, 4, 5 ] ]
+ Cusp 1, width: 10
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 2, -1 ], [ 5, -2 ] ], [ [ 4, -3 ], [ 7, -5 ] ], [ [ 3, -5 ], [ 2, -3 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "even", "even", "even", "odd", "even" ] ) 
+Passport: [ (2,8)(4,9)(6,7), ( 1, 2, 9)( 3, 4, 5)( 6, 8,10), ( 1, 2,10, 6, 7, 8, 9, 5, 3, 4) ]
+Graph: graph/modSL2_index10_5.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2, 3, 4, 5 ] ]
+ Cusp 1, width: 10
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 2, -1 ], [ 5, -2 ] ], [ [ 3, -2 ], [ 5, -3 ] ], [ [ 4, -7 ], [ 3, -5 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "even", "even", "even", "even", "odd" ] ) 
+Passport: [ ( 2, 7)( 4, 8)( 9,10), (1,2,8)(3,4,5)(6,7,9), ( 1, 2, 9,10, 6, 7, 8, 5, 3, 4) ]
+Graph: graph/modSL2_index10_6.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2, 3, 4, 5 ] ]
+ Cusp 1, width: 10
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 2, -1 ], [ 5, -2 ] ], [ [ 3, -2 ], [ 5, -3 ] ], [ [ 3, -5 ], [ 2, -3 ] ], [ [ 2, -7 ], [ 1, -3 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "odd", "even", "even", 7, 7 ] ) 
+Passport: [ ( 1, 2)( 3, 8)( 5, 9)( 7,10), ( 1, 3, 9)( 4, 5, 6)( 7,10, 8), (1,2,3,7,8,9,6,4,5) ]
+Graph: graph/modSL2_index10_7.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2, 3, 4 ], [ 5 ] ]
+ Cusp 1, width: 9
+ Cusp 2, width: 9
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 2, -1 ], [ 5, -2 ] ], [ [ 3, -2 ], [ 5, -3 ] ], [ [ 3, -4 ], [ 1, -1 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "odd", "even", 6, "even", 6 ] ) 
+Passport: [ ( 1, 2)( 3, 8)( 5, 9)( 6,10), ( 1, 3, 9)( 4, 5,10)( 6, 7, 8), ( 1, 2, 3, 6, 4, 5)( 7, 8, 9,10) ]
+Graph: graph/modSL2_index10_8.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2, 3 ], [ 4, 5 ] ]
+ Cusp 1, width: 6
+ Cusp 2, width: 6
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 2, -1 ], [ 5, -2 ] ], [ [ 5, -3 ], [ 2, -1 ] ], [ [ 3, -5 ], [ 2, -3 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "odd", 5, "even", "even", 5 ] ) 
+Passport: [ ( 1, 2)( 3, 8)( 4,10)( 5, 9), ( 1, 3, 9)( 4, 7, 8)( 5, 6,10), ( 1, 2, 3, 4, 5)( 6,10, 7, 8, 9) ]
+Graph: graph/modSL2_index10_9.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2 ], [ 3, 4, 5 ] ]
+ Cusp 1, width: 5
+ Cusp 2, width: 5
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 4, -1 ], [ 1, 0 ] ], [ [ 3, -2 ], [ 5, -3 ] ], [ [ 3, -5 ], [ 2, -3 ] ] ]
+Is a congruence subgroup? true
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "odd", "even", 6, 6, "even" ] ) 
+Passport: [ (1,2)(3,8)(5,9)(6,7), ( 1, 3, 9)( 4, 5, 7)( 6, 8,10), ( 1, 2, 3,10, 6, 4, 5)( 7, 8, 9) ]
+Graph: graph/modSL2_index10_10.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2, 3, 5 ], [ 4 ] ]
+ Cusp 1, width: 7
+ Cusp 2, width: 7
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 2, -1 ], [ 5, -2 ] ], [ [ 4, -3 ], [ 3, -2 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "odd", 5, "even", 5, "even" ] ) 
+Passport: [ (1,2)(3,8)(4,7)(5,9), ( 1, 3, 9)( 4, 8,10)( 5, 6, 7), ( 1, 2, 3,10, 4, 5)( 6, 7, 8, 9) ]
+Graph: graph/modSL2_index10_11.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2, 5 ], [ 3, 4 ] ]
+ Cusp 1, width: 6
+ Cusp 2, width: 6
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 5, -2 ], [ 3, -1 ] ], [ [ 3, -2 ], [ 5, -3 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "odd", 5, 5, "even", "even" ] ) 
+Passport: [ (1,2)(3,8)(4,6)(5,9), ( 1, 3, 9)( 4, 6, 5)( 7, 8,10), ( 1, 2, 3,10, 7, 8, 9, 4, 5) ]
+Graph: graph/modSL2_index10_12.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2, 4, 5 ], [ 3 ] ]
+ Cusp 1, width: 9
+ Cusp 2, width: 9
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 3, -1 ], [ 4, -1 ] ], [ [ 3, -5 ], [ 2, -3 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "even", "odd", "even", 7, 7 ] ) 
+Passport: [ ( 2, 8)( 3, 4)( 5, 9)( 7,10), ( 1, 2, 9)( 3, 5, 6)( 7,10, 8), (1,2,7,8,9,6,3,4,5) ]
+Graph: graph/modSL2_index10_13.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2, 3, 4 ], [ 5 ] ]
+ Cusp 1, width: 9
+ Cusp 2, width: 9
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 2, -1 ], [ 7, -3 ] ], [ [ 3, -2 ], [ 5, -3 ] ], [ [ 3, -4 ], [ 1, -1 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ 4, "odd", "even", "even", 4 ] ) 
+Passport: [ ( 1,10)( 2, 8)( 3, 4)( 5, 9), ( 1, 7, 8)( 2, 9,10)( 3, 5, 6), ( 1, 2)( 3, 4, 5,10, 7, 8, 9, 6) ]
+Graph: graph/modSL2_index10_14.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1 ], [ 2, 3, 4, 5 ] ]
+ Cusp 1, width: 2
+ Cusp 2, width: 8
+Generators: [ [ [ 1, 2 ], [ 0, 1 ] ], [ [ 2, -1 ], [ 7, -3 ] ], [ [ 3, -2 ], [ 5, -3 ] ], [ [ 3, -5 ], [ 2, -3 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ 4, "odd", "even", 4, "even" ] ) 
+Passport: [ (1,7)(2,8)(3,4)(5,9), ( 1, 8,10)( 2, 9, 7)( 3, 5, 6), ( 1, 2,10)( 3, 4, 5, 7, 8, 9, 6) ]
+Graph: graph/modSL2_index10_15.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 5 ], [ 2, 3, 4 ] ]
+ Cusp 1, width: 3
+ Cusp 2, width: 7
+Generators: [ [ [ 2, 1 ], [ 1, 1 ] ], [ [ 2, -1 ], [ 7, -3 ] ], [ [ 3, -2 ], [ 5, -3 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ 4, "odd", 4, "even", "even" ] ) 
+Passport: [ (1,6)(2,8)(3,4)(5,9), ( 1, 3, 5)( 2, 9, 6)( 7, 8,10), ( 1, 2,10, 7, 8, 9)( 3, 4, 5, 6) ]
+Graph: graph/modSL2_index10_16.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 4, 5 ], [ 2, 3 ] ]
+ Cusp 1, width: 6
+ Cusp 2, width: 4
+Generators: [ [ [ 1, 1 ], [ 1, 2 ] ], [ [ 2, -1 ], [ 7, -3 ] ], [ [ 3, -5 ], [ 2, -3 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "even", "even", "odd", 7, 7 ] ) 
+Passport: [ ( 2, 8)( 4, 9)( 5, 6)( 7,10), ( 1, 2, 9)( 3, 4, 5)( 7,10, 8), (1,2,7,8,9,5,6,3,4) ]
+Graph: graph/modSL2_index10_17.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2, 3, 4 ], [ 5 ] ]
+ Cusp 1, width: 9
+ Cusp 2, width: 9
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 2, -1 ], [ 5, -2 ] ], [ [ 4, -3 ], [ 7, -5 ] ], [ [ 3, -4 ], [ 1, -1 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ 4, "even", "odd", "even", 4 ] ) 
+Passport: [ ( 1,10)( 2, 8)( 4, 9)( 5, 6), ( 1, 7, 8)( 2, 9,10)( 3, 4, 5), ( 1, 2)( 3, 4,10, 7, 8, 9, 5, 6) ]
+Graph: graph/modSL2_index10_18.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1 ], [ 2, 3, 4, 5 ] ]
+ Cusp 1, width: 2
+ Cusp 2, width: 8
+Generators: [ [ [ 1, 2 ], [ 0, 1 ] ], [ [ 2, -1 ], [ 5, -2 ] ], [ [ 4, -3 ], [ 7, -5 ] ], [ [ 3, -5 ], [ 2, -3 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ 4, "even", "odd", 4, "even" ] ) 
+Passport: [ (1,7)(2,8)(4,9)(5,6), ( 1, 8,10)( 2, 9, 7)( 3, 4, 5), ( 1, 2,10)( 3, 4, 7, 8, 9, 5, 6) ]
+Graph: graph/modSL2_index10_19.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 5 ], [ 2, 3, 4 ] ]
+ Cusp 1, width: 3
+ Cusp 2, width: 7
+Generators: [ [ [ 2, 1 ], [ 1, 1 ] ], [ [ 2, -1 ], [ 5, -2 ] ], [ [ 4, -3 ], [ 7, -5 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ 4, 4, "odd", "even", "even" ] ) 
+Passport: [ (1,3)(2,8)(4,9)(5,6), ( 1, 4, 5)( 2, 9, 3)( 7, 8,10), ( 1, 2,10, 7, 8, 9, 5, 6)( 3, 4) ]
+Graph: graph/modSL2_index10_20.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 3, 4, 5 ], [ 2 ] ]
+ Cusp 1, width: 8
+ Cusp 2, width: 2
+Generators: [ [ [ 1, 0 ], [ 2, 1 ] ], [ [ 4, -3 ], [ 7, -5 ] ], [ [ 3, -5 ], [ 2, -3 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "even", 5, 5, "odd", "even" ] ) 
+Passport: [ (2,8)(3,5)(4,9)(6,7), ( 1, 2, 9)( 3, 5, 4)( 6, 8,10), ( 1, 2,10, 6, 7, 8, 9, 3, 4) ]
+Graph: graph/modSL2_index10_21.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2, 4, 5 ], [ 3 ] ]
+ Cusp 1, width: 9
+ Cusp 2, width: 9
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 3, -1 ], [ 4, -1 ] ], [ [ 4, -7 ], [ 3, -5 ] ], [ [ 2, -5 ], [ 1, -2 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "even", 5, 5, "even", "odd" ] ) 
+Passport: [ ( 2, 7)( 3, 5)( 4, 8)( 9,10), (1,2,8)(3,5,4)(6,7,9), ( 1, 2, 9,10, 6, 7, 8, 3, 4) ]
+Graph: graph/modSL2_index10_22.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2, 4, 5 ], [ 3 ] ]
+ Cusp 1, width: 9
+ Cusp 2, width: 9
+Generators: [ [ [ 0, -1 ], [ 1, 0 ] ], [ [ 3, -1 ], [ 4, -1 ] ], [ [ 3, -5 ], [ 2, -3 ] ], [ [ 2, -7 ], [ 1, -3 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "odd", 5, 5, 7, 7 ] ) 
+Passport: [ ( 1, 2)( 3, 8)( 4, 6)( 5, 9)( 7,10), ( 1, 3, 9)( 4, 6, 5)( 7,10, 8), (1,2,3,7,8,9,4,5) ]
+Graph: graph/modSL2_index10_23.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2, 4 ], [ 3 ], [ 5 ] ]
+ Cusp 1, width: 8
+ Cusp 2, width: 8
+ Cusp 3, width: 1
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 3, -1 ], [ 4, -1 ] ], [ [ 3, -4 ], [ 1, -1 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "odd", 5, 6, 6, 5 ] ) 
+Passport: [ ( 1, 2)( 3, 8)( 4,10)( 5, 9)( 6, 7), ( 1, 3, 9)( 4, 6, 8)( 5, 7,10), ( 1, 2, 3, 4, 5)( 6,10)( 7, 8, 9) ]
+Graph: graph/modSL2_index10_24.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2 ], [ 3, 5 ], [ 4 ] ]
+ Cusp 1, width: 5
+ Cusp 2, width: 5
+ Cusp 3, width: 2
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 4, -1 ], [ 1, 0 ] ], [ [ 4, -3 ], [ 3, -2 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ "odd", 5, 6, 5, 6 ] ) 
+Passport: [ ( 1, 2)( 3, 8)( 4, 7)( 5, 9)( 6,10), ( 1, 3, 9)( 4, 8, 6)( 5,10, 7), ( 1, 2, 3, 6, 7, 8, 9,10, 4, 5) ]
+Graph: graph/modSL2_index10_25.dot
+Genus: 1
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 2, 3, 4, 5 ] ]
+ Cusp 1, width: 10
+Generators: [ [ [ -1, -1 ], [ 1, 0 ] ], [ [ 5, -2 ], [ 3, -1 ] ], [ [ 5, -3 ], [ 2, -1 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ 4, "odd", 4, 7, 7 ] ) 
+Passport: [ ( 1, 6)( 2, 8)( 3, 4)( 5, 9)( 7,10), ( 1, 3, 5)( 2, 9, 6)( 7,10, 8), (1,2,7,8,9)(3,4,5,6) ]
+Graph: graph/modSL2_index10_26.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 4 ], [ 2, 3 ], [ 5 ] ]
+ Cusp 1, width: 5
+ Cusp 2, width: 4
+ Cusp 3, width: 4
+Generators: [ [ [ 1, 1 ], [ 1, 2 ] ], [ [ 2, -1 ], [ 7, -3 ] ], [ [ 3, -4 ], [ 1, -1 ] ] ]
+Is a congruence subgroup? false
+--
+Farey symbol: FareySymbolByData( [ infinity, 0, 1/2, 1, 2, infinity ], [ 4, 4, "odd", 7, 7 ] ) 
+Passport: [ ( 1, 3)( 2, 8)( 4, 9)( 5, 6)( 7,10), ( 1, 4, 5)( 2, 9, 3)( 7,10, 8), (1,2,7,8,9,5,6)(3,4) ]
+Graph: graph/modSL2_index10_27.dot
+Genus: 0
+Degree 2 ramified points: 4
+Degree 3 ramified points: 1
+Equivalence classes of cusps: [ [ 1, 3, 4 ], [ 2 ], [ 5 ] ]
+ Cusp 1, width: 7
+ Cusp 2, width: 2
+ Cusp 3, width: 7
+Generators: [ [ [ 1, 0 ], [ 2, 1 ] ], [ [ 4, -3 ], [ 7, -5 ] ], [ [ 3, -4 ], [ 1, -1 ] ] ]
+Is a congruence subgroup? false
+gap> diagrams;
+[ rec( aut := Group([ (), (1,2)(3,5)(4,6) ]), coloring := [ [ 3, 4, 5, 6 ], [  ], () ], farey_symbol := [ infinity, 0, 1, 2, infinity ]
+        [ "odd", "odd", "odd", "odd" ], graph := [ [ false, true, true, true, false, false ], [ true, false, false, false, true, true ], 
+          [ true, false, false, false, false, false ], [ true, false, false, false, false, false ], [ false, true, false, false, false, false ],
+          [ false, true, false, false, false, false ] ], orientation := [ (2,3,4), (1,5,6) ], size := 6, tree_aut := Group([ (1,2)(3,5)(4,6) ]) 
+     ), rec( aut := Group(()), coloring := [ [ 4 ], [ 5, 6, 7, 8 ], () ], farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ "odd", "even", "even", "even", "even" ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), rec( aut := Group(()), coloring := [ [ 5 ], [ 4, 6, 7, 8 ], () ], 
+      farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ "even", "odd", "even", "even", "even" ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), rec( aut := Group(()), coloring := [ [ 6 ], [ 4, 5, 7, 8 ], () ], 
+      farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ "even", "even", "odd", "even", "even" ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), rec( aut := Group(()), coloring := [ [ 7 ], [ 4, 5, 6, 8 ], () ], 
+      farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ "even", "even", "even", "odd", "even" ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), rec( aut := Group(()), coloring := [ [ 8 ], [ 4, 5, 6, 7 ], () ], 
+      farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ "even", "even", "even", "even", "odd" ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), 
+  rec( aut := Group(()), coloring := [ [ 4 ], [ 5, 6 ], (7,8) ], farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ "odd", "even", "even", 7, 7 ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), 
+  rec( aut := Group(()), coloring := [ [ 4 ], [ 5, 7 ], (6,8) ], farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ "odd", "even", 6, "even", 6 ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), 
+  rec( aut := Group(()), coloring := [ [ 4 ], [ 6, 7 ], (5,8) ], farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ "odd", 5, "even", "even", 5 ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), 
+  rec( aut := Group(()), coloring := [ [ 4 ], [ 5, 8 ], (6,7) ], farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ "odd", "even", 6, 6, "even" ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), 
+  rec( aut := Group(()), coloring := [ [ 4 ], [ 6, 8 ], (5,7) ], farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ "odd", 5, "even", 5, "even" ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), 
+  rec( aut := Group(()), coloring := [ [ 4 ], [ 7, 8 ], (5,6) ], farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ "odd", 5, 5, "even", "even" ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), 
+  rec( aut := Group(()), coloring := [ [ 5 ], [ 4, 6 ], (7,8) ], farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ "even", "odd", "even", 7, 7 ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), 
+  rec( aut := Group(()), coloring := [ [ 5 ], [ 6, 7 ], (4,8) ], farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ 4, "odd", "even", "even", 4 ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), 
+  rec( aut := Group(()), coloring := [ [ 5 ], [ 6, 8 ], (4,7) ], farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ 4, "odd", "even", 4, "even" ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), 
+  rec( aut := Group(()), coloring := [ [ 5 ], [ 7, 8 ], (4,6) ], farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ 4, "odd", 4, "even", "even" ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), 
+  rec( aut := Group(()), coloring := [ [ 6 ], [ 4, 5 ], (7,8) ], farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ "even", "even", "odd", 7, 7 ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), 
+  rec( aut := Group(()), coloring := [ [ 6 ], [ 5, 7 ], (4,8) ], farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ 4, "even", "odd", "even", 4 ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), 
+  rec( aut := Group(()), coloring := [ [ 6 ], [ 5, 8 ], (4,7) ], farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ 4, "even", "odd", 4, "even" ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), 
+  rec( aut := Group(()), coloring := [ [ 6 ], [ 7, 8 ], (4,5) ], farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ 4, 4, "odd", "even", "even" ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), 
+  rec( aut := Group(()), coloring := [ [ 7 ], [ 4, 8 ], (5,6) ], farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ "even", 5, 5, "odd", "even" ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), 
+  rec( aut := Group(()), coloring := [ [ 8 ], [ 4, 7 ], (5,6) ], farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ "even", 5, 5, "even", "odd" ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), rec( aut := Group(()), coloring := [ [ 4 ], [  ], (5,6)(7,8) ], 
+      farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ "odd", 5, 5, 7, 7 ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), rec( aut := Group(()), coloring := [ [ 4 ], [  ], (5,8)(6,7) ], 
+      farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ "odd", 5, 6, 6, 5 ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), rec( aut := Group(()), coloring := [ [ 4 ], [  ], (5,7)(6,8) ], 
+      farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ "odd", 5, 6, 5, 6 ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), rec( aut := Group(()), coloring := [ [ 5 ], [  ], (4,6)(7,8) ], 
+      farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ 4, "odd", 4, 7, 7 ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ), rec( aut := Group(()), coloring := [ [ 6 ], [  ], (4,5)(7,8) ], 
+      farey_symbol := [ infinity, 0, 1/2, 1, 2, infinity ]
+        [ 4, 4, "odd", 7, 7 ], graph := [ [ false, true, true, true, false, false, false, false ], 
+          [ true, false, false, false, false, false, true, true ], [ true, false, false, false, true, true, false, false ], 
+          [ true, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false ], 
+          [ false, false, true, false, false, false, false, false ], [ false, true, false, false, false, false, false, false ], 
+          [ false, true, false, false, false, false, false, false ] ], orientation := [ (2,4,3), (1,7,8), (1,5,6) ], size := 8, 
+      tree_aut := Group([ (2,3)(5,7)(6,8) ]) ) ]
+gap> Number(diagrams, IsACongruenceSubgroup);
+2
+gap> 

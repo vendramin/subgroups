@@ -6,13 +6,13 @@
 ### FIXME
 ### CuspsRelations no anda con 2
 
-LogTo("blah");
+LogTo("table.log");
 
 # We need our package 
 Read("kulkarni.g");
 
-from := 2;
-to := 10;
+from := 3;
+to := 20;
 
 # This is where we will store the data.
 data := List([1..to], x->[]);
@@ -24,13 +24,18 @@ for k in [from..to] do
 od;
 
 for k in [1..Size(data)] do
+  l := 0;
   if not data[k] = [] then
     Print("\nIndex ", k);
     for x in data[k] do
+      l := l+1;
       Print("\nFarey symbol: ", x!.farey_symbol);
       Print("\nPassport: ", KulkarniDiagram2Passport(x));
   #    Print("\nCups generators: ", CuspsRelations(x));
-      Print("\nGraph: ... file");
+      Print("\nGraph: graph/modSL2_index", String(k), "_", String(l), ".dot");
+
+      CreateGraph(x, Concatenation("graph/modSL2_index", String(k), "_", String(l), ".dot"));
+
       Print("\nGenus: ", Genus(x));
       Print("\nDegree 2 ramified points: ", NrDegreeTwoRamifiedPoints(x));
       Print("\nDegree 3 ramified points: ", NrDegreeThreeRamifiedPoints(x));
@@ -40,6 +45,7 @@ for k in [1..Size(data)] do
         Print("\n Cusp ", j, ", width: ", WidthOfCusp(x, j));
       od;
       Print("\nGenerators: ", Generators(x));
+      Print("\nIs a congruence subgroup? ", IsACongruenceSubgroup(x));
       Print("\n--");
     od;
   fi;
