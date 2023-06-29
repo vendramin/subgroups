@@ -1,0 +1,21 @@
+Index: 1. There are 1 subgroups (modulo GL_2(Z)).
+Index: 2. There are 1 subgroups (modulo GL_2(Z)).
+Index: 3. There are 2 subgroups (modulo GL_2(Z)).
+Index: 4. There are 2 subgroups (modulo GL_2(Z)).
+Index: 5. There are 1 subgroups (modulo GL_2(Z)).
+Index: 6. There are 8 subgroups (modulo GL_2(Z)).
+Index: 7. There are 6 subgroups (modulo GL_2(Z)).
+Index: 8. There are 7 subgroups (modulo GL_2(Z)).
+Index: 9. There are 14 subgroups (modulo GL_2(Z)).
+Index: 10. There are 27 subgroups (modulo GL_2(Z)).
+Index: 11. There are 26 subgroups (modulo GL_2(Z)).
+Index: 12. There are 80 subgroups (modulo GL_2(Z)).
+Index: 13. There are 133 subgroups (modulo GL_2(Z)).
+Index: 14. There are 170 subgroups (modulo GL_2(Z)).
+Index: 15. There are 348 subgroups (modulo GL_2(Z)).
+Index: 16. There are 765 subgroups (modulo GL_2(Z)).
+Index: 17. There are 1002 subgroups (modulo GL_2(Z)).
+Index: 18. There are 2176 subgroups (modulo GL_2(Z)).
+Index: 19. There are 4682 subgroups (modulo GL_2(Z)).
+Index: 20. There are 6931 subgroups (modulo GL_2(Z)).
+gap> 
