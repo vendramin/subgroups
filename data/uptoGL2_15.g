@@ -14,6 +14,8 @@ diagrams := [rec(
           false ], [ false, false, true, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,5,6), ( 1, 9,10), (1,7,8) ],
+  passport := [ ( 1, 2)( 3,10)( 4,13)( 5, 6)( 7, 8)( 9,14), ( 2,10, 6)( 3,13, 9)( 4,15,12)( 8,14,11), 
+      ( 1, 2, 3, 4,15,12,13,14,11, 7, 8, 9,10, 5, 6) ],
   size := 10,
   tree_aut := Group( [ ( 2, 4, 3)( 5, 7, 9)( 6, 8,10), ( 3, 4)( 7, 9)( 8,10), ( 2, 3)( 5, 9)( 6,10) ] ) ),
 rec(
@@ -29,6 +31,8 @@ rec(
           false ], [ false, false, true, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,5,6), ( 1, 9,10), (1,7,8) ],
+  passport := [ ( 1, 2)( 3, 9)( 4,13)( 5, 6)( 8,14)(10,11), ( 2, 9, 6)( 3,13, 8)( 4,15,12)( 7,14,11), 
+      ( 1, 2, 3, 4,15,12,13,14,10,11, 7, 8, 9, 5, 6) ],
   size := 10,
   tree_aut := Group( [ ( 2, 4, 3)( 5, 7, 9)( 6, 8,10), ( 3, 4)( 7, 9)( 8,10), ( 2, 3)( 5, 9)( 6,10) ] ) ),
 rec(
@@ -44,6 +48,8 @@ rec(
           false ], [ false, false, true, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,5,6), ( 1, 9,10), (1,7,8) ],
+  passport := [ ( 1, 2)( 3, 9)( 4,13)( 6, 7)( 8,14)(11,12), ( 2, 9, 5)( 3,13, 8)( 4,15,12)( 7,14,10), 
+      ( 1, 2, 3, 4,15,11,12,13,14,10, 6, 7, 8, 9, 5) ],
   size := 10,
   tree_aut := Group( [ ( 2, 4, 3)( 5, 7, 9)( 6, 8,10), ( 3, 4)( 7, 9)( 8,10), ( 2, 3)( 5, 9)( 6,10) ] ) ),
 rec(
@@ -59,6 +65,8 @@ rec(
           false ], [ false, false, true, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,5,6), ( 1, 9,10), (1,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4, 5)( 6, 7)( 8,14)(11,12), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 7,14,10), 
+      ( 1, 2, 3,15,11,12,13,14,10, 6, 7, 8, 9, 4, 5) ],
   size := 10,
   tree_aut := Group( [ ( 2, 4, 3)( 5, 7, 9)( 6, 8,10), ( 3, 4)( 7, 9)( 8,10), ( 2, 3)( 5, 9)( 6,10) ] ) ),
 rec(
@@ -74,6 +82,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 1, 2)( 3,11)( 4,14)( 5, 6)( 7,12)( 8, 9), ( 2,11, 7)( 3,14,10)( 4,15,13)( 6,12, 9), 
+      ( 1, 2, 3, 4,15,13,14,10,11,12, 8, 9, 5, 6, 7) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -89,6 +99,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 1, 2)( 3,11)( 4,14)( 5, 6)( 7,12)( 9,10), ( 2,11, 7)( 3,14,10)( 4,15,13)( 6,12, 8), 
+      ( 1, 2, 3, 4,15,13,14, 9,10,11,12, 8, 5, 6, 7) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -104,6 +116,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 1, 2)( 3,11)( 4,14)( 6,12)( 7, 8)( 9,10), ( 2,11, 6)( 3,14,10)( 4,15,13)( 5,12, 8), 
+      ( 1, 2, 3, 4,15,13,14, 9,10,11,12, 7, 8, 5, 6) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -119,6 +133,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 2,11)( 3,14)( 4, 5)( 6,12)( 7, 8)( 9,10), ( 1,11, 6)( 2,14,10)( 3,15,13)( 5,12, 8), 
+      ( 1, 2, 3,15,13,14, 9,10,11,12, 7, 8, 4, 5, 6) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -134,6 +150,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 1, 2)( 3,10)( 4,14)( 5, 6)( 7,11)(12,13), ( 2,10, 7)( 3,14, 9)( 4,15,13)( 6,11, 8), 
+      ( 1, 2, 3, 4,15,12,13,14, 9,10,11, 8, 5, 6, 7) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -149,6 +167,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 1, 2)( 3,10)( 4,14)( 6,11)( 7, 8)(12,13), ( 2,10, 6)( 3,14, 9)( 4,15,13)( 5,11, 8), 
+      ( 1, 2, 3, 4,15,12,13,14, 9,10,11, 7, 8, 5, 6) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -164,6 +184,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 2,10)( 3,14)( 4, 5)( 6,11)( 7, 8)(12,13), ( 1,10, 6)( 2,14, 9)( 3,15,13)( 5,11, 8), 
+      ( 1, 2, 3,15,12,13,14, 9,10,11, 7, 8, 4, 5, 6) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -179,6 +201,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 2,10)( 3,14)( 5,11)( 6, 7)( 8, 9)(12,13), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7), 
+      ( 1, 2, 3,15,12,13,14, 8, 9,10,11, 6, 7, 4, 5) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -194,6 +218,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 1, 2)( 3,10)( 4,13)( 6,11)( 7, 8)(14,15), ( 2,10, 6)( 3,13, 9)( 4,15,12)( 5,11, 8), 
+      ( 1, 2, 3, 4,14,15,12,13, 9,10,11, 7, 8, 5, 6) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -209,6 +235,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 2,10)( 3,13)( 4, 5)( 6,11)( 7, 8)(14,15), ( 1,10, 6)( 2,13, 9)( 3,15,12)( 5,11, 8), 
+      ( 1, 2, 3,14,15,12,13, 9,10,11, 7, 8, 4, 5, 6) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -224,6 +252,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), ( 1, 4,10), (1,6,7), (2,8,9) ],
+  passport := [ ( 1, 2)( 3,11)( 4, 5)( 6,12)( 7, 8)(10,15), ( 2,11, 6)( 3,14,10)( 5,12, 8)( 9,15,13), 
+      ( 1, 2, 3,14,15,13, 9,10,11,12, 7, 8, 4, 5, 6) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5,10)( 6, 8)( 7, 9) ] ) ),
 rec(
@@ -239,6 +269,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), ( 1, 4,10), (1,6,7), (2,8,9) ],
+  passport := [ ( 1, 2)( 3,11)( 4, 5)( 6,12)( 8, 9)(10,15), ( 2,11, 6)( 3,14,10)( 5,12, 7)( 9,15,13), 
+      ( 1, 2, 3,14,15,13, 8, 9,10,11,12, 7, 4, 5, 6) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5,10)( 6, 8)( 7, 9) ] ) ),
 rec(
@@ -254,6 +286,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), ( 1, 4,10), (1,6,7), (2,8,9) ],
+  passport := [ ( 1, 2)( 3,11)( 5,12)( 6, 7)( 8, 9)(10,15), ( 2,11, 5)( 3,14,10)( 4,12, 7)( 9,15,13), 
+      ( 1, 2, 3,14,15,13, 8, 9,10,11,12, 6, 7, 4, 5) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5,10)( 6, 8)( 7, 9) ] ) ),
 rec(
@@ -269,6 +303,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), ( 1, 4,10), (1,6,7), (2,8,9) ],
+  passport := [ ( 2,11)( 3, 4)( 5,12)( 6, 7)( 8, 9)(10,15), ( 1,11, 5)( 2,14,10)( 4,12, 7)( 9,15,13), 
+      ( 1, 2,14,15,13, 8, 9,10,11,12, 6, 7, 3, 4, 5) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5,10)( 6, 8)( 7, 9) ] ) ),
 rec(
@@ -284,6 +320,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), ( 1, 4,10), (1,6,7), (2,8,9) ],
+  passport := [ ( 1, 2)( 3,10)( 4, 5)( 6,11)( 9,15)(12,13), ( 2,10, 6)( 3,14, 9)( 5,11, 7)( 8,15,13), 
+      ( 1, 2, 3,14,15,12,13, 8, 9,10,11, 7, 4, 5, 6) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5,10)( 6, 8)( 7, 9) ] ) ),
 rec(
@@ -299,6 +337,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), ( 1, 4,10), (1,6,7), (2,8,9) ],
+  passport := [ ( 1, 2)( 3,10)( 5,11)( 6, 7)( 9,15)(12,13), ( 2,10, 5)( 3,14, 9)( 4,11, 7)( 8,15,13), 
+      ( 1, 2, 3,14,15,12,13, 8, 9,10,11, 6, 7, 4, 5) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5,10)( 6, 8)( 7, 9) ] ) ),
 rec(
@@ -314,6 +354,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), ( 1, 4,10), (1,6,7), (2,8,9) ],
+  passport := [ ( 2,10)( 3, 4)( 5,11)( 6, 7)( 9,15)(12,13), ( 1,10, 5)( 2,14, 9)( 4,11, 7)( 8,15,13), 
+      ( 1, 2,14,15,12,13, 8, 9,10,11, 6, 7, 3, 4, 5) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5,10)( 6, 8)( 7, 9) ] ) ),
 rec(
@@ -329,6 +371,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), ( 1, 4,10), (1,6,7), (2,8,9) ],
+  passport := [ ( 1, 2)( 3,10)( 5,11)( 7, 8)( 9,15)(12,13), ( 2,10, 5)( 3,14, 9)( 4,11, 6)( 8,15,13), 
+      ( 1, 2, 3,14,15,12,13, 7, 8, 9,10,11, 6, 4, 5) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5,10)( 6, 8)( 7, 9) ] ) ),
 rec(
@@ -344,6 +388,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), ( 1, 4,10), (1,6,7), (2,8,9) ],
+  passport := [ ( 1, 2)( 3,10)( 4, 5)( 6,11)( 9,15)(13,14), ( 2,10, 6)( 3,14, 9)( 5,11, 7)( 8,15,12), 
+      ( 1, 2, 3,13,14,15,12, 8, 9,10,11, 7, 4, 5, 6) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5,10)( 6, 8)( 7, 9) ] ) ),
 rec(
@@ -359,6 +405,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), ( 1, 4,10), (1,6,7), (2,8,9) ],
+  passport := [ ( 1, 2)( 3,10)( 5,11)( 6, 7)( 9,15)(13,14), ( 2,10, 5)( 3,14, 9)( 4,11, 7)( 8,15,12), 
+      ( 1, 2, 3,13,14,15,12, 8, 9,10,11, 6, 7, 4, 5) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5,10)( 6, 8)( 7, 9) ] ) ),
 rec(
@@ -374,6 +422,8 @@ rec(
           false ], [ false, false, true, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,5,6), ( 1, 9,10), (1,7,8) ],
+  passport := [ ( 1, 2)( 3,10)( 4,13)( 5, 6)( 7, 8)( 9,14)(12,15), ( 2,10, 6)( 3,13, 9)( 4,15,12)( 8,14,11), 
+      ( 1, 2, 3, 4,12,13,14,11, 7, 8, 9,10, 5, 6) ],
   size := 10,
   tree_aut := Group( [ ( 2, 4, 3)( 5, 7, 9)( 6, 8,10), ( 3, 4)( 7, 9)( 8,10), ( 2, 3)( 5, 9)( 6,10) ] ) ),
 rec(
@@ -389,6 +439,8 @@ rec(
           false ], [ false, false, true, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,5,6), ( 1, 9,10), (1,7,8) ],
+  passport := [ ( 1, 2)( 3,10)( 4,13)( 5, 6)( 7, 8)( 9,14)(11,15), ( 2,10, 6)( 3,13, 9)( 4,15,12)( 8,14,11), ( 1, 2, 3, 4,11, 7, 8, 9,10, 5, 6)
+        (12,13,14,15) ],
   size := 10,
   tree_aut := Group( [ ( 2, 4, 3)( 5, 7, 9)( 6, 8,10), ( 3, 4)( 7, 9)( 8,10), ( 2, 3)( 5, 9)( 6,10) ] ) ),
 rec(
@@ -404,6 +456,8 @@ rec(
           false ], [ false, false, true, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,5,6), ( 1, 9,10), (1,7,8) ],
+  passport := [ ( 1, 2)( 3,10)( 4,13)( 5, 6)( 7, 8)( 9,14)(11,12), ( 2,10, 6)( 3,13, 9)( 4,15,12)( 8,14,11), 
+      ( 1, 2, 3, 4,15,11, 7, 8, 9,10, 5, 6)(12,13,14) ],
   size := 10,
   tree_aut := Group( [ ( 2, 4, 3)( 5, 7, 9)( 6, 8,10), ( 3, 4)( 7, 9)( 8,10), ( 2, 3)( 5, 9)( 6,10) ] ) ),
 rec(
@@ -419,6 +473,8 @@ rec(
           false ], [ false, false, true, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,5,6), ( 1, 9,10), (1,7,8) ],
+  passport := [ ( 1, 2)( 3, 9)( 4,13)( 5, 6)( 8,14)(10,11)(12,15), ( 2, 9, 6)( 3,13, 8)( 4,15,12)( 7,14,11), 
+      ( 1, 2, 3, 4,12,13,14,10,11, 7, 8, 9, 5, 6) ],
   size := 10,
   tree_aut := Group( [ ( 2, 4, 3)( 5, 7, 9)( 6, 8,10), ( 3, 4)( 7, 9)( 8,10), ( 2, 3)( 5, 9)( 6,10) ] ) ),
 rec(
@@ -434,6 +490,8 @@ rec(
           false ], [ false, false, true, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,5,6), ( 1, 9,10), (1,7,8) ],
+  passport := [ ( 1, 2)( 3, 9)( 4,13)( 5, 6)( 7,15)( 8,14)(10,11), ( 2, 9, 6)( 3,13, 8)( 4,15,12)( 7,14,11), 
+      ( 1, 2, 3, 4, 7, 8, 9, 5, 6)(10,11,15,12,13,14) ],
   size := 10,
   tree_aut := Group( [ ( 2, 4, 3)( 5, 7, 9)( 6, 8,10), ( 3, 4)( 7, 9)( 8,10), ( 2, 3)( 5, 9)( 6,10) ] ) ),
 rec(
@@ -449,6 +507,8 @@ rec(
           false ], [ false, false, true, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,5,6), ( 1, 9,10), (1,7,8) ],
+  passport := [ ( 1, 2)( 3, 9)( 4,13)( 5, 6)( 7,12)( 8,14)(10,11), ( 2, 9, 6)( 3,13, 8)( 4,15,12)( 7,14,11), 
+      ( 1, 2, 3, 4,15, 7, 8, 9, 5, 6)(10,11,12,13,14) ],
   size := 10,
   tree_aut := Group( [ ( 2, 4, 3)( 5, 7, 9)( 6, 8,10), ( 3, 4)( 7, 9)( 8,10), ( 2, 3)( 5, 9)( 6,10) ] ) ),
 rec(
@@ -464,6 +524,8 @@ rec(
           false ], [ false, false, true, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,5,6), ( 1, 9,10), (1,7,8) ],
+  passport := [ ( 1, 2)( 3, 9)( 4,13)( 6, 7)( 8,14)(10,15)(11,12), ( 2, 9, 5)( 3,13, 8)( 4,15,12)( 7,14,10), 
+      ( 1, 2, 3, 4,10, 6, 7, 8, 9, 5)(11,12,13,14,15) ],
   size := 10,
   tree_aut := Group( [ ( 2, 4, 3)( 5, 7, 9)( 6, 8,10), ( 3, 4)( 7, 9)( 8,10), ( 2, 3)( 5, 9)( 6,10) ] ) ),
 rec(
@@ -479,6 +541,8 @@ rec(
           false ], [ false, false, true, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,5,6), ( 1, 9,10), (1,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4, 5)( 6, 7)( 8,14)(10,15)(11,12), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 7,14,10), 
+      ( 1, 2, 3,10, 6, 7, 8, 9, 4, 5)(11,12,13,14,15) ],
   size := 10,
   tree_aut := Group( [ ( 2, 4, 3)( 5, 7, 9)( 6, 8,10), ( 3, 4)( 7, 9)( 8,10), ( 2, 3)( 5, 9)( 6,10) ] ) ),
 rec(
@@ -494,6 +558,8 @@ rec(
           false ], [ false, false, true, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,5,6), ( 1, 9,10), (1,7,8) ],
+  passport := [ ( 1,15)( 2, 9)( 3,13)( 4, 5)( 6, 7)( 8,14)(11,12), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 7,14,10), 
+      ( 1, 2, 3)( 4, 5,15,11,12,13,14,10, 6, 7, 8, 9) ],
   size := 10,
   tree_aut := Group( [ ( 2, 4, 3)( 5, 7, 9)( 6, 8,10), ( 3, 4)( 7, 9)( 8,10), ( 2, 3)( 5, 9)( 6,10) ] ) ),
 rec(
@@ -509,6 +575,8 @@ rec(
           false ], [ false, false, true, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,5,6), ( 1, 9,10), (1,7,8) ],
+  passport := [ ( 1,10)( 2, 9)( 3,13)( 4, 5)( 6, 7)( 8,14)(11,12), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 7,14,10), 
+      ( 1, 2, 3,15,11,12,13,14)( 4, 5,10, 6, 7, 8, 9) ],
   size := 10,
   tree_aut := Group( [ ( 2, 4, 3)( 5, 7, 9)( 6, 8,10), ( 3, 4)( 7, 9)( 8,10), ( 2, 3)( 5, 9)( 6,10) ] ) ),
 rec(
@@ -524,6 +592,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 1, 2)( 3,11)( 4,14)( 5, 6)( 7,12)( 8, 9)(13,15), ( 2,11, 7)( 3,14,10)( 4,15,13)( 6,12, 9), 
+      ( 1, 2, 3, 4,13,14,10,11,12, 8, 9, 5, 6, 7) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -539,6 +609,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 1, 2)( 3,11)( 4,14)( 5, 6)( 7,12)( 8, 9)(10,15), ( 2,11, 7)( 3,14,10)( 4,15,13)( 6,12, 9), 
+      ( 1, 2, 3, 4,10,11,12, 8, 9, 5, 6, 7)(13,14,15) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -554,6 +626,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 1, 2)( 3,11)( 4,14)( 5, 6)( 7,12)( 8, 9)(10,13), ( 2,11, 7)( 3,14,10)( 4,15,13)( 6,12, 9), 
+      ( 1, 2, 3, 4,15,10,11,12, 8, 9, 5, 6, 7)(13,14) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -569,6 +643,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 1, 2)( 3,11)( 4,14)( 5, 6)( 7,12)( 9,10)(13,15), ( 2,11, 7)( 3,14,10)( 4,15,13)( 6,12, 8), 
+      ( 1, 2, 3, 4,13,14, 9,10,11,12, 8, 5, 6, 7) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -584,6 +660,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 1, 2)( 3,11)( 4,14)( 5, 6)( 7,12)( 8,15)( 9,10), ( 2,11, 7)( 3,14,10)( 4,15,13)( 6,12, 8), 
+      ( 1, 2, 3, 4, 8, 5, 6, 7)( 9,10,11,12,15,13,14) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -599,6 +677,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 1, 2)( 3,11)( 4,14)( 5, 6)( 7,12)( 8,13)( 9,10), ( 2,11, 7)( 3,14,10)( 4,15,13)( 6,12, 8), 
+      ( 1, 2, 3, 4,15, 8, 5, 6, 7)( 9,10,11,12,13,14) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -614,6 +694,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 1, 2)( 3,11)( 4,14)( 6,12)( 7, 8)( 9,10)(13,15), ( 2,11, 6)( 3,14,10)( 4,15,13)( 5,12, 8), 
+      ( 1, 2, 3, 4,13,14, 9,10,11,12, 7, 8, 5, 6) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -629,6 +711,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 1, 2)( 3,11)( 4,14)( 5,15)( 6,12)( 7, 8)( 9,10), ( 2,11, 6)( 3,14,10)( 4,15,13)( 5,12, 8), 
+      ( 1, 2, 3, 4, 5, 6)( 7, 8,15,13,14, 9,10,11,12) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -644,6 +728,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 1, 2)( 3,11)( 4,14)( 5,13)( 6,12)( 7, 8)( 9,10), ( 2,11, 6)( 3,14,10)( 4,15,13)( 5,12, 8), 
+      ( 1, 2, 3, 4,15, 5, 6)( 7, 8,13,14, 9,10,11,12) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -659,6 +745,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 2,11)( 3,14)( 4, 5)( 6,12)( 7, 8)( 9,10)(13,15), ( 1,11, 6)( 2,14,10)( 3,15,13)( 5,12, 8), 
+      ( 1, 2, 3,13,14, 9,10,11,12, 7, 8, 4, 5, 6) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -674,6 +762,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 1, 2)( 3,10)( 4,14)( 5, 6)( 7,11)( 9,15)(12,13), ( 2,10, 7)( 3,14, 9)( 4,15,13)( 6,11, 8), ( 1, 2, 3, 4, 9,10,11, 8, 5, 6, 7)
+        (12,13,14,15) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -689,6 +779,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 1, 2)( 3,10)( 4,14)( 6,11)( 7, 8)( 9,15)(12,13), ( 2,10, 6)( 3,14, 9)( 4,15,13)( 5,11, 8), ( 1, 2, 3, 4, 9,10,11, 7, 8, 5, 6)
+        (12,13,14,15) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -704,6 +796,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 2,10)( 3,14)( 4, 5)( 6,11)( 7, 8)( 9,15)(12,13), ( 1,10, 6)( 2,14, 9)( 3,15,13)( 5,11, 8), ( 1, 2, 3, 9,10,11, 7, 8, 4, 5, 6)
+        (12,13,14,15) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -719,6 +813,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 1, 9)( 2,10)( 3,14)( 4, 5)( 6,11)( 7, 8)(12,13), ( 1,10, 6)( 2,14, 9)( 3,15,13)( 5,11, 8), 
+      ( 1, 2, 3,15,12,13,14)( 4, 5, 6, 9,10,11, 7, 8) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -734,6 +830,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 2,10)( 3,14)( 4,15)( 5,11)( 6, 7)( 8, 9)(12,13), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7), 
+      ( 1, 2, 3, 4, 5)( 6, 7,15,12,13,14, 8, 9,10,11) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -749,6 +847,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 1, 4)( 2,10)( 3,14)( 5,11)( 6, 7)( 8, 9)(12,13), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7), 
+      ( 1, 2, 3,15,12,13,14, 8, 9,10,11, 6, 7)( 4, 5) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -764,6 +864,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 1, 2)( 3,10)( 4,13)( 6,11)( 7, 8)( 9,12)(14,15), ( 2,10, 6)( 3,13, 9)( 4,15,12)( 5,11, 8), 
+      ( 1, 2, 3, 4,14,15, 9,10,11, 7, 8, 5, 6)(12,13) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -779,6 +881,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), (1,8,4), (1,6,7), ( 2, 9,10) ],
+  passport := [ ( 2,10)( 3,13)( 4, 5)( 6,11)( 7, 8)( 9,12)(14,15), ( 1,10, 6)( 2,13, 9)( 3,15,12)( 5,11, 8), 
+      ( 1, 2, 3,14,15, 9,10,11, 7, 8, 4, 5, 6)(12,13) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5, 8)( 6, 9)( 7,10) ] ) ),
 rec(
@@ -794,6 +898,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), ( 1, 4,10), (1,6,7), (2,8,9) ],
+  passport := [ ( 1, 2)( 3,11)( 4, 5)( 6,12)( 7, 8)( 9,13)(10,15), ( 2,11, 6)( 3,14,10)( 5,12, 8)( 9,15,13), 
+      ( 1, 2, 3,14,15, 9,10,11,12, 7, 8, 4, 5, 6) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5,10)( 6, 8)( 7, 9) ] ) ),
 rec(
@@ -809,6 +915,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), ( 1, 4,10), (1,6,7), (2,8,9) ],
+  passport := [ ( 1,14)( 2,11)( 3, 4)( 5,12)( 6, 7)( 8, 9)(10,15), ( 1,11, 5)( 2,14,10)( 4,12, 7)( 9,15,13), 
+      ( 1, 2)( 3, 4, 5,14,15,13, 8, 9,10,11,12, 6, 7) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5,10)( 6, 8)( 7, 9) ] ) ),
 rec(
@@ -824,6 +932,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), ( 1, 4,10), (1,6,7), (2,8,9) ],
+  passport := [ ( 1, 2)( 3,10)( 4, 5)( 6,11)( 7, 8)( 9,15)(12,13), ( 2,10, 6)( 3,14, 9)( 5,11, 7)( 8,15,13), ( 1, 2, 3,14,15,12,13, 7, 4, 5, 6)
+        ( 8, 9,10,11) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5,10)( 6, 8)( 7, 9) ] ) ),
 rec(
@@ -839,6 +949,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), ( 1, 4,10), (1,6,7), (2,8,9) ],
+  passport := [ ( 1, 2)( 3,10)( 4, 6)( 5,11)( 7, 8)( 9,15)(12,13), ( 2,10, 5)( 3,14, 9)( 4,11, 6)( 8,15,13), 
+      ( 1, 2, 3,14,15,12,13, 7, 8, 9,10,11, 4, 5) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5,10)( 6, 8)( 7, 9) ] ) ),
 rec(
@@ -854,6 +966,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), ( 1, 4,10), (1,6,7), (2,8,9) ],
+  passport := [ ( 1, 2)( 3,10)( 4, 5)( 6,11)( 8,12)( 9,15)(13,14), ( 2,10, 6)( 3,14, 9)( 5,11, 7)( 8,15,12), 
+      ( 1, 2, 3,13,14,15, 8, 9,10,11, 7, 4, 5, 6) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5,10)( 6, 8)( 7, 9) ] ) ),
 rec(
@@ -869,6 +983,8 @@ rec(
           false ], [ false, false, false, true, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,5,3), ( 1, 4,10), (1,6,7), (2,8,9) ],
+  passport := [ ( 1, 2)( 3,10)( 5,11)( 6, 7)( 8,12)( 9,15)(13,14), ( 2,10, 5)( 3,14, 9)( 4,11, 7)( 8,15,12), 
+      ( 1, 2, 3,13,14,15, 8, 9,10,11, 6, 7, 4, 5) ],
   size := 10,
   tree_aut := Group( [ ( 1, 2)( 3, 4)( 5,10)( 6, 8)( 7, 9) ] ) ),
 rec(
@@ -889,6 +1005,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 5,10)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,15,12,13,14,11, 7, 8, 9,10, 6, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -909,6 +1027,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 5,11)( 7,12), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,15,13,14, 9,10,11,12, 8, 6, 7, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -929,6 +1049,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,5,9), ( 2,11,12), (3,7,8) ],
+  passport := [ ( 2,11)( 3,14)( 5, 9)( 6,12), ( 1,11, 6)( 2,14,10)( 3,15,13)( 4, 9, 7)( 5,12, 8), 
+      ( 1, 2, 3,15,13,14,10,11,12, 8, 9, 7, 4, 5, 6) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,11)( 8,12)( 9,10) ] ) ),
 rec(
@@ -949,6 +1071,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1, 4,12), (1,7,5), ( 2,10,11), (3,8,9) ],
+  passport := [ ( 2,10)( 4,11)( 6,12)( 9,15), ( 1,10, 4)( 2,14, 9)( 3,11, 6)( 5,12, 7)( 8,15,13), 
+      ( 1, 2,14,15,13, 8, 9,10,11,12, 7, 5, 6, 3, 4) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,12)( 8,10)( 9,11) ] ) ),
 rec(
@@ -968,6 +1092,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 5,10)( 8,14)(12,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,12,13,14,11, 7, 8, 9,10, 6, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -987,6 +1113,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 5,10)( 8,14)(11,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), ( 1, 2, 3,11, 7, 8, 9,10, 6, 4, 5)
+        (12,13,14,15) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1006,6 +1134,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 5,10)( 7,15)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 7, 8, 9,10, 6, 4, 5)(11,15,12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1025,6 +1155,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 5,10)( 6,15)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 6, 4, 5)( 7, 8, 9,10,15,12,13,14,11) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1044,6 +1176,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4,15)( 5,10)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 4, 5)( 6,15,12,13,14,11, 7, 8, 9,10) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1063,6 +1197,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1,15)( 2, 9)( 3,13)( 5,10)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3)( 4, 5,15,12,13,14,11, 7, 8, 9,10, 6) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1082,6 +1218,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 5,10)( 8,14)(11,12), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), ( 1, 2, 3,15,11, 7, 8, 9,10, 6, 4, 5)
+        (12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1101,6 +1239,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 5,10)( 7,12)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), ( 1, 2, 3,15, 7, 8, 9,10, 6, 4, 5)
+        (11,12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1120,6 +1260,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 5,10)( 6,12)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,15, 6, 4, 5)( 7, 8, 9,10,12,13,14,11) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1139,6 +1281,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4,12)( 5,10)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,15, 4, 5)( 6,12,13,14,11, 7, 8, 9,10) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1158,6 +1302,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1,12)( 2, 9)( 3,13)( 5,10)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,15)( 4, 5,12,13,14,11, 7, 8, 9,10, 6) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1177,6 +1323,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 5,10)( 7,11)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,15,12,13,14, 7, 8, 9,10, 6, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1196,6 +1344,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1,11)( 2, 9)( 3,13)( 5,10)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,15,12,13,14)( 4, 5,11, 7, 8, 9,10, 6) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1215,6 +1365,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 5,10)( 6, 7)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), ( 1, 2, 3,15,12,13,14,11, 6, 4, 5)
+        ( 7, 8, 9,10) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1234,6 +1386,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4, 7)( 5,10)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,15,12,13,14,11, 4, 5)( 6, 7, 8, 9,10) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1253,6 +1407,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4, 6)( 5,10)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,15,12,13,14,11, 7, 8, 9,10, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1272,6 +1428,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 6)( 2, 9)( 3,13)( 5,10)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), ( 1, 2, 3,15,12,13,14,11, 7, 8, 9,10)
+        ( 4, 5, 6) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1291,6 +1449,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 4)( 2, 9)( 3,13)( 5,10)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,15,12,13,14,11, 7, 8, 9,10, 6)( 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1310,6 +1470,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 5,11)( 7,12)(13,15), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,13,14, 9,10,11,12, 8, 6, 7, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -1329,6 +1491,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 5,11)( 7,12)( 9,15), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), ( 1, 2, 3, 9,10,11,12, 8, 6, 7, 4, 5)
+        (13,14,15) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -1348,6 +1512,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 5,11)( 7,12)( 8,15), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3, 8, 6, 7, 4, 5)( 9,10,11,12,15,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -1367,6 +1533,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 5,11)( 7,12)( 9,13), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,15, 9,10,11,12, 8, 6, 7, 4, 5)(13,14) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -1386,6 +1554,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 5,11)( 7,12)( 8,13), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,15, 8, 6, 7, 4, 5)( 9,10,11,12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -1405,6 +1575,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 5,11)( 6,13)( 7,12), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,15, 6, 7, 4, 5)( 8,13,14, 9,10,11,12) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -1424,6 +1596,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 1, 9)( 2,10)( 3,14)( 5,11)( 7,12), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,15,13,14)( 4, 5, 9,10,11,12, 8, 6, 7) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -1443,6 +1617,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 5,11)( 6, 8)( 7,12), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,15,13,14, 9,10,11,12, 6, 7, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -1462,6 +1638,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 4, 8)( 5,11)( 7,12), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), ( 1, 2, 3,15,13,14, 9,10,11,12, 4, 5)
+        ( 6, 7, 8) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -1481,6 +1659,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 4, 6)( 5,11)( 7,12), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,15,13,14, 9,10,11,12, 8, 4, 5)( 6, 7) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -1500,6 +1680,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 1, 4)( 2,10)( 3,14)( 5,11)( 7,12), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,15,13,14, 9,10,11,12, 8, 6, 7)( 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -1519,6 +1701,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,5,9), ( 2,11,12), (3,7,8) ],
+  passport := [ ( 2,11)( 3,14)( 5, 9)( 6,12)(13,15), ( 1,11, 6)( 2,14,10)( 3,15,13)( 4, 9, 7)( 5,12, 8), 
+      ( 1, 2, 3,13,14,10,11,12, 8, 9, 7, 4, 5, 6) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,11)( 8,12)( 9,10) ] ) ),
 rec(
@@ -1538,6 +1722,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1, 4,12), (1,7,5), ( 2,10,11), (3,8,9) ],
+  passport := [ ( 2,10)( 4,11)( 6,12)( 8,13)( 9,15), ( 1,10, 4)( 2,14, 9)( 3,11, 6)( 5,12, 7)( 8,15,13), 
+      ( 1, 2,14,15, 8, 9,10,11,12, 7, 5, 6, 3, 4) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,12)( 8,10)( 9,11) ] ) ),
 rec(
@@ -1557,6 +1743,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1, 4,12), (1,7,5), ( 2,10,11), (3,8,9) ],
+  passport := [ ( 2,10)( 4,11)( 6,12)( 7, 8)( 9,15), ( 1,10, 4)( 2,14, 9)( 3,11, 6)( 5,12, 7)( 8,15,13), 
+      ( 1, 2,14,15,13, 7, 5, 6, 3, 4)( 8, 9,10,11,12) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,12)( 8,10)( 9,11) ] ) ),
 rec(
@@ -1576,6 +1764,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 5,10)( 7,11)( 8,14)(12,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,12,13,14, 7, 8, 9,10, 6, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1595,6 +1785,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 5,10)( 7,15)( 8,14)(11,12), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 7, 8, 9,10, 6, 4, 5)(11,15)(12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1614,6 +1806,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 5,10)( 7,12)( 8,14)(11,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,11,12,13,14,15, 7, 8, 9,10, 6, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1633,6 +1827,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 5,10)( 6,11)( 8,14)(12,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,12,13,14, 6, 4, 5)( 7, 8, 9,10,11) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1652,6 +1848,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 5,10)( 6,15)( 8,14)(11,12), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 6, 4, 5)( 7, 8, 9,10,15,11)(12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1671,6 +1869,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 5,10)( 6,12)( 8,14)(11,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,11, 7, 8, 9,10,12,13,14,15, 6, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1690,6 +1890,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4,11)( 5,10)( 8,14)(12,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,12,13,14, 4, 5)( 6,11, 7, 8, 9,10) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1709,6 +1911,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4,15)( 5,10)( 8,14)(11,12), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 4, 5)( 6,15,11, 7, 8, 9,10)(12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1728,6 +1932,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4,12)( 5,10)( 8,14)(11,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,11, 7, 8, 9,10, 6,12,13,14,15, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1747,6 +1953,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1,11)( 2, 9)( 3,13)( 5,10)( 8,14)(12,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,12,13,14)( 4, 5,11, 7, 8, 9,10, 6) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1766,6 +1974,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1,15)( 2, 9)( 3,13)( 5,10)( 8,14)(11,12), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3)( 4, 5,15,11, 7, 8, 9,10, 6)(12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1785,6 +1995,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1,12)( 2, 9)( 3,13)( 5,10)( 8,14)(11,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,11, 7, 8, 9,10, 6, 4, 5,12,13,14,15) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1804,6 +2016,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 5,10)( 6, 7)( 8,14)(12,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,12,13,14,11, 6, 4, 5)( 7, 8, 9,10) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1823,6 +2037,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 5,10)( 6,15)( 7,12)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 6, 4, 5)( 7, 8, 9,10,15)(11,12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1842,6 +2058,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 5,10)( 6,12)( 7,15)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 7, 8, 9,10,12,13,14,11,15, 6, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1861,6 +2079,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4, 7)( 5,10)( 8,14)(12,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,12,13,14,11, 4, 5)( 6, 7, 8, 9,10) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1880,6 +2100,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4,15)( 5,10)( 7,12)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 4, 5)( 6,15, 7, 8, 9,10)(11,12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1899,6 +2121,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 7)( 2, 9)( 3,13)( 5,10)( 8,14)(12,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,12,13,14,11)( 4, 5, 7, 8, 9,10, 6) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1918,6 +2142,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1,15)( 2, 9)( 3,13)( 5,10)( 7,12)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3)( 4, 5,15, 7, 8, 9,10, 6)(11,12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1937,6 +2163,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1,12)( 2, 9)( 3,13)( 5,10)( 7,15)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 7, 8, 9,10, 6, 4, 5,12,13,14,11,15) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1956,6 +2184,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4, 6)( 5,10)( 8,14)(12,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,12,13,14,11, 7, 8, 9,10, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1975,6 +2205,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4,15)( 5,10)( 6,12)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 4, 5)( 6,15)( 7, 8, 9,10,12,13,14,11) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -1994,6 +2226,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4,12)( 5,10)( 6,15)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 6,12,13,14,11, 7, 8, 9,10,15, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2013,6 +2247,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 6)( 2, 9)( 3,13)( 5,10)( 8,14)(12,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,12,13,14,11, 7, 8, 9,10)( 4, 5, 6) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2032,6 +2268,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 4)( 2, 9)( 3,13)( 5,10)( 8,14)(12,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,12,13,14,11, 7, 8, 9,10, 6)( 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2051,6 +2289,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 5,10)( 6, 7)( 8,14)(11,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,11, 6, 4, 5)( 7, 8, 9,10)(12,13,14,15) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2070,6 +2310,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4,11)( 5,10)( 7,15)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 7, 8, 9,10, 6,11,15,12,13,14, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2089,6 +2331,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 7)( 2, 9)( 3,13)( 5,10)( 8,14)(11,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,11)( 4, 5, 7, 8, 9,10, 6)(12,13,14,15) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2108,6 +2352,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1,15)( 2, 9)( 3,13)( 5,10)( 7,11)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3)( 4, 5,15,12,13,14, 7, 8, 9,10, 6) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2127,6 +2373,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4, 6)( 5,10)( 8,14)(11,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,11, 7, 8, 9,10, 4, 5)(12,13,14,15) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2146,6 +2394,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4,15)( 5,10)( 6,11)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), ( 1, 2, 3, 4, 5)( 6,15,12,13,14)
+        ( 7, 8, 9,10,11) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2165,6 +2415,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4,11)( 5,10)( 6,15)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 6,11, 7, 8, 9,10,15,12,13,14, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2184,6 +2436,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 6)( 2, 9)( 3,13)( 5,10)( 8,14)(11,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,11, 7, 8, 9,10)( 4, 5, 6)(12,13,14,15) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2203,6 +2457,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 4)( 2, 9)( 3,13)( 5,10)( 8,14)(11,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,11, 7, 8, 9,10, 6)( 4, 5)(12,13,14,15) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2222,6 +2478,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4, 6)( 5,10)( 7,15)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 7, 8, 9,10, 4, 5)(11,15,12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2241,6 +2499,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4,15)( 5,10)( 6, 7)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 4, 5)( 6,15,12,13,14,11)( 7, 8, 9,10) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2260,6 +2520,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4, 7)( 5,10)( 6,15)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 6, 7, 8, 9,10,15,12,13,14,11, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2279,6 +2541,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 6)( 2, 9)( 3,13)( 5,10)( 7,15)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), ( 1, 2, 3, 7, 8, 9,10)( 4, 5, 6)
+        (11,15,12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2298,6 +2562,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1,15)( 2, 9)( 3,13)( 5,10)( 6, 7)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3)( 4, 5,15,12,13,14,11, 6)( 7, 8, 9,10) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2317,6 +2583,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 4)( 2, 9)( 3,13)( 5,10)( 7,15)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), ( 1, 2, 3, 7, 8, 9,10, 6)( 4, 5)
+        (11,15,12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2336,6 +2604,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 4)( 2, 9)( 3,13)( 5,10)( 6,15)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 6)( 4, 5)( 7, 8, 9,10,15,12,13,14,11) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2355,6 +2625,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 6)( 2, 9)( 3,13)( 4,15)( 5,10)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 4, 5, 6,15,12,13,14,11, 7, 8, 9,10) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2374,6 +2646,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 5,10)( 6,12)( 7,11)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,15, 6, 4, 5)( 7, 8, 9,10,12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2393,6 +2667,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4,12)( 5,10)( 7,11)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,15, 4, 5)( 6,12,13,14, 7, 8, 9,10) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2412,6 +2688,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 7)( 2, 9)( 3,13)( 5,10)( 8,14)(11,12), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,15,11)( 4, 5, 7, 8, 9,10, 6)(12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2431,6 +2709,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1,12)( 2, 9)( 3,13)( 5,10)( 7,11)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,15)( 4, 5,12,13,14, 7, 8, 9,10, 6) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2450,6 +2730,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4, 6)( 5,10)( 8,14)(11,12), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,15,11, 7, 8, 9,10, 4, 5)(12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2469,6 +2751,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 6)( 2, 9)( 3,13)( 5,10)( 8,14)(11,12), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,15,11, 7, 8, 9,10)( 4, 5, 6)(12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2488,6 +2772,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 4)( 2, 9)( 3,13)( 5,10)( 8,14)(11,12), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,15,11, 7, 8, 9,10, 6)( 4, 5)(12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2507,6 +2793,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4, 6)( 5,10)( 7,12)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,15, 7, 8, 9,10, 4, 5)(11,12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2526,6 +2814,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4, 6)( 5,10)( 7,11)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,15,12,13,14, 7, 8, 9,10, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -2545,6 +2835,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 5,11)( 7,12)( 8,15)( 9,13), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3, 8, 6, 7, 4, 5)( 9,10,11,12,15)(13,14) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -2564,6 +2856,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 5,11)( 7,12)( 8,13)( 9,15), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3, 9,10,11,12,13,14,15, 8, 6, 7, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -2583,6 +2877,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 5,11)( 6,15)( 7,12)( 9,13), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3, 6, 7, 4, 5)( 8,15, 9,10,11,12)(13,14) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -2602,6 +2898,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 5,11)( 6,13)( 7,12)( 9,15), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3, 9,10,11,12, 8,13,14,15, 6, 7, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -2621,6 +2919,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 1, 9)( 2,10)( 3,14)( 5,11)( 7,12)(13,15), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,13,14)( 4, 5, 9,10,11,12, 8, 6, 7) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -2640,6 +2940,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 5,11)( 6, 8)( 7,12)(13,15), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,13,14, 9,10,11,12, 6, 7, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -2659,6 +2961,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 4, 8)( 5,11)( 7,12)(13,15), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,13,14, 9,10,11,12, 4, 5)( 6, 7, 8) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -2678,6 +2982,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 4, 6)( 5,11)( 7,12)(13,15), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,13,14, 9,10,11,12, 8, 4, 5)( 6, 7) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -2697,6 +3003,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 1, 4)( 2,10)( 3,14)( 5,11)( 7,12)(13,15), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,13,14, 9,10,11,12, 8, 6, 7)( 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -2716,6 +3024,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 5,11)( 6, 8)( 7,12)( 9,15), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3, 9,10,11,12, 6, 7, 4, 5)(13,14,15) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -2735,6 +3045,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 4, 8)( 5,11)( 7,12)( 9,15), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3, 9,10,11,12, 4, 5)( 6, 7, 8)(13,14,15) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -2754,6 +3066,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 4, 6)( 5,11)( 7,12)( 9,15), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3, 9,10,11,12, 8, 4, 5)( 6, 7)(13,14,15) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -2773,6 +3087,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 1, 4)( 2,10)( 3,14)( 5,11)( 7,12)( 9,15), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3, 9,10,11,12, 8, 6, 7)( 4, 5)(13,14,15) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -2792,6 +3108,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 5,11)( 6, 8)( 7,12)( 9,13), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,15, 9,10,11,12, 6, 7, 4, 5)(13,14) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -2811,6 +3129,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 4, 6)( 5,11)( 7,12)( 9,13), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,15, 9,10,11,12, 8, 4, 5)( 6, 7)(13,14) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -2830,6 +3150,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 1, 9)( 2,10)( 3,14)( 5,11)( 6,13)( 7,12), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,15, 6, 7, 4, 5, 9,10,11,12, 8,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -2849,6 +3171,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 1, 4)( 2,10)( 3,14)( 5,11)( 7,12)( 9,13), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,15, 9,10,11,12, 8, 6, 7)( 4, 5)(13,14) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -2868,6 +3192,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 4, 6)( 5,11)( 7,12)( 8,13), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,15, 8, 4, 5)( 6, 7)( 9,10,11,12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -2887,6 +3213,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 1, 9)( 2,10)( 3,14)( 5,11)( 6, 8)( 7,12), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,15,13,14)( 4, 5, 9,10,11,12, 6, 7) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -2906,6 +3234,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 1, 9)( 2,10)( 3,14)( 4, 8)( 5,11)( 7,12), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,15,13,14)( 4, 5, 9,10,11,12)( 6, 7, 8) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -2925,6 +3255,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 1, 9)( 2,10)( 3,14)( 4, 6)( 5,11)( 7,12), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,15,13,14)( 4, 5, 9,10,11,12, 8)( 6, 7) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -2944,6 +3276,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 1, 4)( 2,10)( 3,14)( 5,11)( 6, 8)( 7,12), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,15,13,14, 9,10,11,12, 6, 7)( 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -2963,6 +3297,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,5,9), ( 2,11,12), (3,7,8) ],
+  passport := [ ( 2,11)( 3,14)( 4, 7)( 5, 9)( 6,12)(13,15), ( 1,11, 6)( 2,14,10)( 3,15,13)( 4, 9, 7)( 5,12, 8), 
+      ( 1, 2, 3,13,14,10,11,12, 8, 9, 4, 5, 6) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,11)( 8,12)( 9,10) ] ) ),
 rec(
@@ -2982,6 +3318,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, true, false, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1, 4,12), (1,7,5), ( 2,10,11), (3,8,9) ],
+  passport := [ ( 2,10)( 4,11)( 5, 7)( 6,12)( 8,13)( 9,15), ( 1,10, 4)( 2,14, 9)( 3,11, 6)( 5,12, 7)( 8,15,13), 
+      ( 1, 2,14,15, 8, 9,10,11,12, 5, 6, 3, 4) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,12)( 8,10)( 9,11) ] ) ),
 rec(
@@ -3001,6 +3339,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4, 6)( 5,10)( 7,11)( 8,14)(12,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,12,13,14, 7, 8, 9,10, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3020,6 +3360,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4, 6)( 5,10)( 7,15)( 8,14)(11,12), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 7, 8, 9,10, 4, 5)(11,15)(12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3039,6 +3381,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4, 6)( 5,10)( 7,12)( 8,14)(11,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,11,12,13,14,15, 7, 8, 9,10, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3058,6 +3402,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4,15)( 5,10)( 6,11)( 7,12)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 4, 5)( 6,15, 7, 8, 9,10,11,12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3077,6 +3423,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4,15)( 5,10)( 6, 7)( 8,14)(11,12), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 4, 5)( 6,15,11)( 7, 8, 9,10)(12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3096,6 +3444,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4,15)( 5,10)( 6,12)( 7,11)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 4, 5)( 6,15)( 7, 8, 9,10,12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3115,6 +3465,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4, 7)( 5,10)( 6,11)( 8,14)(12,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,12,13,14, 6, 7, 8, 9,10,11, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3134,6 +3486,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4, 7)( 5,10)( 6,15)( 8,14)(11,12), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 6, 7, 8, 9,10,15,11, 4, 5)(12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3153,6 +3507,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4, 7)( 5,10)( 6,12)( 8,14)(11,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,11, 4, 5)( 6, 7, 8, 9,10,12,13,14,15) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3172,6 +3528,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4,11)( 5,10)( 6,15)( 7,12)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 6,11,12,13,14, 4, 5)( 7, 8, 9,10,15) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3191,6 +3549,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4,11)( 5,10)( 6, 7)( 8,14)(12,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,12,13,14, 4, 5)( 6,11)( 7, 8, 9,10) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3210,6 +3570,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4,12)( 5,10)( 6,11)( 7,15)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 7, 8, 9,10,11,15, 4, 5)( 6,12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3229,6 +3591,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4,12)( 5,10)( 6, 7)( 8,14)(11,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,11, 6,12,13,14,15, 4, 5)( 7, 8, 9,10) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3248,6 +3612,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 2, 9)( 3,13)( 4,12)( 5,10)( 6,15)( 7,11)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 6,12,13,14, 7, 8, 9,10,15, 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3267,6 +3633,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 6)( 2, 9)( 3,13)( 5,10)( 7,11)( 8,14)(12,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,12,13,14, 7, 8, 9,10)( 4, 5, 6) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3286,6 +3654,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 6)( 2, 9)( 3,13)( 5,10)( 7,15)( 8,14)(11,12), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 7, 8, 9,10)( 4, 5, 6)(11,15)(12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3305,6 +3675,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 6)( 2, 9)( 3,13)( 5,10)( 7,12)( 8,14)(11,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,11,12,13,14,15, 7, 8, 9,10)( 4, 5, 6) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3324,6 +3696,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1,15)( 2, 9)( 3,13)( 5,10)( 6,12)( 7,11)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3)( 4, 5,15, 6)( 7, 8, 9,10,12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3343,6 +3717,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 7)( 2, 9)( 3,13)( 5,10)( 6,11)( 8,14)(12,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,12,13,14, 6, 4, 5, 7, 8, 9,10,11) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3362,6 +3738,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1,11)( 2, 9)( 3,13)( 5,10)( 6, 7)( 8,14)(12,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,12,13,14)( 4, 5,11, 6)( 7, 8, 9,10) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3381,6 +3759,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1,12)( 2, 9)( 3,13)( 5,10)( 6,15)( 7,11)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 6, 4, 5,12,13,14, 7, 8, 9,10,15) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3400,6 +3780,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 4)( 2, 9)( 3,13)( 5,10)( 7,11)( 8,14)(12,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,12,13,14, 7, 8, 9,10, 6)( 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3419,6 +3801,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 4)( 2, 9)( 3,13)( 5,10)( 7,15)( 8,14)(11,12), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 7, 8, 9,10, 6)( 4, 5)(11,15)(12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3438,6 +3822,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 4)( 2, 9)( 3,13)( 5,10)( 7,12)( 8,14)(11,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,11,12,13,14,15, 7, 8, 9,10, 6)( 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3457,6 +3843,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1,15)( 2, 9)( 3,13)( 4,12)( 5,10)( 7,11)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3)( 4, 5,15)( 6,12,13,14, 7, 8, 9,10) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3476,6 +3864,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1,11)( 2, 9)( 3,13)( 4, 7)( 5,10)( 8,14)(12,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,12,13,14)( 4, 5,11)( 6, 7, 8, 9,10) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3495,6 +3885,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 4)( 2, 9)( 3,13)( 5,10)( 6,15)( 8,14)(11,12), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 6)( 4, 5)( 7, 8, 9,10,15,11)(12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3514,6 +3906,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 4)( 2, 9)( 3,13)( 5,10)( 6,12)( 8,14)(11,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,11, 7, 8, 9,10,12,13,14,15, 6)( 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3533,6 +3927,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 6)( 2, 9)( 3,13)( 4,15)( 5,10)( 8,14)(11,12), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 4, 5, 6,15,11, 7, 8, 9,10)(12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3552,6 +3948,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 6)( 2, 9)( 3,13)( 4,12)( 5,10)( 8,14)(11,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,11, 7, 8, 9,10)( 4, 5, 6,12,13,14,15) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3571,6 +3969,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1,11)( 2, 9)( 3,13)( 4, 6)( 5,10)( 8,14)(12,15), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,12,13,14)( 4, 5,11, 7, 8, 9,10) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3590,6 +3990,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 4)( 2, 9)( 3,13)( 5,10)( 6,15)( 7,12)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 6)( 4, 5)( 7, 8, 9,10,15)(11,12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3609,6 +4011,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1, 6)( 2, 9)( 3,13)( 4,15)( 5,10)( 7,12)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3, 4, 5, 6,15, 7, 8, 9,10)(11,12,13,14) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3628,6 +4032,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1,15)( 2, 9)( 3,13)( 4, 6)( 5,10)( 7,11)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3)( 4, 5,15,12,13,14, 7, 8, 9,10) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3647,6 +4053,8 @@ rec(
       [ false, false, true, false, false, false, false, false, false, false, false, false ], 
       [ false, false, true, false, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,4,3), (1,6,5), ( 1,11,12), ( 1, 9,10), (2,7,8) ],
+  passport := [ ( 1,12)( 2, 9)( 3,13)( 4, 6)( 5,10)( 7,11)( 8,14), ( 1, 9, 5)( 2,13, 8)( 3,15,12)( 4,10, 6)( 7,14,11), 
+      ( 1, 2, 3,15)( 4, 5,12,13,14, 7, 8, 9,10) ],
   size := 12,
   tree_aut := Group( [ ( 3, 4)( 9,11)(10,12) ] ) ),
 rec(
@@ -3666,6 +4074,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 4, 6)( 5,11)( 7,12)( 8,15)( 9,13), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3, 8, 4, 5)( 6, 7)( 9,10,11,12,15)(13,14) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -3685,6 +4095,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 4, 6)( 5,11)( 7,12)( 8,13)( 9,15), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3, 9,10,11,12,13,14,15, 8, 4, 5)( 6, 7) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -3704,6 +4116,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 2,10)( 3,14)( 4, 8)( 5,11)( 6,13)( 7,12)( 9,15), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3, 9,10,11,12, 4, 5)( 6, 7, 8,13,14,15) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -3723,6 +4137,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 1, 9)( 2,10)( 3,14)( 5,11)( 6, 8)( 7,12)(13,15), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,13,14)( 4, 5, 9,10,11,12, 6, 7) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -3742,6 +4158,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 1, 9)( 2,10)( 3,14)( 4, 8)( 5,11)( 7,12)(13,15), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,13,14)( 4, 5, 9,10,11,12)( 6, 7, 8) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -3761,6 +4179,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 1, 9)( 2,10)( 3,14)( 4, 6)( 5,11)( 7,12)(13,15), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,13,14)( 4, 5, 9,10,11,12, 8)( 6, 7) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -3780,6 +4200,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 1, 4)( 2,10)( 3,14)( 5,11)( 6, 8)( 7,12)(13,15), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,13,14, 9,10,11,12, 6, 7)( 4, 5) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -3799,6 +4221,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 1, 4)( 2,10)( 3,14)( 5,11)( 6, 8)( 7,12)( 9,15), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3, 9,10,11,12, 6, 7)( 4, 5)(13,14,15) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) ),
 rec(
@@ -3818,6 +4242,8 @@ rec(
       [ false, false, false, true, false, false, false, false, false, false, false, false ], 
       [ false, false, false, true, false, false, false, false, false, false, false, false ] ],
   orientation := [ (2,6,3), ( 1,10, 4), (1,7,5), ( 2,11,12), (3,8,9) ],
+  passport := [ ( 1, 4)( 2,10)( 3,14)( 5,11)( 6, 8)( 7,12)( 9,13), ( 1,10, 5)( 2,14, 9)( 3,15,13)( 4,11, 7)( 6,12, 8), 
+      ( 1, 2, 3,15, 9,10,11,12, 6, 7)( 4, 5)(13,14) ],
   size := 12,
   tree_aut := Group( [ ( 2, 3)( 4, 5)( 7,10)( 8,11)( 9,12) ] ) )
 ];

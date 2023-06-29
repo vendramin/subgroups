@@ -7,6 +7,7 @@ diagrams := [rec(
   farey_symbol := FareySymbolByData( [ infinity, 0, 1, infinity ], [ "odd", "odd", "odd" ] ) ,
   graph := [ [ false, true, true, true ], [ true, false, false, false ], [ true, false, false, false ], [ true, false, false, false ] ],
   orientation := [ (2,3,4) ],
+  passport := [ (1,2)(3,4)(5,6), (2,6,4), (1,2,5,6,3,4) ],
   size := 4,
   tree_aut := Group( [ (2,3,4), (2,3) ] ) ),
 rec(
@@ -16,6 +17,7 @@ rec(
   graph := [ [ false, true, true, true, false, false ], [ true, false, false, false, true, true ], [ true, false, false, false, false, false ], 
       [ true, false, false, false, false, false ], [ false, true, false, false, false, false ], [ false, true, false, false, false, false ] ],
   orientation := [ (2,3,4), (1,5,6) ],
+  passport := [ (2,5), (1,5,3)(2,6,4), (1,2,6,4,5,3) ],
   size := 6,
   tree_aut := Group( [ (1,2)(3,5)(4,6) ] ) ),
 rec(
@@ -25,6 +27,7 @@ rec(
   graph := [ [ false, true, true, true, false, false ], [ true, false, false, false, true, true ], [ true, false, false, false, false, false ], 
       [ true, false, false, false, false, false ], [ false, true, false, false, false, false ], [ false, true, false, false, false, false ] ],
   orientation := [ (2,3,4), (1,5,6) ],
+  passport := [ (2,5)(4,6), (1,5,3)(2,6,4), (1,2,4,5,3) ],
   size := 6,
   tree_aut := Group( [ (1,2)(3,5)(4,6) ] ) ),
 rec(
@@ -34,6 +37,7 @@ rec(
   graph := [ [ false, true, true, true, false, false ], [ true, false, false, false, true, true ], [ true, false, false, false, false, false ], 
       [ true, false, false, false, false, false ], [ false, true, false, false, false, false ], [ false, true, false, false, false, false ] ],
   orientation := [ (2,3,4), (1,5,6) ],
+  passport := [ (2,5)(3,6), (1,5,3)(2,6,4), (1,2,3)(4,5,6) ],
   size := 6,
   tree_aut := Group( [ (1,2)(3,5)(4,6) ] ) ),
 rec(
@@ -43,6 +47,7 @@ rec(
   graph := [ [ false, true, true, true, false, false ], [ true, false, false, false, true, true ], [ true, false, false, false, false, false ], 
       [ true, false, false, false, false, false ], [ false, true, false, false, false, false ], [ false, true, false, false, false, false ] ],
   orientation := [ (2,3,4), (1,5,6) ],
+  passport := [ (1,6)(2,5), (1,5,3)(2,6,4), (1,2)(3,6,4,5) ],
   size := 6,
   tree_aut := Group( [ (1,2)(3,5)(4,6) ] ) ),
 rec(
@@ -52,6 +57,7 @@ rec(
   graph := [ [ false, true, true, true, false, false ], [ true, false, false, false, true, true ], [ true, false, false, false, false, false ], 
       [ true, false, false, false, false, false ], [ false, true, false, false, false, false ], [ false, true, false, false, false, false ] ],
   orientation := [ (2,3,4), (1,5,6) ],
+  passport := [ (1,3)(2,5)(4,6), (1,5,3)(2,6,4), (1,2,4,5) ],
   size := 6,
   tree_aut := Group( [ (1,2)(3,5)(4,6) ] ) ),
 rec(
@@ -61,6 +67,7 @@ rec(
   graph := [ [ false, true, true, true, false, false ], [ true, false, false, false, true, true ], [ true, false, false, false, false, false ], 
       [ true, false, false, false, false, false ], [ false, true, false, false, false, false ], [ false, true, false, false, false, false ] ],
   orientation := [ (2,3,4), (1,5,6) ],
+  passport := [ (1,6)(2,5)(3,4), (1,5,3)(2,6,4), (1,2)(3,6)(4,5) ],
   size := 6,
   tree_aut := Group( [ (1,2)(3,5)(4,6) ] ) ),
 rec(
@@ -70,6 +77,7 @@ rec(
   graph := [ [ false, true, true, true, false, false ], [ true, false, false, false, true, true ], [ true, false, false, false, false, false ], 
       [ true, false, false, false, false, false ], [ false, true, false, false, false, false ], [ false, true, false, false, false, false ] ],
   orientation := [ (2,3,4), (1,5,6) ],
+  passport := [ (1,4)(2,5)(3,6), (1,5,3)(2,6,4), (1,2,3,4,5,6) ],
   size := 6,
   tree_aut := Group( [ (1,2)(3,5)(4,6) ] ) )
 ];

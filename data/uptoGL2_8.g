@@ -8,6 +8,7 @@ diagrams := [rec(
   graph := [ [ false, true, true, true, false, false ], [ true, false, false, false, true, true ], [ true, false, false, false, false, false ], 
       [ true, false, false, false, false, false ], [ false, true, false, false, false, false ], [ false, true, false, false, false, false ] ],
   orientation := [ (2,3,4), (1,5,6) ],
+  passport := [ (1,2)(3,7)(4,5), (2,7,5)(3,8,6), (1,2,3,8,6,7,4,5) ],
   size := 6,
   tree_aut := Group( [ (1,2)(3,5)(4,6) ] ) ),
 rec(
@@ -17,6 +18,7 @@ rec(
   graph := [ [ false, true, true, true, false, false ], [ true, false, false, false, true, true ], [ true, false, false, false, false, false ], 
       [ true, false, false, false, false, false ], [ false, true, false, false, false, false ], [ false, true, false, false, false, false ] ],
   orientation := [ (2,3,4), (1,5,6) ],
+  passport := [ (1,2)(3,7)(5,6), (2,7,4)(3,8,6), (1,2,3,8,5,6,7,4) ],
   size := 6,
   tree_aut := Group( [ (1,2)(3,5)(4,6) ] ) ),
 rec(
@@ -26,6 +28,7 @@ rec(
   graph := [ [ false, true, true, true, false, false ], [ true, false, false, false, true, true ], [ true, false, false, false, false, false ], 
       [ true, false, false, false, false, false ], [ false, true, false, false, false, false ], [ false, true, false, false, false, false ] ],
   orientation := [ (2,3,4), (1,5,6) ],
+  passport := [ (2,7)(3,4)(5,6), (1,7,4)(2,8,6), (1,2,8,5,6,7,3,4) ],
   size := 6,
   tree_aut := Group( [ (1,2)(3,5)(4,6) ] ) ),
 rec(
@@ -35,6 +38,7 @@ rec(
   graph := [ [ false, true, true, true, false, false ], [ true, false, false, false, true, true ], [ true, false, false, false, false, false ], 
       [ true, false, false, false, false, false ], [ false, true, false, false, false, false ], [ false, true, false, false, false, false ] ],
   orientation := [ (2,3,4), (1,5,6) ],
+  passport := [ (1,2)(3,7)(4,5)(6,8), (2,7,5)(3,8,6), (1,2,3,6,7,4,5) ],
   size := 6,
   tree_aut := Group( [ (1,2)(3,5)(4,6) ] ) ),
 rec(
@@ -44,6 +48,7 @@ rec(
   graph := [ [ false, true, true, true, false, false ], [ true, false, false, false, true, true ], [ true, false, false, false, false, false ], 
       [ true, false, false, false, false, false ], [ false, true, false, false, false, false ], [ false, true, false, false, false, false ] ],
   orientation := [ (2,3,4), (1,5,6) ],
+  passport := [ (1,2)(3,7)(4,8)(5,6), (2,7,4)(3,8,6), (1,2,3,4)(5,6,7,8) ],
   size := 6,
   tree_aut := Group( [ (1,2)(3,5)(4,6) ] ) ),
 rec(
@@ -53,6 +58,7 @@ rec(
   graph := [ [ false, true, true, true, false, false ], [ true, false, false, false, true, true ], [ true, false, false, false, false, false ], 
       [ true, false, false, false, false, false ], [ false, true, false, false, false, false ], [ false, true, false, false, false, false ] ],
   orientation := [ (2,3,4), (1,5,6) ],
+  passport := [ (1,8)(2,7)(3,4)(5,6), (1,7,4)(2,8,6), (1,2)(3,4,8,5,6,7) ],
   size := 6,
   tree_aut := Group( [ (1,2)(3,5)(4,6) ] ) )
 ];
