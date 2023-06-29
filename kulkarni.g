@@ -1412,20 +1412,70 @@ end;
 # creates a file with name <filename> 
 # and the graph in graphviz format. 
 # https://graphviz.org
+#CreateGraph := function(kdiagram, filename)
+#  local i,j,f,str;
+#  
+#  f := IO_File(filename, "w");
+#
+#  IO_WriteLine(f, "graph diagram {");
+#  for i in [1..Size(kdiagram!.graph)] do
+#  #  IO_WriteLine(f, Concatenation(String(i), "[label=", String(i), ", shape=circle]"));
+#    for j in [i+1..Size(kdiagram!.graph)] do 
+#      if kdiagram!.graph[i][j] then
+#        IO_WriteLine(f, String(i), " -- ", String(j), ";");
+#      fi;
+#    od;
+#  od;
+#  IO_WriteLine(f, "}");
+#  IO_Flush(f);
+#  IO_Close(f);
+#end;
+
 CreateGraph := function(kdiagram, filename)
-  local i,j,f,str;
+  local i,j,f,str,size,label;
   
   f := IO_File(filename, "w");
+  size := Size(kdiagram!.graph);
 
   IO_WriteLine(f, "graph diagram {");
-  for i in [1..Size(kdiagram!.graph)] do
-  #  IO_WriteLine(f, Concatenation(String(i), "[label=", String(i), ", shape=circle]"));
-    for j in [i+1..Size(kdiagram!.graph)] do 
-      if kdiagram!.graph[i][j] then
-        IO_WriteLine(f, String(i), " -- ", String(j), ";");
-      fi;
-    od;
+  IO_WriteLine(f, "node [shape=point,color=black];");
+  IO_WriteLine(f, "rankdir = LR;");
+  IO_WriteLine(f, "subgraph subdiagram {");
+  
+  if size = 4 then
+    IO_WriteLine(f, "1;");
+  elif size = 2 or size = 6 then
+    IO_WriteLine(f, "1 -- 2;");   
+  elif size = 8 then
+    IO_WriteLine(f, "2 -- 1 -- 3;");    
+  fi;
+
+  IO_WriteLine(f, "}");
+
+  if size = 4 or size = 6 then
+    IO_WriteLine(f, "{", String(size/2), ",", String(size/2+1), "} -- 1;");
+  elif size = 8 then
+    IO_WriteLine(f, "{5,6} -- 2;");
+    IO_WriteLine(f, "{rank=same;1 -- 4};");
+  fi;
+ 
+  if size = 4 then
+    IO_WriteLine(f, "1 -- 4;");
+  elif size = 6 or size = 8 then
+    IO_WriteLine(f, String(size/2-1)," -- {", String(size),",",String(size-1),"};");
+  fi;    
+
+  for i in [size/2..size] do
+    if i in kdiagram!.coloring[1] then
+      IO_WriteLine(f, String(i)," [color=blue];");   
+    elif i in kdiagram!.coloring[2] then
+      IO_WriteLine(f, String(i)," [color=red];");
+    elif i in MovedPoints(kdiagram!.coloring[3]) then
+      label := Minimum(i,i^kdiagram!.coloring[3]);
+      IO_WriteLine(f, String(i)," [fillcolor=red,xlabel=",String(label),"];");
+    fi;
   od;
+
   IO_WriteLine(f, "}");
   IO_Flush(f);
   IO_Close(f);

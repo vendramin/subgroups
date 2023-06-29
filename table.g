@@ -4,7 +4,6 @@
 
 ### TODO
 ### FIXME
-### CuspsRelations no anda con 2
 
 LogTo("table.log");
 
@@ -12,7 +11,7 @@ LogTo("table.log");
 Read("kulkarni.g");
 
 from := 1;
-to := 20;
+to := 10;
 
 # This is where we will store the data.
 data := List([1..to], x->[]);
