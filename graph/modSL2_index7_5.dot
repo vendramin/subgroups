@@ -5,7 +5,7 @@ subgraph subdiagram {
 1 -- 2;
 }
 {3,4} -- 1;
-2 -- {6,5};
+2 -- {6,5}
 3 [color=blue];
 4 [fillcolor=red,xlabel=4];
 5 [fillcolor=red,xlabel=4];

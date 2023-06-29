@@ -1453,16 +1453,16 @@ CreateGraph := function(kdiagram, filename)
   IO_WriteLine(f, "}");
 
   if size = 4 or size = 6 then
-    IO_WriteLine(f, "{", String(size/2), ",", String(size/2+1), "} -- 1;");
+    IO_WriteLine(f, "{3,4} -- 1;");
   elif size = 8 then
-    IO_WriteLine(f, "{5,6} -- 2;");
+    IO_WriteLine(f, "{7,8} -- 2;");
     IO_WriteLine(f, "{rank=same;1 -- 4};");
   fi;
  
   if size = 4 then
-    IO_WriteLine(f, "1 -- 4;");
+    IO_WriteLine(f, "1 -- 2;");
   elif size = 6 or size = 8 then
-    IO_WriteLine(f, String(size/2-1)," -- {", String(size),",",String(size-1),"};");
+    IO_WriteLine(f, String(size/2-1)," -- {6,5}");
   fi;    
 
   for i in [size/2..size] do
