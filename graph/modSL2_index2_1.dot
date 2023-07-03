@@ -1,9 +1,0 @@
-graph diagram {
-node [shape=point,color=black];
-rankdir = LR;
-subgraph subdiagram {
-1 -- 2;
-}
-1 [color=blue];
-2 [color=blue];
-}
