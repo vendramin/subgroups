@@ -3,7 +3,7 @@
 The repository contains the [GAP](https://www.gap-system.org) code used in the paper
 On computing finite index subgroups of $PSL_2(Z)$
 
-[![DOI](https://zenodo.org/badge/641409582.svg)](https://zenodo.org/badge/latestdoi/641409582)
+[![DOI](641409582.svg)](https://zenodo.org/badge/latestdoi/641409582)
 
 Our script uses the GAP packages [Yags](https://github.com/yags/yags), 
 [congruence](https://www.gap-system.org/Packages/congruence.html), 
