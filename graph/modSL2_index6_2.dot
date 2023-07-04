@@ -1,0 +1,13 @@
+graph diagram {
+node [shape=point,color=black];
+rankdir = LR;
+subgraph subdiagram {
+1 -- 2;
+}
+{3,4} -- 1;
+2 -- {6,5}
+3 [color=red];
+4 [color=red];
+5 [color=red];
+6 [color=red];
+}

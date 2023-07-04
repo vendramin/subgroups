@@ -8,14 +8,14 @@ LoadPackage("yags");
 LoadPackage("congruence");
 
 # The package ToolsForHomAlg is used to make more efficient
-# the use of recursive functions.
+# the use of recursive functions.
 LoadPackage("ToolsForHomAlg");
 
 # Create a square matrix of a given size with false
-# in every entry.
-# Example:
-# gap> FalseMatrix(2);
-# [ [ false, false ], [ false, false ] ]
+# in every entry.
+# Example:
+# gap> FalseMatrix(2);
+# [ [ false, false ], [ false, false ] ]
 FalseMatrix := function(n)
   local i, j, m;
   m := NullMat(n,n);
@@ -27,11 +27,11 @@ FalseMatrix := function(n)
   return m;
 end;  
 
-# This function returns an adjacency matrix
-# as a 0-1 matrix.
-# Example:
-# gap> ConvertFromBoolean([ [ false, true ], [ true, false ] ]);
-# [ [ 0, 1 ], [ 1, 0 ] ]
+# This function returns an adjacency matrix
+# as a 0-1 matrix.
+# Example:
+# gap> ConvertFromBoolean([ [ false, true ], [ true, false ] ]);
+# [ [ 0, 1 ], [ 1, 0 ] ]
 ConvertFromBoolean := function(m)
   local i,j,adj;
 
@@ -49,11 +49,11 @@ ConvertFromBoolean := function(m)
   return adj;
 end;
 
-# This function returns an adjacency matrix
-# in the format needed by the package Yags.
-# Example:
-# gap> ConvertToBoolean([ [ 0, 1 ], [ 0, 1] ]);
-# [ [ false, true ], [ false, true ] ]
+# This function returns an adjacency matrix
+# in the format needed by the package Yags.
+# Example:
+# gap> ConvertToBoolean([ [ 0, 1 ], [ 0, 1] ]);
+# [ [ false, true ], [ false, true ] ]
 ConvertToBoolean := function(m)
   local i,j,adj;
 
@@ -71,8 +71,8 @@ ConvertToBoolean := function(m)
   return adj;
 end;
 
-# Given a <list> of graphs, the function checks whether 
-# the <graph> belongs to the list (up to isomorphism). 
+# Given a <list> of graphs, the function checks whether 
+# the <graph> belongs to the list (up to isomorphism). 
 IsNewGraph := function(list, graph)
   local x;
   for x in list do
@@ -83,13 +83,13 @@ IsNewGraph := function(list, graph)
   return true;
 end;
 
-# This function implements the usual Kronecker delta
-# function.
-# Example:
-# gap> KroneckerDelta(2,2);
-# 1
-# gap> KroneckerDelta(2,3);
-# 0
+# This function implements the usual Kronecker delta
+# function.
+# Example:
+# gap> KroneckerDelta(2,2);
+# 1
+# gap> KroneckerDelta(2,3);
+# 0
 KroneckerDelta := function(i, j)
   if i=j then
     return 1;
@@ -98,12 +98,12 @@ KroneckerDelta := function(i, j)
   fi;
 end;
 
-# Given a square matrix <matrix> of size n and a row vector <v>
-# of size n+1 the function returns a new matrix of size n+1 where
-# the last row and the last column is equal to <v>. 
-# Example:
-# gap> MatrixEnlarge([[1,2],[3,4]],[5,6,7]);
-# [ [ 1, 2, 5 ], [ 3, 4, 6 ], [ 5, 6, 7 ] ]
+# Given a square matrix <matrix> of size n and a row vector <v>
+# of size n+1 the function returns a new matrix of size n+1 where
+# the last row and the last column is equal to <v>. 
+# Example:
+# gap> MatrixEnlarge([[1,2],[3,4]],[5,6,7]);
+# [ [ 1, 2, 5 ], [ 3, 4, 6 ], [ 5, 6, 7 ] ]
 MatrixEnlarge := function(matrix, v)
   local i, j, m, size;
   
@@ -124,10 +124,10 @@ MatrixEnlarge := function(matrix, v)
 end;
 
 # Computes representatives of isomorphism classes 
-# of inner graphs of size <n> inner vertices 
-# using the precomputed data <input>. 
-# The parameter <input> is a list of representatives of isomorphic classes
-# of inner graphs of size n-1. 
+# of inner graphs of size <n> inner vertices 
+# using the precomputed data <input>. 
+# The parameter <input> is a list of representatives of isomorphic classes
+# of inner graphs of size n-1. 
 InnerInequivalentTreesWithInput := FunctionWithCache( function(n, input)
   local i, j, g, answer, previous, graph;
 
@@ -158,9 +158,9 @@ InnerInequivalentTreesWithInput := FunctionWithCache( function(n, input)
 end : Cache := "crisp" );
 
 # Computes from scratch representatives of isomorphism classes of inner 
-# graph with <n> inner vertices.
-# Warning: This function uses InnerInequivalentTreesWithInput. 
-# Example:
+# graph with <n> inner vertices.
+# Warning: This function uses InnerInequivalentTreesWithInput. 
+# Example:
 # gap> InnerInequivalentTrees(2);
 # [ [ [ false, true ], [ true, false ] ] ]
 # gap> InnerInequivalentTrees(3);
@@ -169,17 +169,17 @@ InnerInequivalentTrees := function(n)
   return InnerInequivalentTreesWithInput(n, [[]]);
 end;
 
-# This function returns the extended graph attached to 
-# the inner graph. 
-# Example:
-# gap> g := [ [ false, true ], [ true, false ] ];;
-# gap> InnerToTotal(g);
-# [ [ false, true, true, true, false, false ],
-#   [ true, false, false, false, true, true ],
-#   [ true, false, false, false, false, false ],
-#   [ true, false, false, false, false, false ],
-#   [ false, true, false, false, false, false ],
-#   [ false, true, false, false, false, false ] ]
+# This function returns the extended graph attached to 
+# the inner graph. 
+# Example:
+# gap> g := [ [ false, true ], [ true, false ] ];;
+# gap> InnerToTotal(g);
+# [ [ false, true, true, true, false, false ],
+#   [ true, false, false, false, true, true ],
+#   [ true, false, false, false, false, false ],
+#   [ true, false, false, false, false, false ],
+#   [ false, true, false, false, false, false ],
+#   [ false, true, false, false, false, false ] ]
 InnerToTotal := function(graph)
   local n, m, k, f, i, x, g; 
 
@@ -202,46 +202,46 @@ InnerToTotal := function(graph)
   return ConvertToBoolean(m);
 end;
 
-# Given an extended graph <graph>, the function 
-# return the inner graph associated with it. 
-# Example:
-# gap> g := 
-# [ [ false, true, true, true, false, false ],
-#   [ true, false, false, false, true, true ],
-#   [ true, false, false, false, false, false ],
-#   [ true, false, false, false, false, false ],
-#   [ false, true, false, false, false, false ],
-#   [ false, true, false, false, false, false ] ];;
-# gap> TotalToInner(g);
-# [ [ false, true ], [ true, false ] ]
+# Given an extended graph <graph>, the function 
+# return the inner graph associated with it. 
+# Example:
+# gap> g := 
+# [ [ false, true, true, true, false, false ],
+#   [ true, false, false, false, true, true ],
+#   [ true, false, false, false, false, false ],
+#   [ true, false, false, false, false, false ],
+#   [ false, true, false, false, false, false ],
+#   [ false, true, false, false, false, false ] ];;
+# gap> TotalToInner(g);
+# [ [ false, true ], [ true, false ] ]
 TotalToInner := function(graph)
   local n;
   n := Size(graph);
   return graph{[1..n/2-1]}{[1..n/2-1]};
 end;
 
-# This function performs the calculation 
-# of graph automorphisms using Yags package. 
+# This function performs the calculation 
+# of graph automorphisms using Yags package. 
 # Example:
-# gap> YagsAutomorphismsOfGraph( [ [ true, false ], [ true, true ] ]);
-# Group([ (1,2) ])
+# gap> YagsAutomorphismsOfGraph( [ [ true, false ], [ true, true ] ]);
+# Group([ (1,2) ])
 YagsAutomorphismsOfGraph := function(graph)
   return AutomorphismGroup(GraphByAdjMatrix(graph));
 end;
 
-# Given an extended graph <graph> and a vertex <x>, 
-# the function returns the list of external vertices
-# adjacent to <x>. 
-# Example:
-# gap> g := InnerToTotal([[false, true],[true,false]]);
-# [ [ false, true, true, true, false, false ],
-#   [ true, false, false, false, true, true ],
-#   [ true, false, false, false, false, false ],
-#   [ true, false, false, false, false, false ],
-#   [ false, true, false, false, false, false ],
-#   [ false, true, false, false, false, false ] ]
-# gap> ExternalVerticesAdjacentTo(g, 2);
-# [ 5, 6 ]
+# Given an extended graph <graph> and a vertex <x>, 
+# the function returns the list of external vertices
+# adjacent to <x>. 
+# Example:
+# gap> g := InnerToTotal([[false, true],[true,false]]);
+# [ [ false, true, true, true, false, false ],
+#   [ true, false, false, false, true, true ],
+#   [ true, false, false, false, false, false ],
+#   [ true, false, false, false, false, false ],
+#   [ false, true, false, false, false, false ],
+#   [ false, true, false, false, false, false ] ]
+# gap> ExternalVerticesAdjacentTo(g, 2);
+# [ 5, 6 ]
 ExternalVerticesAdjacentTo := function(graph, x)
   local y, l, n;
 
@@ -256,12 +256,12 @@ ExternalVerticesAdjacentTo := function(graph, x)
   return l ;
 end;
 
-# Given an extended graph <graph> and a vertex <x>, 
-# the function returns the list of vertices
-# adjacent to <x>. 
-# gap> g := InnerToTotal([[false, true],[true,false]]);;
-# gap> VerticesAdjacentTo(g, 2);
-# [ 1, 5, 6 ]
+# Given an extended graph <graph> and a vertex <x>, 
+# the function returns the list of vertices
+# adjacent to <x>. 
+# gap> g := InnerToTotal([[false, true],[true,false]]);;
+# gap> VerticesAdjacentTo(g, 2);
+# [ 1, 5, 6 ]
 VerticesAdjacentTo := function(graph, x)
   local y, l, n;
 
@@ -276,32 +276,32 @@ VerticesAdjacentTo := function(graph, x)
   return l;
 end;
 
-# Given an extended graph <graph> and a vertex <x>, 
-# the function returns the list of vertices
-# adjacent to <x>. 
-# gap> g := InnerToTotal([[false, true],[true,false]]);;
-# gap> ExternalVertices(g);
-# [ 3, 4, 5, 6 ]
-# ExternalVertices := function(graph)
-#   local n;
-#   n := Size(graph);
-#   return Filtered([1..n], x->Size(VerticesAdjacentTo(graph, x))=1);
-# end;
-# 
-# InternalVertices := function(graph)
-#   local n;
-# 
-#   n := Size(graph);
-#   return Filtered([1..n], x->Size(VerticesAdjacentTo(graph, x))>1);
-# end;
+# Given an extended graph <graph> and a vertex <x>, 
+# the function returns the list of vertices
+# adjacent to <x>. 
+# gap> g := InnerToTotal([[false, true],[true,false]]);;
+# gap> ExternalVertices(g);
+# [ 3, 4, 5, 6 ]
+# ExternalVertices := function(graph)
+#   local n;
+#   n := Size(graph);
+#   return Filtered([1..n], x->Size(VerticesAdjacentTo(graph, x))=1);
+# end;
+# 
+# InternalVertices := function(graph)
+#   local n;
+# 
+#   n := Size(graph);
+#   return Filtered([1..n], x->Size(VerticesAdjacentTo(graph, x))>1);
+# end;
 
-# Given an extended graph <graph>, the function
-# returns the automorphism group of <graph> taking advantage 
-# of the particular structure of <graph>. 
+# Given an extended graph <graph>, the function
+# returns the automorphism group of <graph> taking advantage 
+# of the particular structure of <graph>. 
 # Example:
-# gap> g := InnerToTotal( [ [ false, true ],[ true, false ] ] );;
-# gap> AutomorphismsOfGraph(g);
-# Group([ (1,2)(3,5)(4,6), (3,4), (5,6) ])
+# gap> g := InnerToTotal( [ [ false, true ],[ true, false ] ] );;
+# gap> AutomorphismsOfGraph(g);
+# Group([ (1,2)(3,5)(4,6), (3,4), (5,6) ])
 AutomorphismsOfGraph := function(graph)
   local p, c, cycles, x, h, l, m, n, g, gens, new;
 
@@ -342,15 +342,15 @@ AutomorphismsOfGraph := function(graph)
   return Group(new);
 end;
 
-# Given an extended graph <graph>, the function
-# returns the automorphism group of the inner vertices
-# extended to the extended graph. 
+# Given an extended graph <graph>, the function
+# returns the automorphism group of the inner vertices
+# extended to the extended graph. 
 # Example:
-# gap> g := InnerToTotal( [ [ false, true ],[ true, false ] ] );;
-# gap> AutomorphismsOfGraph(g);
-# Group([ (1,2)(3,5)(4,6), (3,4), (5,6) ])
-# gap> ExtendedAutomorphismsOfInnerGraph(g);
-# Group([ (1,2)(3,5)(4,6) ])
+# gap> g := InnerToTotal( [ [ false, true ],[ true, false ] ] );;
+# gap> AutomorphismsOfGraph(g);
+# Group([ (1,2)(3,5)(4,6), (3,4), (5,6) ])
+# gap> ExtendedAutomorphismsOfInnerGraph(g);
+# Group([ (1,2)(3,5)(4,6) ])
 ExtendedAutomorphismsOfInnerGraph := function(graph)
   local p, c, cycles, x, h, l, m, n, g, gens, new;
 
@@ -383,17 +383,17 @@ ExtendedAutomorphismsOfInnerGraph := function(graph)
   return Group(new);
 end;
 
-# Given a <graph> and a permutation <f> of the vertices of the graph,
-# the function returns a new graph relabeled by <f>. 
-# Example:
-# gap> g := InnerToTotal([[false, true],[true,false]]);;
-# gap> ActionOnTree(g, (1,2));
-# [ [ false, true, false, false, true, true ],
-#   [ true, false, true, true, false, false ],
-#   [ false, true, false, false, false, false ],
-#   [ false, true, false, false, false, false ],
-#   [ true, false, false, false, false, false ],
-#   [ true, false, false, false, false, false ] ]
+# Given a <graph> and a permutation <f> of the vertices of the graph,
+# the function returns a new graph relabeled by <f>. 
+# Example:
+# gap> g := InnerToTotal([[false, true],[true,false]]);;
+# gap> ActionOnTree(g, (1,2));
+# [ [ false, true, false, false, true, true ],
+#   [ true, false, true, true, false, false ],
+#   [ false, true, false, false, false, false ],
+#   [ false, true, false, false, false, false ],
+#   [ true, false, false, false, false, false ],
+#   [ true, false, false, false, false, false ] ]
 ActionOnTree := function(graph, f)
   local p, m; 
   m := ConvertFromBoolean(graph);
@@ -402,46 +402,46 @@ ActionOnTree := function(graph, f)
 end;
 
 # An oriented tree is an object which is a record with the following components:
-# 1) An extended graph. 
-# 2) An orientation. 
+# 1) An extended graph. 
+# 2) An orientation. 
 # 3) The size.   
-# Example: 
-# rec( graph := [ [ false, true, true, true ], [ true, false, false, false ],
+# Example: 
+# rec( graph := [ [ false, true, true, true ], [ true, false, false, false ],
 #      [ true, false, false, false ], [ true, false, false, false ] ],
 #  orientation := [ (2,4,3), (), (), () ], size := 4 )
-# Notes: 
-# 1. The oriented tree does not have the automorphism group inside.
+# Notes: 
+# 1. The oriented tree does not have the automorphism group inside.
 # 2. We assume that the external vertices are labelled so that the right
 #    vertex of i corresponds to the label i+1. Given a general oriented
 #    tree, the script OrientedTreeGoodLabelling does the job. 
 
-# Given an oriented tree <obj> and an automorphism <f> of the 
-# underlying graph, the function returns a new oriented tree, which is the
+# Given an oriented tree <obj> and an automorphism <f> of the 
+# underlying graph, the function returns a new oriented tree, which is the
 # original oriented tree acted by <f>. 
-# Example:
-# x := rec( 
-#       graph := [ [ false, true, true, true, false, false, false, false ],
-#           [ true, false, false, false, true, true, false, false ],
-#           [ true, false, false, false, false, false, true, true ],
-#           [ true, false, false, false, false, false, false, false ],
-#           [ false, true, false, false, false, false, false, false ],
-#           [ false, true, false, false, false, false, false, false ],
-#           [ false, false, true, false, false, false, false, false ],
-#           [ false, false, true, false, false, false, false, false ] ],
-#       orientation := [ (2,4,3), (), () ], size := 8 ) ];;
-# gap> AutomorphismsOfGraph(x!.graph);
-# Group([ (2,3)(5,7)(6,8), (5,6), (7,8) ])
-# gap> f := (2,3)(5,7)(6,8);;
-# gap> ActionOnOrientedTree(x, f);
-# rec( graph := [ [ false, true, true, true, false, false, false, false ],
-#       [ true, false, false, false, true, true, false, false ],
-#       [ true, false, false, false, false, false, true, true ],
-#       [ true, false, false, false, false, false, false, false ],
-#       [ false, true, false, false, false, false, false, false ],
-#       [ false, true, false, false, false, false, false, false ],
-#       [ false, false, true, false, false, false, false, false ],
-#       [ false, false, true, false, false, false, false, false ] ],
-#   orientation := [ (2,3,4), (), () ], size := 8 )
+# Example:
+# x := rec( 
+#       graph := [ [ false, true, true, true, false, false, false, false ],
+#           [ true, false, false, false, true, true, false, false ],
+#           [ true, false, false, false, false, false, true, true ],
+#           [ true, false, false, false, false, false, false, false ],
+#           [ false, true, false, false, false, false, false, false ],
+#           [ false, true, false, false, false, false, false, false ],
+#           [ false, false, true, false, false, false, false, false ],
+#           [ false, false, true, false, false, false, false, false ] ],
+#       orientation := [ (2,4,3), (), () ], size := 8 ) ];;
+# gap> AutomorphismsOfGraph(x!.graph);
+# Group([ (2,3)(5,7)(6,8), (5,6), (7,8) ])
+# gap> f := (2,3)(5,7)(6,8);;
+# gap> ActionOnOrientedTree(x, f);
+# rec( graph := [ [ false, true, true, true, false, false, false, false ],
+#       [ true, false, false, false, true, true, false, false ],
+#       [ true, false, false, false, false, false, true, true ],
+#       [ true, false, false, false, false, false, false, false ],
+#       [ false, true, false, false, false, false, false, false ],
+#       [ false, true, false, false, false, false, false, false ],
+#       [ false, false, true, false, false, false, false, false ],
+#       [ false, false, true, false, false, false, false, false ] ],
+#   orientation := [ (2,3,4), (), () ], size := 8 )
 #ActionOnOrientedTree := function(obj, f)
 #  local n, x, graph, orientation, new;
 #
@@ -459,14 +459,14 @@ end;
 #end;
 
 # An oriented tree is an object which is a record with the following components:
-# 1) An extended <graph>. 
-# 2) An <orientation>. 
+# 1) An extended <graph>. 
+# 2) An <orientation>. 
 # 3) The <size>.   
-# 4) The automorphism group <tree_aut> of the tree.
+# 4) The automorphism group <tree_aut> of the tree.
 # 5) The automorphism group <aut> of the oriented tree. 
 
-# Given an oriented tree (with automorphism) <obj> and an automorphism <f> of the 
-# underlying graph, the function returns a new oriented tree, which is the
+# Given an oriented tree (with automorphism) <obj> and an automorphism <f> of the 
+# underlying graph, the function returns a new oriented tree, which is the
 # original oriented tree acted by <f>. 
 ActionOnOrientedTree := function(obj, f)
   local n, x, graph, orientation, new;
@@ -494,14 +494,14 @@ ActionOnOrientedTree := function(obj, f)
   fi;
 end;
 
-# Given an oriented tree <obj> and automorphism <f> 
+# Given an oriented tree <obj> and automorphism <f> 
 # the function determines whether the oriented tree is 
 # preserved by the autmorphism. 
 PreservesOrientedTree := function(obj, f)
   return obj = ActionOnOrientedTree(obj, f);
 end;
 
-# Given a list <list> of oriented trees, an oriented tree <obj> and a set
+# Given a list <list> of oriented trees, an oriented tree <obj> and a set
 # <aut> of automorphisms, the function checks whether the action of an
 # automorphism of <aut> on <obj> belongs to <list>. 
 IsNewOrientedTree := function(list, obj, aut)
@@ -517,10 +517,10 @@ end;
 
 # A colored tree is an oriented tree 
 # with a <coloring> of the external vertices, that is: 
-# 1) An extended <graph>. 
-# 2) An <orientation>. 
+# 1) An extended <graph>. 
+# 2) An <orientation>. 
 # 3) The <size>.   
-# 4) The automorphism group <tree_aut> of the tree.
+# 4) The automorphism group <tree_aut> of the tree.
 # 5) The automorphism group <aut> of the oriented tree. 
 # 6) A <coloring>.
 # 
@@ -529,7 +529,7 @@ end;
 # ii) The list of even vertices fix by the involution.
 # iii) A product of disjoint transpositions describing the free sides.
 
-# This function acts on a colored tree <obj> by an automorphism <f>.
+# This function acts on a colored tree <obj> by an automorphism <f>.
 ActionOnColoredTree := function(obj, f)
   local n, x, graph, coloring, orientation, new;
 
@@ -553,8 +553,8 @@ ActionOnColoredTree := function(obj, f)
 
 end;
 
-# Given an oriented tree <obj> and an external vertex <x>, the function 
-# returns the vertex of <obj> to the left of <x> and 
+# Given an oriented tree <obj> and an external vertex <x>, the function 
+# returns the vertex of <obj> to the left of <x> and 
 # the distance between them. 
 LeftVertex := function(obj, x)
   local c, k, l, g, y, z, d;
@@ -563,7 +563,7 @@ LeftVertex := function(obj, x)
     return fail;
   fi;
 
-  # This patch is needed only in the case of index two 
+  # This patch is needed only in the case of index two 
   if obj!.size = 2 then
     if x = 2 then 
       return [1, 1];
@@ -580,7 +580,7 @@ LeftVertex := function(obj, x)
     k := Position(obj!.orientation, c);
     if c = () then
       l := VerticesAdjacentTo(obj!.graph, k);
-      g!.orientation[k] := (l[1], l[2], l[3]); # We now choose one arbitrary orientation 
+      g!.orientation[k] := (l[1], l[2], l[3]); # We now choose one arbitrary orientation 
     fi;
   od;
 
@@ -597,8 +597,8 @@ LeftVertex := function(obj, x)
   return [y, d];
 end;
 
-# Given an oriented tree <obj> and an external vertex <x>, the function 
-# returns the vertex of <obj> to the right of <x> and 
+# Given an oriented tree <obj> and an external vertex <x>, the function 
+# returns the vertex of <obj> to the right of <x> and 
 # the distance between them. 
 RightVertex := function(obj, x)
   local c, k, l, g, y, z, d;
@@ -607,7 +607,7 @@ RightVertex := function(obj, x)
     return fail;
   fi;
 
-  # This patch is needed only in the case of index two 
+  # This patch is needed only in the case of index two 
   if obj!.size = 2 then
     if x = 2 then 
       return [1, 1];
@@ -622,7 +622,7 @@ RightVertex := function(obj, x)
     k := Position(obj!.orientation, c);
     if c = () then
       l := VerticesAdjacentTo(obj!.graph, k);
-      g!.orientation[k] := (l[1], l[2], l[3]); # We now choose one arbitrary orientation 
+      g!.orientation[k] := (l[1], l[2], l[3]); # We now choose one arbitrary orientation 
     fi;
   od;
 
@@ -671,7 +671,7 @@ OrientedTreeGoodLabelling := function(oriented_tree)
   return ActionOnOrientedTree(oriented_tree, Inverse(change));
 end;
 
-# Given a <list> of colored trees, a colored tree <obj> and a set
+# Given a <list> of colored trees, a colored tree <obj> and a set
 # <aut> of automorphisms, the function checks whether the action of an
 # automorphism of <aut> on <obj> belongs to <list>. 
 IsNewColoredTree := function(list, obj, aut)
@@ -685,8 +685,8 @@ IsNewColoredTree := function(list, obj, aut)
   return true;
 end;
 
-# This function computes the oriented tree classes 
-# of size <n> with their automorphism groups.  
+# This function computes the oriented tree classes 
+# with <n> internal vecrtices together with their automorphism groups.  
 OrientedTreeClassesWithAutomorphisms := function(n)
   local f, t, g, x, y, z, v, tmp, total, res, aut, graphs, orientation, tmp_orientation;
 
@@ -735,8 +735,8 @@ OrientedTreeClassesWithAutomorphisms := function(n)
   return res;
 end;
 
-# This function checks if a permutation is well-ordered. 
-# See [X] for the definition. 
+# This function checks if a permutation is well-ordered. 
+# See [X] for the definition. 
 IsOrderedPermutation := function(perm, n)
   local p, k;
   p := ListPerm(perm, n);
@@ -782,7 +782,7 @@ end;
 # Examples:
 # gap> c := ColoredTree(1,0,1);;
 # gap> Size(c);
-# 3
+# 1
 ColoredTree := function(blue, red, free)
   local n, b, r, c, x, f, tmp, set, output, classes;
 
@@ -806,7 +806,7 @@ ColoredTree := function(blue, red, free)
         od;
       else
         tmp := ShallowCopy(c);
-        tmp!.coloring := [(n-2)+b, (n-2)+Difference([1..n],b), () ]; # fixme!
+        tmp!.coloring := [(n-2)+b, (n-2)+Difference([1..n],b), () ]; # fixme!
         tmp!.aut := c!.aut;
         if IsNewColoredTree(output, tmp, c!.aut) then
           Add(output, tmp);
@@ -850,7 +850,7 @@ TreeDiagrams := function(d)
 end;
 
 
-# Given a colored tree <obj>, this function
+# Given a colored tree <obj>, this function
 # returns the linear system of the inequivalent cups of <obj>. 
 SystemNumberOfCusps := function(obj)
   local e, f, i, j, n, m;
@@ -881,16 +881,16 @@ end;
 # A Kulkarni diagram is an oriented tree 
 # with a <coloring> of the external vertices 
 # and a generalized Farey Symbol, that is: 
-# 1) An extended <graph>. 
-# 2) An <orientation>. 
+# 1) An extended <graph>. 
+# 2) An <orientation>. 
 # 3) The <size>.   
-# 4) The automorphism group <tree_aut> of the tree.
+# 4) The automorphism group <tree_aut> of the tree.
 # 5) The automorphism group <aut> of the oriented tree. 
 # 6) A <coloring>. 
 # 7) A generalized <farey_symbol>.
 
 
-# Given a Kulkarni diagram <kdiagram>, this function
+# Given a Kulkarni diagram <kdiagram>, this function
 # returns the permutation group associated to the cups relations of <obj>. 
 CuspsRelations := function(kdiagram)
   local e, f, i, j, n, gens;
@@ -915,7 +915,7 @@ CuspsRelations := function(kdiagram)
 end;
 
 
-# Given a Kulkarni diagram <kdiagram>, this function 
+# Given a Kulkarni diagram <kdiagram>, this function 
 # returns the number of inequivalent cups of <kdiagram>. 
 # Example:
 # gap> List(TreeDiagrams(4), NumberOfusps);
@@ -924,7 +924,7 @@ NumberOfCusps := function(kdiagram)
   return Size(NullspaceMat(TransposedMat(SystemNumberOfCusps(kdiagram))));
 end;
 
-# Given a Kulkarni diagram <kdiagram>, this function 
+# Given a Kulkarni diagram <kdiagram>, this function 
 # returns the genus of the upper half plane quotient by <kdiagram>. 
 # Example:
 # gap> List(TreeDiagrams(4), Genus);
@@ -965,7 +965,7 @@ end;
 TreeDiagram2GFS := function(obj)
   local x, i, m, v, p, w, a, b, c, d, tmp, u, ww;
 
-  # The case of index two is quite exceptional
+  # The case of index two is quite exceptional
   if obj!.size = 2 then
     return FareySymbolByData([infinity, 0, infinity], ["odd", "odd"]);
   fi;
@@ -1015,7 +1015,7 @@ TreeDiagram2GFS := function(obj)
 
 end;
 
-# Given a colored tree <obj> the function
+# Given a tree diagram <obj> the function
 # returns the associated Kulkarni diagram. 
 TreeDiagram2KulkarniDiagram := function(obj)
   obj!.farey_symbol := TreeDiagram2GFS(obj);
@@ -1060,9 +1060,9 @@ WidthOfCusp := function(kdiagram, k)
 end;
 
 # Given a Kulkarni diagram <kdiagram> and an integer <k> 
-# corresponding to k-coordinate of the cusp, 
-# the function computes the attached generator. 
-CuspGenerators := function(kdiagram, k)
+# corresponding to k-coordinate of the cusp, 
+# the function computes the attached generator. 
+CuspGenerator := function(kdiagram, k)
   local a, b, c, d, a2, b2, c2, d2, j, gfs, cfs;
 
   gfs := GeneralizedFareySequence(kdiagram!.farey_symbol);
@@ -1088,7 +1088,7 @@ CuspGenerators := function(kdiagram, k)
 end;
 
 # Given an element <g> of SL(2,Z) and a Kulkarni diagram <kdiagram> 
-# the function returns a reduction of <g>. 
+# the function returns a reduction of <g>. 
 ReducedModulo := function(g, kdiagram)
   local a, b, c, l, x, y, m, gfs, cfs, gens, case, quotient;
 
@@ -1168,13 +1168,13 @@ ReducedModulo := function(g, kdiagram)
   fi;
 
   if not cfs[c-1] = "odd" then
-    y := CuspGenerators(kdiagram, c-1);
+    y := CuspGenerator(kdiagram, c-1);
   else
     m := (NumeratorOfGFSElement(gfs, c-1)+NumeratorOfGFSElement(gfs, c))/(DenominatorOfGFSElement(gfs, c-1)+DenominatorOfGFSElement(gfs, c));
     if g[2][1] = 0 or b > m then
-      y := CuspGenerators(kdiagram, c-1);
+      y := CuspGenerator(kdiagram, c-1);
     else
-      y := Inverse(CuspGenerators(kdiagram, c-1));
+      y := Inverse(CuspGenerator(kdiagram, c-1));
     fi;
   fi;
   return ReducedModulo(y*g, kdiagram);
@@ -1202,7 +1202,7 @@ IsInSubgroup := function(g, kdiagram)
   if IsIdentityMat(g) or IsIdentityMat(-g) then
     return true;
   elif not cfs[1] in ["odd", "even"] then
-    x := CuspGenerators(kdiagram, 1);
+    x := CuspGenerator(kdiagram, 1);
     if g in [x, -x, Inverse(x), -Inverse(x)] then
       return true;
     fi;
@@ -1389,15 +1389,14 @@ KulkarniDiagramsUpToGL2Equivalence := function(n)
   return List(res, x->t[x]); 
 end;
 
-# Given a Kulkarni diagram, the function
-# returns the number of degree-two ramified points. 
+# Given a Kulkarni diagram, the function
+# returns the number of degree-two ramified points. 
 NrDegreeTwoRamifiedPoints := function(kdiagram)
   return Size(kdiagram.coloring[2]);
-  # +NrMovedPoints(kdiagram.coloring[3]);
 end;
 
-# Given a Kulkarni diagram, the function
-# returns the number of degree-three ramified points. 
+# Given a Kulkarni diagram, the function
+# returns the number of degree-three ramified points. 
 NrDegreeThreeRamifiedPoints := function(kdiagram)
   return Size(kdiagram.coloring[1]);
 end;
@@ -1407,90 +1406,3 @@ end;
 Generators := function(kdiagram)
   return GeneratorsByFareySymbol(kdiagram!.farey_symbol);
 end;
-
-# Given a Kulkarni diagram, the function
-# creates a file with name <filename> 
-# and the graph in graphviz format. 
-# https://graphviz.org
-#CreateGraph := function(kdiagram, filename)
-#  local i,j,f,str;
-#  
-#  f := IO_File(filename, "w");
-#
-#  IO_WriteLine(f, "graph diagram {");
-#  for i in [1..Size(kdiagram!.graph)] do
-#  #  IO_WriteLine(f, Concatenation(String(i), "[label=", String(i), ", shape=circle]"));
-#    for j in [i+1..Size(kdiagram!.graph)] do 
-#      if kdiagram!.graph[i][j] then
-#        IO_WriteLine(f, String(i), " -- ", String(j), ";");
-#      fi;
-#    od;
-#  od;
-#  IO_WriteLine(f, "}");
-#  IO_Flush(f);
-#  IO_Close(f);
-#end;
-
-CreateGraph := function(kdiagram, filename)
-  local i,j,f,str,size,label;
-  
-  f := IO_File(filename, "w");
-  size := Size(kdiagram!.graph);
-
-  IO_WriteLine(f, "graph diagram {");
-  IO_WriteLine(f, "node [shape=point,color=black];");
-  IO_WriteLine(f, "rankdir = LR;");
-  IO_WriteLine(f, "subgraph subdiagram {");
-  
-  if size = 4 then
-    IO_WriteLine(f, "1;");
-  elif size = 2 or size = 6 then
-    IO_WriteLine(f, "1 -- 2;");   
-  elif size = 8 then
-    IO_WriteLine(f, "2 -- 1 -- 3;");    
-  fi;
-
-  IO_WriteLine(f, "}");
-
-  if size = 4 or size = 6 then
-    IO_WriteLine(f, "{3,4} -- 1;");
-  elif size = 8 then
-    IO_WriteLine(f, "{7,8} -- 2;");
-    IO_WriteLine(f, "{rank=same;1 -- 4};");
-  fi;
- 
-  if size = 4 then
-    IO_WriteLine(f, "1 -- 2;");
-  elif size = 6 or size = 8 then
-    IO_WriteLine(f, String(size/2-1)," -- {6,5}");
-  fi;    
-
-  for i in [size/2..size] do
-    if i in kdiagram!.coloring[1] then
-      IO_WriteLine(f, String(i)," [color=blue];");   
-    elif i in kdiagram!.coloring[2] then
-      IO_WriteLine(f, String(i)," [color=red];");
-    elif i in MovedPoints(kdiagram!.coloring[3]) then
-      label := Minimum(i,i^kdiagram!.coloring[3]);
-      IO_WriteLine(f, String(i)," [fillcolor=red,xlabel=",String(label),"];");
-    fi;
-  od;
-
-  IO_WriteLine(f, "}");
-  IO_Flush(f);
-  IO_Close(f);
-end;
-
-# This function uses the Yags internal drawing system
-# to draw the underlying graph. The inner vertices
-# are highligthed. 
-# Commands:
-# H - Show help.
-# L - Show/hide labels.
-# R - Reorder vertices.
-DrawWithYags := function(kdiagram)
-  #Draw(GraphByAdjMatrix(kdiagram!.graph), kdiagram!.coloring[1]);
-  Draw(GraphByAdjMatrix(kdiagram!.graph));
-end;
-
-

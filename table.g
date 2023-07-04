@@ -2,15 +2,13 @@
 # of all Kulkarni diagrams (up to conjugation by SL_2(Z)) 
 # corresponding to subgroups of index up to 10.
 
-### TODO
-### FIXME
-
 LogTo("table.log");
 
 # We need our package 
 Read("kulkarni.g");
+Read("graph.g");
 
-from := 1;
+from := 2;
 to := 10;
 
 # This is where we will store the data.
