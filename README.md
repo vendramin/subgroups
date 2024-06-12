@@ -1,8 +1,10 @@
 # Subgroups of $SL_2(\mathbb{Z})$
 
-The repository contains the [GAP](https://www.gap-system.org) code used in the paper
+The repository contains the [GAP](https://www.gap-system.org) code and the database used in the paper
 
+Nicolás Mayorga Uruburu, Ariel Pacetti, and Leandro Vendramin
 On computing finite index subgroups of $PSL_2(Z)$
+https://arxiv.org/abs/2307.01826
 
 [![DOI](641409582.svg)](https://zenodo.org/badge/latestdoi/641409582)
 
