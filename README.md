@@ -1,12 +1,12 @@
 # Subgroups of $SL_2(\mathbb{Z})$
 
+[![DOI](641409582.svg)](https://zenodo.org/badge/latestdoi/641409582)
+
 The repository contains the [GAP](https://www.gap-system.org) code and the database used in the paper
 
 Nicolás Mayorga Uruburu, Ariel Pacetti, and Leandro Vendramin  
 On computing finite index subgroups of $PSL_2(Z)$  
 https://arxiv.org/abs/2307.01826  
-
-[![DOI](641409582.svg)](https://zenodo.org/badge/latestdoi/641409582)
 
 Our script uses the GAP packages [Yags](https://github.com/yags/yags), 
 [congruence](https://www.gap-system.org/Packages/congruence.html), 
